@@ -12,8 +12,8 @@ def eval_system(g, system=None):
 	if system == 'integro':
 		g_temp = g.copy()
 		integro.set_weights_and_start_seed(g_temp, seeds=seeds, trust=len(g.nodes()))
-		print(sum([g_temp[x][y]['weight'] for (x,y) in g_temp.edges_iter() if g_temp.node[x]['label']!=g_temp.node[y]['label']])/len([x for (x,y) in g_temp.edges_iter() if g_temp.node[x]['label']!=g_temp.node[y]['label']]))
-		print(sum([g_temp[x][y]['weight'] for (x,y) in g_temp.edges_iter() if g_temp.node[x]['label']==g_temp.node[y]['label']])/len([x for (x,y) in g_temp.edges_iter() if g_temp.node[x]['label']==g_temp.node[y]['label']]))
+		#print(sum([g_temp[x][y]['weight'] for (x,y) in g_temp.edges_iter() if g_temp.node[x]['label']!=g_temp.node[y]['label']])/len([x for (x,y) in g_temp.edges_iter() if g_temp.node[x]['label']!=g_temp.node[y]['label']]))
+		#print(sum([g_temp[x][y]['weight'] for (x,y) in g_temp.edges_iter() if g_temp.node[x]['label']==g_temp.node[y]['label']])/len([x for (x,y) in g_temp.edges_iter() if g_temp.node[x]['label']==g_temp.node[y]['label']]))
 
 		ranks = integro.get_ranks(g_temp)
 
@@ -24,7 +24,7 @@ def eval_system(g, system=None):
 		ranks = votetrust.getRanks(g)
 
 	elif system == 'sybilframe':
-		sybilframe.inferPosteriorsParallel(g)
+		sybilframe.inferPosteriorsEdgeImprove(g)
 		ranks = sybilframe.getRanks(g)
 
 	real = [g.node[i]['label'] for i in g.nodes_iter()]

@@ -8,7 +8,6 @@ from math import sqrt
 from collections import defaultdict
 import sklearn.linear_model as linmod
 import multiprocessing
-import dill
 
 
 g_glob = 42
@@ -24,7 +23,7 @@ def worker(node_arr, edge_arr, n_list, q):
 		for l in e_slice:
 			for v in (1, -1):
 				for u in (1, -1):
-					edge_pot = l[]
+					edge_pot = l
 					node_pot = g.node[x][SF_Keys.Potential][u]
 					prod = edge_pot * node_pot
 					for f in in_edges:
@@ -97,6 +96,47 @@ def inferPosteriorsParallel(g, d=5):
 		g.node[n][SF_Keys.Belief] = belief
 
 
+def inferPosteriorsEdgeImprove(g, d=5):
+	for u,v in g.edges():
+		g[u][v][SF_Keys.Message] = defaultdict(lambda: 1)
+	for i in range(d):
+		#print('new round')
+		new_messages = {}
+		in_edge_prod = {}
+		for i in g.nodes_iter():
+			one_prob = 1
+			minus_prob = 1
+			in_edges = g.in_edges(i)
+			for x,y in in_edges:
+				one_prob *= g[x][y][SF_Keys.Message][1]
+				minus_prob *= g[x][y][SF_Keys.Message][-1]
+			in_edge_prod[i] = (one_prob, minus_prob)
+
+		for e in g.edges_iter():
+			in_edges = g.in_edges(e[0])
+			message = {1: 0, -1: 0}
+			for v in (1, -1):
+				for u in (1, -1):
+					edge_pot = g[e[0]][e[1]][SF_Keys.Potential](u,v)
+					node_pot = g.node[e[0]][SF_Keys.Potential](u)
+					prod = edge_pot * node_pot
+					prod *= in_edge_prod[e[0]][u]
+					message[v] += prod
+			new_messages[e] = normalize(message)
+		#print(message)
+		for f, t in g.edges_iter():
+			g[f][t][SF_Keys.Message] = new_messages[(f,t)]
+
+	""" calc beliefs """
+	for n in g.nodes():
+		message = {1: 1, -1: 1}
+		for e in g.in_edges(n):
+			message[1] *= g[e[0]][e[1]][SF_Keys.Message][1]
+			message[-1] *= g[e[0]][e[1]][SF_Keys.Message][-1]
+		message[1] *= g.node[n][SF_Keys.Potential](1)
+		message[-1] *= g.node[n][SF_Keys.Potential](-1)
+		belief = normalize(message)
+		g.node[n][SF_Keys.Belief] = belief
 
 def inferPosteriors(g, d=5):
 	for u,v in g.edges():
