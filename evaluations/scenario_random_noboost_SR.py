@@ -76,7 +76,9 @@ print(nx.is_connected(g))
 g_back = g.copy()
 g_back_sybilframe = g_sybilframe.copy()
 requested = []
+
 results_list = []
+return_package = (results_list, paras)
 
 MAX_REQUESTS = paras.maxRequests
 
@@ -111,7 +113,7 @@ for j in range(paras.numRepeats):
 			g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
 
 	results_list.append(results)
-pickle.dump(results_list, open( "../pickles/results_random_noboost_SR.p", "wb+"))
+pickle.dump(return_package, open( "../pickles/results_random_noboost_SR.p", "wb+"))
 
 mergeAuc = defaultdict(lambda: 0)
 for e in results_list:

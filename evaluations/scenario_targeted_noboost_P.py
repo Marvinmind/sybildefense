@@ -48,6 +48,7 @@ getNonSybilEdgeProb = calc.getNodeProbClosure(paras.edgeProbNonSybil)
 
 
 results_list = []
+return_package = (results_list,paras)
 for j in range(paras.numRepeats):
 	""" createGraph and set labels"""
 	g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
@@ -154,7 +155,7 @@ for j in range(paras.numRepeats):
 			requested[j].append((s, h))
 	results_list.append(results)
 
-pickle.dump(results_list, open( "../pickles/results_targeted_noboost_P.p", "wb+" ) )
+pickle.dump(return_package, open( "../pickles/results_targeted_noboost_P.p", "wb+" ) )
 
 
 
