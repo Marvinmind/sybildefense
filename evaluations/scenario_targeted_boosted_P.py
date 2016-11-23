@@ -57,9 +57,29 @@ for j in range(paras.numRepeats):
 	NUM_NODES = len(g.nodes())
 	NUM_SYBILS = paras.numSybils
 
+	"add boosting region"
+	r = []
+	for i in range(5):
+		while True:
+			h = random.randint(0,NUM_NODES-1)
+			if h not in r:
+				g.add_edge(h, NUM_NODES,{'trust':1})
+				r.append(h)
+				break
+
+	g.add_edge(NUM_NODES, NUM_NODES+1,{'trust':1})
+	g.add_edge(NUM_NODES+1, NUM_NODES+2,{'trust':1})
+	g.add_edge(NUM_NODES+2, NUM_NODES,{'trust':1})
+
+	for i in range(3):
+		g.node[NUM_NODES+i]['label'] = 1
+		g.add_edge(NUM_NODES+i+3,NUM_NODES,{'trust': 1})
+		g.add_edge(NUM_NODES+i+3,NUM_NODES+1,{'trust': 1})
+		g.add_edge(NUM_NODES+i+3,NUM_NODES+2,{'trust': 1})
+
 	""" set 10 sybil nodes"""
 	for i in range(NUM_SYBILS):
-		g.add_node(NUM_NODES+i,{'label':1})
+		g.add_node(NUM_NODES+i+3,{'label':1})
 
 
 	""" set seeds"""
@@ -104,7 +124,7 @@ for j in range(paras.numRepeats):
 
 	requested = defaultdict(lambda :[])
 	results =  {'integro':[], 'votetrust':[], 'sybilframe':[]}
-	MAX_REQUESTS = paras.maxRequests
+	MAX_REQUESTS = 101
 	select_trust = []
 	pool = defaultdict(lambda: [])
 
@@ -121,7 +141,7 @@ for j in range(paras.numRepeats):
 			#results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
 
 		for j in range(NUM_SYBILS):
-			s = NUM_NODES+j
+			s = NUM_NODES+j+3
 			if len(pool[j])==0:
 				while True:
 					h = random.randint(0, NUM_NODES-1)
@@ -156,7 +176,7 @@ for j in range(paras.numRepeats):
 			requested[j].append((s, h))
 	results_list.append(results)
 
-pickle.dump(return_package, open( "../pickles/results_targeted_noboost_P.p", "wb+" ) )
+pickle.dump(return_package, open( "../pickles/results_targeted_boosted_P.p", "wb+" ) )
 
 
 
