@@ -115,11 +115,4 @@ for j in range(paras.numRepeats):
 	results_list.append(results)
 pickle.dump(return_package, open( "../pickles/results_random_noboost_SR.p", "wb+"))
 
-mergeAuc = defaultdict(lambda: 0)
-for e in results_list:
-	for i, x in enumerate(e['integro']):
-		mergeAuc[i] += x.auc/len(results_list)
-
-print(mergeAuc)
-
 
