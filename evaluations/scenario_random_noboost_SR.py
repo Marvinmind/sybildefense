@@ -9,7 +9,7 @@ from collections import defaultdict
 
 from util import graph_creation
 
-paras = parameters.ParameterSettingRealistic()
+paras = parameters.ParameterSettingRealistic(maxRequests=501)
 " set parameters "
 beta = paras.beta
 d = paras.d
