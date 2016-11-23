@@ -75,9 +75,9 @@ g_back_sybilframe = g_sybilframe.copy()
 requested = []
 results_list = []
 
-MAX_REQUESTS = 2001
+MAX_REQUESTS = 1001
 
-for j in range(5):
+for j in range(10):
 	g=g_back.copy()
 	g_sybilframe = g_back_sybilframe.copy()
 	results = {'integro': [], 'votetrust': [], 'sybilframe': []}

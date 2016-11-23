@@ -62,7 +62,7 @@ def calc_weighted_degrees(g):
 		if n in neighbors:
 			deg += g[n][n]['weight']
 		degrees[n] = deg
-		degrees[n] = g.degree(n)
+		#degrees[n] = g.degree(n)
 	return degrees
 
 

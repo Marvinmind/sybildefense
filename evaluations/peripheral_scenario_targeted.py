@@ -172,7 +172,7 @@ if __name__=='__main__':
 				requested[j].append((s, h))
 		results_list.append(results)
 
-	pickle.dump(results_list, open( "../pickles/results.p", "wb+" ) )
+	pickle.dump(results_list, open( "../pickles/results_targeted_noboost_P.p", "wb+" ) )
 
 
 

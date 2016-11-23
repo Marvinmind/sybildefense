@@ -49,7 +49,7 @@ if __name__=='__main__':
 	results_list = []
 	for j in range(2):
 		""" createGraph and set labels"""
-		g = graph_creation.create_directed_smallWorld(1000, 40)
+		g = graph_creation.create_directed_smallWorld(4000, 40)
 		nx.set_node_attributes(g,'label', 0)
 		NUM_NODES = len(g.nodes())
 		NUM_SYBILS = 10
@@ -101,7 +101,7 @@ if __name__=='__main__':
 
 		requested = defaultdict(lambda :[])
 		results =  {'integro':[], 'votetrust':[], 'sybilframe':[]}
-		MAX_REQUESTS = 21
+		MAX_REQUESTS = 101
 		select_trust = []
 		pool = defaultdict(lambda: [])
 
@@ -111,7 +111,7 @@ if __name__=='__main__':
 
 
 		for i in range(MAX_REQUESTS):
-			if i % 10 == 0:
+			if i % 5 == 0:
 				print('eval')
 				results['integro'].append(eval_systems.eval_system(g, system='integro'))
 				results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
@@ -153,7 +153,7 @@ if __name__=='__main__':
 				requested[j].append((s, h))
 		results_list.append(results)
 
-	pickle.dump(results_list, open( "../pickles/results.p", "wb+" ) )
+	pickle.dump(results_list, open( "../pickles/results_targeted_noboost_P.p", "wb+" ) )
 
 
 
