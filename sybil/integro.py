@@ -167,7 +167,7 @@ def get_ranks(g):
 	"""
 	degrees = calc_weighted_degrees(g)
 	rank = raw / np.array(list(degrees.values()))
-
+	print('sum of raw is: {}'.format(sum(raw)))
 	return rank
 
 def calc_auc(g):

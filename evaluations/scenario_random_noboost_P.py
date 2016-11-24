@@ -118,7 +118,7 @@ for j in range(paras.numRepeats):
 			s = NUM_NODES+j
 			while True:
 				h = random.randint(0, NUM_NODES-1)
-				if (s, h) not in requested:
+				if (s, h) not in requested and h not in paras.seeds:
 					break
 
 			num_common_friends = len(set(g.neighbors(h)).intersection(set(g.neighbors(s))))

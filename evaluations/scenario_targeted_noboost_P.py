@@ -125,7 +125,7 @@ for j in range(paras.numRepeats):
 			if len(pool[j])==0:
 				while True:
 					h = random.randint(0, NUM_NODES-1)
-					if (s, h) not in requested:
+					if (s, h) not in requested and s not in paras.seeds:
 						break
 			else:
 				h = pool[j][0]
@@ -137,7 +137,7 @@ for j in range(paras.numRepeats):
 			if trust == 1:
 				friends_of_friend = g.neighbors(h)
 				pool[j].extend(friends_of_friend)
-				if s in friends_of_friend:
+				if s in friends_of_friend or s in paras.seeds:
 					friends_of_friend.remove(s)
 				""" magic list conversion to remove duplicates"""
 				seen = set()

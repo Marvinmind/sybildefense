@@ -20,7 +20,6 @@ class IntegroTests(unittest.TestCase):
 		a = integro.construct_transition_matrix(g)
 		expect = np.array([[0.2, 0.8, 0, 0, 0], [0.44, 0, 0.28, 0.28, 0], [0, 0.2, 0, 0.8, 0], [0, 0.14, 0.57, 0, 0.29], [0, 0, 0, 1, 0]])
 		self.assertEqual((np.around(a, 2)-expect).any(), False)
-		print(a)
 
 	def test_weights(self):
 		g = nx.Graph()

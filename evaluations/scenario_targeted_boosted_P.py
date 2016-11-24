@@ -32,7 +32,7 @@ getSybilEdgeProb:   From Twitter Evaluation: 18% attack edges detected, FP Rate 
 
 getNonSybilEdgeProb: ""
 """
-paras = parameters.ParameterSettingRealistic()
+paras = parameters.ParameterSettingRealistic(numRepeats=2)
 " set parameters "
 beta = paras.beta
 d = paras.d
@@ -62,7 +62,7 @@ for j in range(paras.numRepeats):
 	for i in range(5):
 		while True:
 			h = random.randint(0,NUM_NODES-1)
-			if h not in r:
+			if h not in r and h not in paras.seeds:
 				g.add_edge(h, NUM_NODES,{'trust':1})
 				r.append(h)
 				break
@@ -73,14 +73,13 @@ for j in range(paras.numRepeats):
 
 	for i in range(3):
 		g.node[NUM_NODES+i]['label'] = 1
-		g.add_edge(NUM_NODES+i+3,NUM_NODES,{'trust': 1})
-		g.add_edge(NUM_NODES+i+3,NUM_NODES+1,{'trust': 1})
-		g.add_edge(NUM_NODES+i+3,NUM_NODES+2,{'trust': 1})
 
 	""" set 10 sybil nodes"""
 	for i in range(NUM_SYBILS):
 		g.add_node(NUM_NODES+i+3,{'label':1})
-
+		g.add_edge(NUM_NODES+i+3,NUM_NODES,{'trust': 1})
+		g.add_edge(NUM_NODES+i+3,NUM_NODES+1,{'trust': 1})
+		g.add_edge(NUM_NODES+i+3,NUM_NODES+2,{'trust': 1})
 
 	""" set seeds"""
 	for i in g.nodes_iter():
@@ -112,7 +111,7 @@ for j in range(paras.numRepeats):
 		if g.node[start]['label'] == g.node[end]['label']:
 			prob = getNonSybilEdgeProb()
 		else:
-			print('ATTACK EDGE!!')
+			#print('ATTACK EDGE!!')
 			prob = getSybilEdgeProb()
 		temp = sybilframe.create_edge_func(prob)
 		g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
@@ -145,7 +144,7 @@ for j in range(paras.numRepeats):
 			if len(pool[j])==0:
 				while True:
 					h = random.randint(0, NUM_NODES-1)
-					if (s, h) not in requested:
+					if ((s, h) not in requested[j]) and (h not in paras.seeds):
 						break
 			else:
 				h = pool[j][0]
@@ -157,7 +156,7 @@ for j in range(paras.numRepeats):
 			if trust == 1:
 				friends_of_friend = g.neighbors(h)
 				pool[j].extend(friends_of_friend)
-				if s in friends_of_friend:
+				if s in friends_of_friend or s in paras.seeds:
 					friends_of_friend.remove(s)
 				""" magic list conversion to remove duplicates"""
 				seen = set()
