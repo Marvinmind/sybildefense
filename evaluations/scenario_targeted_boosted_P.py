@@ -32,7 +32,7 @@ getSybilEdgeProb:   From Twitter Evaluation: 18% attack edges detected, FP Rate 
 
 getNonSybilEdgeProb: ""
 """
-paras = parameters.ParameterSettingRealistic(numRepeats=2)
+paras = parameters.ParameterSettingRealistic(numRepeats=10)
 " set parameters "
 beta = paras.beta
 d = paras.d
@@ -129,7 +129,6 @@ for j in range(paras.numRepeats):
 
 	g_back = g.copy()
 	g_back_sybilframe = g_sybilframe.copy()
-
 
 
 	for i in range(MAX_REQUESTS):

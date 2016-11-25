@@ -106,3 +106,6 @@ def append_boosting_region(g, dummies):
 
 	for i in range(4):
 		g.node[N+i]['label'] = 1
+
+def create_standard_gh():
+	pass

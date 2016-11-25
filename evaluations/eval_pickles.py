@@ -61,10 +61,14 @@ print(mergeAuc_integro_peripheral_tar_boost)
 
 
 " peripheral plot"
-plt.plot(x, list(mergeAuc_integro_peripheral_rand.values()),'r--', label='Integro Random')
+plt.plot(x, list(mergeAuc_integro_peripheral_rand.values()),'ro', label='Integro Random')
 plt.plot(x, list(mergeAuc_integro_peripheral_tar.values()),'r:',  label='Integro Targeted')
-plt.plot(x, list(mergeAuc_votetrust_peripheral_rand.values()),'b--', label='Votetrust Random')
+plt.plot(x, list(mergeAuc_integro_peripheral_tar_boost.values()),'r-.',  label='Integro Targeted Boosted')
+plt.plot(x, list(mergeAuc_votetrust_peripheral_rand.values()),'bo', label='Votetrust Random')
 plt.plot(x, list(mergeAuc_votetrust_peripheral_tar.values()),'b:',  label='Votetrust Targeted')
+plt.plot(x, list(mergeAuc_votetrust_peripheral_tar_boost.values()),'b-.',  label='Votetrust Targeted Boosted')
+
+
 plt.xlabel('Number of requests')
 plt.ylabel('Mean AUC')
 plt.title('Peripheral Scenario')

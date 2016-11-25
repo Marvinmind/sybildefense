@@ -48,7 +48,7 @@ getNonSybilEdgeProb = calc.getNodeProbClosure(paras.edgeProbNonSybil)
 
 
 results_list = []
-return_package = (results_list,paras)
+return_package = (results_list, paras)
 
 for j in range(paras.numRepeats):
 	""" createGraph and set labels"""
