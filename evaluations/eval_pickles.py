@@ -4,7 +4,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 
 peripheral_tar = pickle.load(open('../pickles/results_targeted_noboost_P.p','rb'))[0]
-peripheral_rand = pickle.load(open('../pickles/results_random_noboost_P.p','rb'))[0]
+peripheral_rand = pickle.load(open('../pickles/results_random_noboost_P_fb.p','rb'))[0]
 sr_rand = pickle.load(open('../pickles/results_random_noboost_SR.p','rb'))[0]
 peripheral_tar_boosted = pickle.load(open('../pickles/results_targeted_boosted_P.p','rb'))[0]
 

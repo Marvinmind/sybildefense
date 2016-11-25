@@ -107,5 +107,27 @@ def append_boosting_region(g, dummies):
 	for i in range(4):
 		g.node[N+i]['label'] = 1
 
-def create_standard_gh():
-	pass
+def undirected_to_directed(g):
+	g = nx.DiGraph(g)
+	nx.set_node_attributes(g, 'type', 'honest')
+	sorted_edges = sorted(g.edges(), key= lambda tup: tup[0])
+	for e in sorted_edges:
+		if e[0] < e[1]:
+			r = random.random()
+			if r < 0.5:
+				g.remove_edge(e[0], e[1])
+				g[e[1]][e[0]]['trust'] = (lambda x: -1 if x < 0.2 else 1)(random.random())
+			else:
+				g.remove_edge(e[1], e[0])
+				g[e[0]][e[1]]['trust'] = (lambda x: -1 if x < 0.2 else 1)(random.random())
+	to_remove = []
+	for i in g.nodes_iter():
+		if g.degree(i) == 0:
+			print("WARNING: REMOVING NODES!!")
+			to_remove.append(i)
+	for i in to_remove:
+		g.remove_node(i)
+	mapping = dict(zip(g.nodes(), range(len(g.nodes()))))
+	nx.relabel_nodes(g, mapping, copy=False)
+
+	return g
