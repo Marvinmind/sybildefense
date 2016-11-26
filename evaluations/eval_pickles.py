@@ -49,7 +49,7 @@ for e in peripheral_tar_boosted:
 	for i, x in enumerate(e['integro']):
 		mergeAuc_integro_peripheral_tar_boost[i] += x.auc/len(peripheral_tar_boosted)
 
-x = [x*5 for x in range(21)]
+x = [x*5 for x in range(26)]
 print(mergeAuc_integro_peripheral_tar)
 print(mergeAuc_votetrust_peripheral_rand)
 print(mergeAuc_votetrust_peripheral_tar)
@@ -59,12 +59,12 @@ print(mergeAuc_votetrust_sr_rand)
 print(mergeAuc_votetrust_peripheral_tar_boost)
 print(mergeAuc_integro_peripheral_tar_boost)
 
-
+"""
 " peripheral plot"
-plt.plot(x, list(mergeAuc_integro_peripheral_rand.values()),'ro', label='Integro Random')
+#plt.plot(x, list(mergeAuc_integro_peripheral_rand.values()),'ro', label='Integro Random')
 plt.plot(x, list(mergeAuc_integro_peripheral_tar.values()),'r:',  label='Integro Targeted')
 plt.plot(x, list(mergeAuc_integro_peripheral_tar_boost.values()),'r-.',  label='Integro Targeted Boosted')
-plt.plot(x, list(mergeAuc_votetrust_peripheral_rand.values()),'bo', label='Votetrust Random')
+#plt.plot(x, list(mergeAuc_votetrust_peripheral_rand.values()),'bo', label='Votetrust Random')
 plt.plot(x, list(mergeAuc_votetrust_peripheral_tar.values()),'b:',  label='Votetrust Targeted')
 plt.plot(x, list(mergeAuc_votetrust_peripheral_tar_boost.values()),'b-.',  label='Votetrust Targeted Boosted')
 
@@ -88,4 +88,8 @@ plt.ylabel('Mean AUC')
 plt.ylim((0,1.1))
 plt.title('Sybil Region Scenario')
 plt.legend(bbox_to_anchor=(0,0.25), loc='upper left', prop={'size':12})
+plt.show()
+"""
+plt.plot(list(mergeAuc_integro_peripheral_rand.values()), 'r--')
+plt.plot(list(mergeAuc_votetrust_peripheral_rand.values()),'b--')
 plt.show()

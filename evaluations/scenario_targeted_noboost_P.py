@@ -32,7 +32,7 @@ getSybilEdgeProb:   From Twitter Evaluation: 18% attack edges detected, FP Rate 
 
 getNonSybilEdgeProb: ""
 """
-paras = parameters.ParameterSettingRealistic()
+paras = parameters.ParameterSettingRealistic(numRepeats=5, graph='facebook')
 " set parameters "
 beta = paras.beta
 d = paras.d
@@ -51,8 +51,12 @@ results_list = []
 return_package = (results_list, paras)
 
 for j in range(paras.numRepeats):
-	""" createGraph and set labels"""
-	g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
+	" create graph "
+	if paras.graph == 'smallWorld':
+		g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
+	elif paras.graph == 'facebook':
+		g = nx.read_adjlist('/home/martin/Downloads/facebook_combined.txt')
+		g = graph_creation.undirected_to_directed(g)
 	nx.set_node_attributes(g,'label', 0)
 	NUM_NODES = len(g.nodes())
 	NUM_SYBILS = paras.numSybils
@@ -156,7 +160,10 @@ for j in range(paras.numRepeats):
 			requested[j].append((s, h))
 	results_list.append(results)
 
-pickle.dump(return_package, open( "../pickles/results_targeted_noboost_P.p", "wb+" ) )
+if paras.graph =='smallWorld':
+	pickle.dump(return_package, open( "../pickles/results_targeted_noboost_P_sm.p", "wb+" ) )
+if paras.graph =='facebook':
+	pickle.dump(return_package, open("../pickles/results_targeted_noboost_P_fb.p", "wb+"))
 
 
 
