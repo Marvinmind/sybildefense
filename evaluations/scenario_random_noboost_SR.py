@@ -9,7 +9,7 @@ from collections import defaultdict
 
 from util import graph_creation
 
-paras = parameters.ParameterSettingRealistic(maxRequests=501, evalInterval=25, graph='facebook', numRepeats=4)
+paras = parameters.ParameterSettingRealistic(maxRequests=501, evalInterval=25, graph='facebook', numRepeats=5)
 " set parameters "
 beta = paras.beta
 d = paras.d
@@ -35,7 +35,7 @@ for j in range(paras.numRepeats):
 	if paras.graph == 'smallWorld':
 		g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
 	elif paras.graph == 'facebook':
-		g = nx.read_adjlist('/home/martin/Downloads/facebook_combined.txt')
+		g = nx.read_adjlist('../datasets/facebook_combined.txt')
 		g = graph_creation.undirected_to_directed(g)
 	nx.set_node_attributes(g, 'label', 0)
 	NUM_NODES = len(g.nodes())
@@ -89,7 +89,7 @@ for j in range(paras.numRepeats):
 			print('run')
 			results['integro'].append(eval_systems.eval_system(g, system='integro'))
 			results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
-		# results['sybilframe'].append(eval_integro.eval(g))
+			results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
 
 
 		while True:

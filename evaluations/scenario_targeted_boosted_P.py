@@ -32,7 +32,7 @@ getSybilEdgeProb:   From Twitter Evaluation: 18% attack edges detected, FP Rate 
 
 getNonSybilEdgeProb: ""
 """
-paras = parameters.ParameterSettingRealistic(numRepeats=10)
+paras = parameters.ParameterSettingRealistic(numRepeats=5, graph='smallWorld')
 " set parameters "
 beta = paras.beta
 d = paras.d
@@ -52,11 +52,14 @@ return_package = (results_list,paras)
 
 for j in range(paras.numRepeats):
 	""" createGraph and set labels"""
-	g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
+	if paras.graph == 'smallWorld':
+		g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
+	elif paras.graph == 'facebook':
+		g = nx.read_adjlist('../datasets/facebook_combined.txt')
+		g = graph_creation.undirected_to_directed(g)
 	nx.set_node_attributes(g,'label', 0)
 	NUM_NODES = len(g.nodes())
 	NUM_SYBILS = paras.numSybils
-
 	"add boosting region"
 	r = []
 	for i in range(5):
@@ -123,7 +126,7 @@ for j in range(paras.numRepeats):
 
 	requested = defaultdict(lambda :[])
 	results =  {'integro':[], 'votetrust':[], 'sybilframe':[]}
-	MAX_REQUESTS = 101
+	MAX_REQUESTS = paras.maxRequests
 	select_trust = []
 	pool = defaultdict(lambda: [])
 
@@ -136,7 +139,7 @@ for j in range(paras.numRepeats):
 			print('eval')
 			results['integro'].append(eval_systems.eval_system(g, system='integro'))
 			results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
-			#results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
+			results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
 
 		for j in range(NUM_SYBILS):
 			s = NUM_NODES+j+3
@@ -174,7 +177,10 @@ for j in range(paras.numRepeats):
 			requested[j].append((s, h))
 	results_list.append(results)
 
-pickle.dump(return_package, open( "../pickles/results_targeted_boosted_P.p", "wb+" ) )
+if paras.graph =='smallWorld':
+	pickle.dump(return_package, open( "../pickles/results_targeted_boosted_P_sm.p", "wb+" ) )
+elif paras.graph == 'facebook':
+	pickle.dump(return_package, open( "../pickles/results_targeted_boosted_P_fb.p", "wb+" ) )
 
 
 

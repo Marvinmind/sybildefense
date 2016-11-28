@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 peripheral_tar = pickle.load(open('../pickles/results_targeted_noboost_P.p','rb'))[0]
 peripheral_rand = pickle.load(open('../pickles/results_random_noboost_P_fb.p','rb'))[0]
 sr_rand = pickle.load(open('../pickles/results_random_noboost_SR.p','rb'))[0]
-peripheral_tar_boosted = pickle.load(open('../pickles/results_targeted_boosted_P.p','rb'))[0]
-
+peripheral_tar_boosted = pickle.load(open('../pickles/results_targeted_boosted_P_fb.p','rb'))[0]
+print('load done')
 
 mergeAuc_integro_peripheral_tar = defaultdict(lambda: 0)
 for e in peripheral_tar:
@@ -90,6 +90,6 @@ plt.title('Sybil Region Scenario')
 plt.legend(bbox_to_anchor=(0,0.25), loc='upper left', prop={'size':12})
 plt.show()
 """
-plt.plot(list(mergeAuc_integro_peripheral_rand.values()), 'r--')
-plt.plot(list(mergeAuc_votetrust_peripheral_rand.values()),'b--')
+plt.plot(list(mergeAuc_votetrust_peripheral_tar_boost.values()), 'r--')
+plt.plot(list(mergeAuc_integro_peripheral_tar_boost.values()),'b--')
 plt.show()

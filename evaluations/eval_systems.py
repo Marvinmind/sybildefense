@@ -39,5 +39,5 @@ def eval_system(g, system=None):
 		for k in attr:
 			del g_stripped[x][y][k]
 
-	b.graph = g_stripped
+	#b.graph = g_stripped
 	return b

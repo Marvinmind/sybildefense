@@ -5,34 +5,35 @@ import numpy as np
 import random
 import scipy.sparse as sparse
 
-MIN_LIMIT = 0.001
+MIN_LIMIT = 0.01
 
 
 def vote_aggregation(g):
 	nx.set_node_attributes(g, 'p', 0.5)
 	p_sum_old = 0.5*len(g.nodes())
+	neighbors = []
+	for n in g.nodes_iter():
+		neighbors.append(tuple(g.out_edges(n)))
+	neighbors = tuple(neighbors)
 	while True:
+		p_sum_new = 0
 		for n, data in g.nodes_iter(data=True):
-			neighbors = g.out_edges(n)
 			nominator = 0
 			denominator = 0
-			if len(neighbors) == 0 or sum([g.node[v[1]]['vote_capacity'] for v in neighbors]) == 0:
-				#g.node[n]['p'] = 0.5
-				#print('exception:')
-				pass
+			if len(neighbors[n]) == 0 or sum([g.node[v[1]]['vote_capacity'] for v in neighbors[n]]) == 0:
+				data['p'] = 0.5
 			else:
-				for i, v in neighbors:
+				for i, v in neighbors[n]:
 					if g[n][v]['trust'] == 1:
 						nominator += g.node[v]['vote_capacity'] * g.node[v]['p']
 					denominator += g.node[v]['vote_capacity'] * g.node[v]['p']
 				p_roof = nominator/denominator
-				g.node[n]['p'] = wilsonScore(p_roof, len(neighbors))
-		p_sum_new = sum([g.node[x]['p'] for x in g.nodes_iter()])
+				data['p'] = wilsonScore(p_roof, len(neighbors[n]))
+			p_sum_new += data['p']
 		if abs(p_sum_new-p_sum_old) < MIN_LIMIT:
 			break
 		else:
 			p_sum_old = p_sum_new
-
 
 def wilsonScore(p, n, alpha=0.05):
 	return (p + (1/(2*n))*pow(stats.norm.ppf(1-alpha/2),2))/(1+(1/n)*pow(stats.norm.ppf(1-alpha/2),2))
@@ -105,7 +106,7 @@ def vote_propagation_mat(g, d=0.8):
 		length = len(edges)
 		for e in edges:
 			a[i][e[1]] = 1/length
-	a = sparse.csr_matrix(a)
+	a = sparse.csc_matrix(a)
 	while True:
 		v_new = (d*v)*a
 		v_new = v_new+initial

@@ -133,7 +133,7 @@ class IntegroTests(unittest.TestCase):
 				f.node[i]['label'] = 1
 
 		print('start edges')
-		N_ATTACK_EDGES = 35306
+		N_ATTACK_EDGES = 353
 
 		# random attack edges
 		attack_edges = []

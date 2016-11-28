@@ -12,8 +12,9 @@ Input:
 """
 
 import networkx as nx, numpy as np
-from math import floor, ceil
+from math import ceil
 from sklearn import metrics
+from scipy import sparse
 import random
 
 def merge_and_renumber(a,b):
@@ -167,7 +168,6 @@ def get_ranks(g):
 	"""
 	degrees = calc_weighted_degrees(g)
 	rank = raw / np.array(list(degrees.values()))
-	print('sum of raw is: {}'.format(sum(raw)))
 	return rank
 
 def calc_auc(g):
