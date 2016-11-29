@@ -337,8 +337,8 @@ class VoteTrustTests(unittest.TestCase):
         for i in range(len(g.nodes()), 50):
             print(i)
             g.add_node(i)
-        votetrust.vote_assignment(g, [0])
-        votetrust.vote_propagation(g)
+        votetrust.vote_combined(g, [0])
+        #votetrust.vote_propagation(g)
         print(sum([g.node[x]['vote_capacity'] for x in range(len(g.nodes()))]))
         print(sum([g.node[x]['vote_capacity'] for x in range(3,6)]))
         print(g.node[2]['vote_capacity'])
@@ -394,3 +394,10 @@ class VoteTrustTests(unittest.TestCase):
         print(g.node[ATTACKER]['vote_capacity'])
 
         print(sum(g.node[x]['vote_capacity'] for x in g.nodes()))
+
+    def test_voteComb(self):
+        g = nx.DiGraph()
+        g.add_edges_from([(0,1, {'trust': 1}),(0,2, {'trust': 1}),(3,1, {'trust': 1}),(3,2,{'trust': 0}),(3,0,{'trust':0})])
+        votetrust.vote_assignment(g, [0])
+        #votetrust.vote_propagation_mat(g)
+        votetrust.vote_combined(g)

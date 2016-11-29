@@ -33,8 +33,8 @@ x_sr = [x*25 for x in range(21)]
 
 
 
-axarr[0,0].plot(x_per, list(mergeAuc_peripheral_tar_boosted_fb['integro'].values()), 'rs')
-axarr[0,0].plot(x_per, list(mergeAuc_peripheral_tar_boosted_fb['votetrust'].values()),'bs')
+axarr[0,0].plot(x_per, list(mergeAuc_peripheral_tar_boosted_fb['integro'].values()), 'r--')
+axarr[0,0].plot(x_per, list(mergeAuc_peripheral_tar_boosted_fb['votetrust'].values()),'b--')
 axarr[0,0].set_ylim((0,1.1))
 axarr[0,0].set_title('Peripheral Targeted Boosted')
 

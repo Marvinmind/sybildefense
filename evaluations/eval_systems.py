@@ -16,9 +16,9 @@ def eval_system(g, system=None):
 
 	elif system == 'votetrust':
 		votetrust.vote_assignment(g, seeds)
-		votetrust.vote_propagation_mat(g, d=0.99)
-		votetrust.vote_aggregation(g)
-		ranks = votetrust.getRanks(g)
+		#votetrust.vote_propagation_mat(g, d=0.99)
+		#votetrust.vote_aggregation(g)
+		ranks = votetrust.vote_combined(g,d=0.99)
 
 	elif system == 'sybilframe':
 		sybilframe.inferPosteriorsEdgeImprove(g)
