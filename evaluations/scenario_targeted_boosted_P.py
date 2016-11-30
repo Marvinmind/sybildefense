@@ -32,7 +32,7 @@ getSybilEdgeProb:   From Twitter Evaluation: 18% attack edges detected, FP Rate 
 
 getNonSybilEdgeProb: ""
 """
-paras = parameters.ParameterSettingRealistic(numRepeats=5, graph='smallWorld')
+paras = parameters.ParameterSettingRealistic(numRepeats=5, graph='david')
 " set parameters "
 beta = paras.beta
 d = paras.d
@@ -57,6 +57,11 @@ for j in range(paras.numRepeats):
 	elif paras.graph == 'facebook':
 		g = nx.read_adjlist('../datasets/facebook_combined.txt')
 		g = graph_creation.undirected_to_directed(g)
+	elif paras.graph == 'david':
+		g = nx.read_edgelist('../datasets/davidGraph.txt', 'r', nodetype=int, create_using=nx.DiGraph())
+		g = nx.Graph(g)
+		g = graph_creation.undirected_to_directed(g)
+
 	nx.set_node_attributes(g,'label', 0)
 	NUM_NODES = len(g.nodes())
 	NUM_SYBILS = paras.numSybils
@@ -139,7 +144,7 @@ for j in range(paras.numRepeats):
 			print('eval')
 			results['integro'].append(eval_systems.eval_system(g, system='integro'))
 			results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
-			results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
+			#results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
 
 		for j in range(NUM_SYBILS):
 			s = NUM_NODES+j+3
@@ -181,6 +186,8 @@ if paras.graph =='smallWorld':
 	pickle.dump(return_package, open( "../pickles/results_targeted_boosted_P_sm.p", "wb+" ) )
 elif paras.graph == 'facebook':
 	pickle.dump(return_package, open( "../pickles/results_targeted_boosted_P_fb.p", "wb+" ) )
+elif paras.graph == 'david':
+	pickle.dump(return_package, open( "../pickles/results_targeted_boosted_P_da.p", "wb+" ) )
 
 
 

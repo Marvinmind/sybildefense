@@ -28,9 +28,7 @@ def set_weights_and_start_seed(g, seeds=None, BETA=2, trust=1):
 	#get number of nodes
 	#set edge weights
 	weight_list = []
-	for e in g.edges():
-		i = e[0]
-		j = e[1]
+	for i,j in g.edges_iter():
 
 		prob_i = g.node[i]['prob_victim']
 		prob_j = g.node[j]['prob_victim']
@@ -39,14 +37,14 @@ def set_weights_and_start_seed(g, seeds=None, BETA=2, trust=1):
 			w = min(1, BETA*(1-max(prob_i, prob_j)))
 		else:
 			w = 1
-		weight_list.append((e[0], e[1], w))
+		weight_list.append((i, j, w))
 
 	g.add_weighted_edges_from(weight_list)
 
 	#add self loop for nodes with deg < 1 to normalize them to deg = 1
 	#also add starting trust value
 	nx.set_node_attributes(g, 'init_trust', 0)
-	for n in g.nodes():
+	for n in g.nodes_iter():
 		neighbors = g.neighbors(n)
 		deg = sum(g[n][x]['weight'] for x in neighbors)
 		if deg < 1:
@@ -66,21 +64,20 @@ def calc_weighted_degrees(g):
 		#degrees[n] = g.degree(n)
 	return degrees
 
-
-
 # construct propagation matrix:
 def construct_transition_matrix(g):
 	N = len(g.nodes())
-	a = np.zeros((N, N))
+	#a = np.zeros((N, N))
+	a = sparse.lil_matrix((N,N))
 	nx.set_node_attributes(g,'degree', 0)
 	degrees = calc_weighted_degrees(g)
 	nx.set_node_attributes(g,'degree', degrees)
 	for from_node, to_node in g.edges_iter():
-		a[from_node][to_node] = g[from_node][to_node]['weight'] / g.node[from_node]['degree']
-		a[to_node][from_node] = g[from_node][to_node]['weight'] / g.node[to_node]['degree']
+		a[from_node,to_node] = g[from_node][to_node]['weight'] / g.node[from_node]['degree']
+		a[to_node,from_node] = g[from_node][to_node]['weight'] / g.node[to_node]['degree']
 
 		if to_node == from_node:
-			a[from_node][to_node] *= 2
+			a[from_node,to_node] *= 2
 	return a
 
 def getValues(n,auc):
@@ -154,12 +151,12 @@ def add_apriori(g, auc=0.7, mode='soft'):
 				g.node[i]['prob_victim'] = 0.1
 
 def get_ranks(g):
-	a = construct_transition_matrix(g)
+	a = sparse.csc_matrix(construct_transition_matrix(g))
 	v_0 = [g.node[x]['init_trust'] for x in g.nodes()]
 	v_0 = np.array(v_0)
 	raw = v_0
 	for i in range(ceil(np.log2(len(g.nodes())))):
-		raw = np.dot(raw, a)
+		raw = raw* a
 	"""
 	for i, val in enumerate(raw):
 		if val == 0:

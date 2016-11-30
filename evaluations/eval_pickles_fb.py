@@ -15,18 +15,30 @@ def getMergedAuc(b):
 
 peripheral_tar_boosted_fb = pickle.load(open('../pickles/results_targeted_boosted_P_fb.p','rb'))[0]
 peripheral_tar_boosted_sm = pickle.load(open('../pickles/results_targeted_boosted_P_sm.p','rb'))[0]
+peripheral_tar_boosted_da = pickle.load(open('../pickles/results_targeted_boosted_P_da.p','rb'))[0]
+
 peripheral_random_noboost_fb = pickle.load(open('../pickles/results_random_noboost_P_fb.p','rb'))[0]
 peripheral_random_noboost_sm = pickle.load(open('../pickles/results_random_noboost_P_sm.p','rb'))[0]
+peripheral_random_noboost_da = pickle.load(open('../pickles/results_random_noboost_P_da.p','rb'))[0]
+
 sr_fb = pickle.load(open('../pickles/results_random_noboost_SR_fb.p','rb'))[0]
 sr_sm = pickle.load(open('../pickles/results_random_noboost_SR_sm.p','rb'))[0]
+sr_da = pickle.load(open('../pickles/results_random_noboost_SR_da.p','rb'))[0]
+
 
 mergeAuc_peripheral_tar_boosted_fb = getMergedAuc(peripheral_tar_boosted_fb)
 mergeAuc_peripheral_tar_boosted_sm = getMergedAuc(peripheral_tar_boosted_sm)
+mergeAuc_peripheral_tar_boosted_da = getMergedAuc(peripheral_tar_boosted_da)
+
 mergeAuc_peripheral_random_noboost_fb = getMergedAuc(peripheral_random_noboost_fb)
 mergeAuc_peripheral_random_noboost_sm = getMergedAuc(peripheral_random_noboost_sm)
+mergeAuc_peripheral_random_noboost_da = getMergedAuc(peripheral_random_noboost_da)
+
 mergeAuc_sr_fb = getMergedAuc(sr_fb)
 mergeAuc_sr_sm = getMergedAuc(sr_sm)
-f, axarr = plt.subplots(2,3)
+mergeAuc_sr_da = getMergedAuc(sr_da)
+
+f, axarr = plt.subplots(3,3)
 
 x_per = [x*2 for x in range(26)]
 x_sr = [x*25 for x in range(21)]
@@ -62,6 +74,19 @@ axarr[1,1].set_ylim((0,1.1))
 axarr[1,2].plot(x_sr, list(mergeAuc_sr_sm['integro'].values()), 'r--')
 axarr[1,2].plot(x_sr, list(mergeAuc_sr_sm['votetrust'].values()),'b--')
 axarr[1,2].set_ylim((0,1.1))
+
+axarr[2,0].plot(x_per, list(mergeAuc_peripheral_tar_boosted_da['integro'].values()), 'r--')
+axarr[2,0].plot(x_per, list(mergeAuc_peripheral_tar_boosted_da['votetrust'].values()),'b--')
+axarr[2,0].set_ylim((0,1.1))
+
+axarr[2,1].plot(x_per, list(mergeAuc_peripheral_random_noboost_da['integro'].values()), 'r--')
+axarr[2,1].plot(x_per, list(mergeAuc_peripheral_random_noboost_da['votetrust'].values()),'b--')
+axarr[2,1].set_ylim((0,1.1))
+
+
+axarr[2,2].plot(x_sr, list(mergeAuc_sr_da['integro'].values()), 'r--')
+axarr[2,2].plot(x_sr, list(mergeAuc_sr_da['votetrust'].values()),'b--')
+axarr[2,2].set_ylim((0,1.1))
 
 plt.show()
 

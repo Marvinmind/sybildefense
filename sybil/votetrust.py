@@ -94,7 +94,7 @@ def vote_propagation_mat(g, d=0.8):
 		length = len(edges)
 		for e in edges:
 			a[i][e[1]] = 1/length
-	#a = sparse.csc_matrix(a)
+	a = sparse.csc_matrix(a)
 	while True:
 		v_new = (d*v)*a
 		v_new = v_new+initial
@@ -109,7 +109,6 @@ def vote_propagation_mat(g, d=0.8):
 		data['vote_capacity'] = v[i]
 
 def vote_combined(g, d=0.8):
-	t0 = time.clock()
 	""" create out edge list"""
 	neighbors = []
 	for n in g.nodes_iter():
@@ -158,7 +157,6 @@ def vote_combined(g, d=0.8):
 			break
 		else:
 			p_old = p
-	print(time.clock()-t0)
 	return p
 def getRanks(g):
 	ranks=[]
