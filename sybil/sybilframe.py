@@ -8,7 +8,7 @@ from math import sqrt
 from collections import defaultdict
 import sklearn.linear_model as linmod
 import multiprocessing
-
+from scipy import sparse
 
 g_glob = 42
 """"HIGHLY SUSPICIOUS!!!
@@ -135,6 +135,65 @@ def inferPosteriorsEdgeImprove(g, d=5):
 			message[-1] *= g[e[0]][e[1]][SF_Keys.Message][-1]
 		message[1] *= g.node[n][SF_Keys.Potential](1)
 		message[-1] *= g.node[n][SF_Keys.Potential](-1)
+		belief = normalize(message)
+		g.node[n][SF_Keys.Belief] = belief
+
+def inferPosteriorsEdgeImproveNew(g, d=5):
+	numNodes = len(g.nodes())
+
+	"Messages"
+	zeroM = sparse.lil_matrix((numNodes, numNodes))
+	oneM = sparse.lil_matrix((numNodes, numNodes))
+
+	"Edge Potentials"
+	zerozeroP = sparse.lil_matrix((numNodes, numNodes))
+	zerooneP = sparse.lil_matrix((numNodes, numNodes))
+	onezeroP = sparse.lil_matrix((numNodes, numNodes))
+	oneoneP = sparse.lil_matrix((numNodes, numNodes))
+
+	"Node Potentials"
+	zeroP = np.array(numNodes)
+	oneP = np.array(numNodes)
+
+	for u,v, data in g.edges_iter(data=True):
+		zeroM[v,u] = 1
+		oneM[v,u] = 1
+
+		zerozeroP[u,v] = data[SF_Keys.Potential](0,0)
+		zerooneP[u,v] = data[SF_Keys.Potential](0,1)
+		onezeroP[u,v] = data[SF_Keys.Potential](1,0)
+		oneoneP[u,v] = data[SF_Keys.Potential](1,1)
+
+	for n, data in g.nodes_iter(data=True):
+		oneP[n] = data[SF_Keys.Potential][1]
+		zeroP[n] = data[SF_Keys.Potential][-1]
+
+	zeroM = sparse.csc_matrix(zeroM)
+	oneM = sparse.csc_matrix(oneM)
+	zerozeroP = sparse.csc_matrix(zerozeroP)
+	zerooneP = sparse.csc_matrix(zerooneP)
+	onezeroP = sparse.csc_matrix(onezeroP)
+	oneoneP = sparse.csc_matrix(oneoneP)
+
+
+	for i in range(d):
+		zeroMV = zeroM.prod(1).prod(zeroP)
+		oneMV = oneM.prod(1).prod(oneP)
+		oneM = np.multiply(oneMV, oneoneP)/oneM.T + np.multiply(zeroMV, zerooneP)/zeroM.T
+		zeroM = np.multiply(zeroMV, zerozeroP)/zeroM.T + np.multiply(oneMV, onezeroP)/oneM.T
+
+		"normalize"
+		divMat = oneM+zeroM
+		zeroM /= divMat
+		oneM /= divMat
+
+	""" calc beliefs """
+	oneB = np.prod(oneM, 0)
+	zeroB = np.prod(zeroM, 0)
+	for n in g.nodes():
+		message = {1: None, -1: None}
+		message[1] = oneB[n]
+		message[-1] = zeroB[n]
 		belief = normalize(message)
 		g.node[n][SF_Keys.Belief] = belief
 

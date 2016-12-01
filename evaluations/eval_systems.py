@@ -18,10 +18,10 @@ def eval_system(g, system=None):
 		votetrust.vote_assignment(g, seeds)
 		#votetrust.vote_propagation_mat(g, d=0.99)
 		#votetrust.vote_aggregation(g)
-		ranks = votetrust.vote_combined(g,d=0.99)
+		ranks = votetrust.vote_combined(g, d=0.99)
 
 	elif system == 'sybilframe':
-		sybilframe.inferPosteriorsEdgeImprove(g)
+		sybilframe.inferPosteriorsEdgeImproveNew(g)
 		ranks = sybilframe.getRanks(g)
 
 	real = [g.node[i]['label'] for i in g.nodes_iter()]
