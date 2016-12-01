@@ -21,8 +21,11 @@ def eval_system(g, system=None):
 		ranks = votetrust.vote_combined(g, d=0.99)
 
 	elif system == 'sybilframe':
-		sybilframe.inferPosteriorsEdgeImproveNew(g)
-		ranks = sybilframe.getRanks(g)
+		g_temp = g.copy()
+		sybilframe.inferPosteriorsEdgeImproveNew(g_temp)
+		ranks = sybilframe.getRanks(g_temp)
+		print(ranks)
+
 
 	real = [g.node[i]['label'] for i in g.nodes_iter()]
 	b = benchmarks.Benchmarks(real, ranks)

@@ -5,6 +5,8 @@ import  numpy as np
 from sybil import sybilframe, integro
 from util import graph_creation
 import random
+from util.keys import SF_Keys
+
 
 
 class sybilframe_tests(unittest.TestCase):
@@ -21,28 +23,28 @@ class sybilframe_tests(unittest.TestCase):
 		g.add_edge(2,4)
 		g.add_edge(3,4)
 
-		g[0][1][sybilframe.Keys.Potential] = sybilframe.create_edge_func(0.1)
-		g[1][2][sybilframe.Keys.Potential] = sybilframe.create_edge_func(0.1)
-		g[2][3][sybilframe.Keys.Potential] = sybilframe.create_edge_func(0.1)
-		g[3][0][sybilframe.Keys.Potential] = sybilframe.create_edge_func(0.1)
+		g[0][1][SF_Keys.Potential] = sybilframe.create_edge_func(0.1)
+		g[1][2][SF_Keys.Potential] = sybilframe.create_edge_func(0.1)
+		g[2][3][SF_Keys.Potential] = sybilframe.create_edge_func(0.1)
+		g[3][0][SF_Keys.Potential] = sybilframe.create_edge_func(0.1)
 
-		g[0][4][sybilframe.Keys.Potential] = sybilframe.create_edge_func(0.1)
-		g[1][4][sybilframe.Keys.Potential] = sybilframe.create_edge_func(0.8)
-		g[2][4][sybilframe.Keys.Potential] = sybilframe.create_edge_func(0.1)
-		g[3][4][sybilframe.Keys.Potential] = sybilframe.create_edge_func(0.9)
+		g[0][4][SF_Keys.Potential] = sybilframe.create_edge_func(0.1)
+		g[1][4][SF_Keys.Potential] = sybilframe.create_edge_func(0.8)
+		g[2][4][SF_Keys.Potential] = sybilframe.create_edge_func(0.1)
+		g[3][4][SF_Keys.Potential] = sybilframe.create_edge_func(0.9)
 
-		g.node[0][sybilframe.Keys.Potential] = sybilframe.create_node_func(0.8)
-		g.node[1][sybilframe.Keys.Potential] = sybilframe.create_node_func(0.2)
-		g.node[2][sybilframe.Keys.Potential] = sybilframe.create_node_func(0.9)
-		g.node[3][sybilframe.Keys.Potential] = sybilframe.create_node_func(0.1)
+		g.node[0][SF_Keys.Potential] = sybilframe.create_node_func(0.8)
+		g.node[1][SF_Keys.Potential] = sybilframe.create_node_func(0.2)
+		g.node[2][SF_Keys.Potential] = sybilframe.create_node_func(0.9)
+		g.node[3][SF_Keys.Potential] = sybilframe.create_node_func(0.1)
 
 		"This one is wrong on purpose"
-		g.node[4][sybilframe.Keys.Potential] = sybilframe.create_node_func(0.9)
+		g.node[4][SF_Keys.Potential] = sybilframe.create_node_func(0.9)
 
 		g = nx.DiGraph(g)
-		sybilframe.inferPosteriors(g, 4)
+		sybilframe.inferPosteriorsEdgeImproveNew(g, 4)
 
-		print(g.node[0][sybilframe.Keys.Potential](1))
+		print(g.node[0][SF_Keys.Potential](1))
 		print(g.node)
 
 	def test_smallWorld(self):
