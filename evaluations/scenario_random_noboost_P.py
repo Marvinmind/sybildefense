@@ -122,7 +122,7 @@ for j in range(paras.numRepeats):
 			print('eval')
 			results['integro'].append(eval_systems.eval_system(g, system='integro'))
 			results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
-			#results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
+			results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
 
 		for j in range(NUM_SYBILS):
 			s = NUM_NODES+j

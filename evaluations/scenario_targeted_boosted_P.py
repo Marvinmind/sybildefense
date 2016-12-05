@@ -109,7 +109,6 @@ for j in range(paras.numRepeats):
 		g.node[i]['prob_victim'] = prob_victim
 		temp = sybilframe.create_node_func(prob_sybil)
 		g.node[i][SF_Keys.Potential] = sybilframe.create_node_func(prob_sybil)
-		#g.node[i][SF_Keys.Potential] = {1:temp(1), -1:temp(-1)}
 
 	g_votetrust = g.copy()
 	g_sybilframe = nx.DiGraph(nx.Graph(g.copy()))
@@ -123,7 +122,6 @@ for j in range(paras.numRepeats):
 			prob = getSybilEdgeProb()
 		temp = sybilframe.create_edge_func(prob)
 		g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
-		#g_sybilframe[start][end][SF_Keys.Potential] = {(1,1): temp(1,1), (1,-1):temp(1,-1), (-1,1):temp(-1,1), (-1,-1): temp(-1,-1)}
 
 
 
@@ -132,7 +130,6 @@ for j in range(paras.numRepeats):
 	requested = defaultdict(lambda :[])
 	results =  {'integro':[], 'votetrust':[], 'sybilframe':[]}
 	MAX_REQUESTS = paras.maxRequests
-	select_trust = []
 	pool = defaultdict(lambda: [])
 
 	g_back = g.copy()
@@ -144,7 +141,6 @@ for j in range(paras.numRepeats):
 			print('eval')
 			results['integro'].append(eval_systems.eval_system(g, system='integro'))
 			results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
-			#results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
 
 		for j in range(NUM_SYBILS):
 			s = NUM_NODES+j+3
@@ -158,22 +154,19 @@ for j in range(paras.numRepeats):
 				pool[j].remove(h)
 			num_common_friends = len(set(g.neighbors(h)).intersection(set(g.neighbors(s))))
 			trust = getAcceptance(num_common_friends)
-			select_trust.append(trust)
 			g_votetrust.add_edge(s, h, {'trust': trust})
 			if trust == 1:
 				friends_of_friend = g.neighbors(h)
 				pool[j].extend(friends_of_friend)
 				if s in friends_of_friend or s in paras.seeds:
 					friends_of_friend.remove(s)
+
 				""" magic list conversion to remove duplicates"""
 				seen = set()
 				seen_add = seen.add
 				pool[j] = [x for x in pool[j] if not (x in seen or seen_add(x)) and x not in requested[j]]
 
 				g.node[h]['prob_victim'] = getVictimNodeProb()
-				temp = sybilframe.create_edge_func(getSybilEdgeProb())
-				#g_sybilframe.add_edge(s, h, {SF_Keys.Potential: {(1,1): temp(1,1), (1,-1):temp(1,-1), (-1,1):temp(-1,1), (-1,-1): temp(-1,-1)}})
-				#g_sybilframe.add_edge(h, s, {SF_Keys.Potential: {(1,1): temp(1,1), (1,-1):temp(1,-1), (-1,1):temp(-1,1), (-1,-1): temp(-1,-1)}})
 
 				g_sybilframe.add_edge(s, h, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
 				g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})

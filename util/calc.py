@@ -17,6 +17,10 @@ def getSuccessByProb(f, k=0.3, start=0.2, max=1):
 	else:
 		return False
 
+def getSuccessProb(f, k=0.3, start=0.2, max=1):
+	prob = max-(max-start)*exp(-1*k*f)
+	return prob
+
 
 def getNodeProbClosure(middle):
 	prec = 10000

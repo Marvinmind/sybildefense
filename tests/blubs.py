@@ -18,4 +18,3 @@ d = list(g.degree(range(len(g.nodes()))).values())
 print(sorted(d))
 print(np.mean(d))
 """
-g = nx.read_adjlist('G:/Downloads/soc-LiveJournal1.txt/soc-LiveJournal1.txt')

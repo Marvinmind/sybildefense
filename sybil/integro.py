@@ -156,7 +156,7 @@ def get_ranks(g):
 	v_0 = np.array(v_0)
 	raw = v_0
 	for i in range(ceil(np.log2(len(g.nodes())))):
-		raw = raw* a
+		raw = raw * a
 	"""
 	for i, val in enumerate(raw):
 		if val == 0:

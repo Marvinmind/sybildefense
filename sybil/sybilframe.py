@@ -44,6 +44,7 @@ def inferPosteriorsParallel(g, d=5):
 	for x,y in g.edges_iter():
 		g_temp[x][y][SF_Keys.Potential] = {(0,0): g[x][y][SF_Keys.Potential](0,0), (0,1): g[x][y][SF_Keys.Potential](0,1), (1,0): g[x][y][SF_Keys.Potential](1,0), (1,1): g[x][y][SF_Keys.Potential](1,1)}
 	"""
+
 	for u,v in g.edges():
 		g_temp[u][v][SF_Keys.Message] = {1: 1, -1: 1}
 
@@ -142,20 +143,20 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 	numNodes = len(g.nodes())
 
 	"Messages"
-	zeroM = np.ones((numNodes, numNodes))
-	oneM = np.ones((numNodes, numNodes))
+	zeroM = sparse.lil_matrix((numNodes, numNodes))
+	oneM = sparse.lil_matrix((numNodes, numNodes))
 
 	"Edge Potentials"
-	sameP = np.zeros((numNodes, numNodes))
-	diffP = np.zeros((numNodes, numNodes))
+	sameP = sparse.lil_matrix((numNodes, numNodes))
+	diffP = sparse.lil_matrix((numNodes, numNodes))
 
 	"Node Potentials"
-	zeroP = np.zeros(numNodes)
-	oneP = np.zeros(numNodes)
+	zeroP = np.empty(numNodes)
+	oneP = np.empty(numNodes)
 
 	for u,v, data in g.edges_iter(data=True):
-		#zeroM[v,u] = 1
-		#oneM[v,u] = 1
+		zeroM[v,u] = 1
+		oneM[v,u] = 1
 
 		diffP[v,u] = data[SF_Keys.Potential](1,-1)
 		sameP[v,u] = data[SF_Keys.Potential](1,1)
@@ -164,28 +165,42 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		oneP[n] = data[SF_Keys.Potential](1)
 		zeroP[n] = data[SF_Keys.Potential](-1)
 
-	"""
 	zeroM = sparse.csc_matrix(zeroM)
 	oneM = sparse.csc_matrix(oneM)
-	zerozeroP = sparse.csc_matrix(zerozeroP)
-	zerooneP = sparse.csc_matrix(zerooneP)
-	onezeroP = sparse.csc_matrix(onezeroP)
-	oneoneP = sparse.csc_matrix(oneoneP)
-	zeroM = np.array(zeroM)
-	oneM = np.array(oneM)
-	zerozeroP = np.array(zerozeroP)
-	zerooneP = np.array(zerooneP)
-	onezeroP = np.array(onezeroP)
-	oneoneP = np.array(oneoneP)
-	"""
+	sameP = sparse.csc_matrix(sameP)
+	diffP = sparse.csc_matrix(diffP)
+	zeroM = sparse.csc_matrix(zeroM)
+	oneM = sparse.csc_matrix(oneM)
+
 
 	for i in range(d):
+		r, c, v = sparse.find(zeroM)
+		zeroMV = np.exp(np.bincount(r, np.log(v), minlength=zeroM.shape[0])) * zeroP
+		r, c, v = sparse.find(oneM)
+		oneMV = np.exp(np.bincount(r, np.log(v), minlength=oneM.shape[0])) * oneP
 
-		zeroMV = np.multiply(zeroM.prod(1), zeroP)
-		oneMV = np.multiply(oneM.prod(1), oneP)
+		#oneM, zeroM = np.multiply(oneMV, sameP)/oneM.T + np.multiply(zeroMV, diffP)/zeroM.T, np.multiply(zeroMV, sameP)/zeroM.T + np.multiply(oneMV, diffP)/oneM.T
+		one1 = (sparse.spdiags(oneMV, 0, len(oneMV), len(oneMV)) * sameP.T).T
+		one2 = (sparse.spdiags(zeroMV, 0, len(zeroMV), len(zeroMV)) * diffP.T).T
+		zero1 = (sparse.spdiags(zeroMV, 0, len(zeroMV), len(zeroMV)) * sameP.T).T
+		zero2 = (sparse.spdiags(oneMV, 0, len(oneMV), len(oneMV)) * diffP.T).T
 
-		oneM, zeroM = np.multiply(oneMV, sameP)/oneM.T + np.multiply(zeroMV, diffP)/zeroM.T, np.multiply(zeroMV, sameP)/zeroM.T + np.multiply(oneMV, diffP)/oneM.T
 
+		one1[r,c] /= oneM.T[r,c]
+		one2[r,c] /= zeroM.T[r,c]
+		zero1[r,c] /= zeroM.T[r,c]
+		zero2[r,c] /= oneM.T[r,c]
+
+		oneM = one1 + one2
+		zeroM = zero1 + zero2
+
+		r1, c1, v1 = sparse.find(zeroM)
+		r2, c2, v2 = sparse.find(oneM)
+
+		zeroM[r1, c1] /= v1+v2
+		oneM[r2, c2] /= v1+v2
+
+		"""
 		"normalize"
 		divMat = oneM+zeroM
 		divMat[divMat==0] = 1
@@ -195,10 +210,13 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 		zeroM[zeroM==0] = 1
 		oneM[oneM==0] = 1
+		"""
 
 	""" calc beliefs """
-	oneB = np.prod(oneM, 1)
-	zeroB = np.prod(zeroM, 1)
+	r, c, v = sparse.find(oneM)
+	oneB = np.exp(np.bincount(r, np.log(v), minlength=oneM.shape[0]))
+	r, c, v = sparse.find(zeroM)
+	zeroB = np.exp(np.bincount(r, np.log(v), minlength=zeroM.shape[0]))
 	for n in g.nodes():
 		message = {1: None, -1: None}
 		message[1] = oneB[n] * oneP[n]
