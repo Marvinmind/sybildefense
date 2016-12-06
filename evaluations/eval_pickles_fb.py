@@ -28,6 +28,8 @@ sr_sm = pickle.load(open('../pickles/results_random_noboost_SR_sm.p','rb'))[0]
 sr_da = pickle.load(open('../pickles/results_random_noboost_SR_da.p','rb'))[0]
 
 
+bench = pickle.load(open('../pickles/results_random_noboost_SR_fb.p','rb'))[1]
+print(bench.numRepeats)
 mergeAuc_peripheral_tar_boosted_fb = getMergedAuc(peripheral_tar_boosted_fb)
 mergeAuc_peripheral_tar_boosted_sm = getMergedAuc(peripheral_tar_boosted_sm)
 mergeAuc_peripheral_tar_boosted_da = getMergedAuc(peripheral_tar_boosted_da)

@@ -137,10 +137,12 @@ for j in range(paras.numRepeats):
 
 
 	for i in range(MAX_REQUESTS):
-		if i % paras.evalInterval == 0:
+		if i == 50:
 			print('eval')
 			results['integro'].append(eval_systems.eval_system(g, system='integro'))
 			results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
+			results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
+
 
 		for j in range(NUM_SYBILS):
 			s = NUM_NODES+j+3

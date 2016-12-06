@@ -91,7 +91,6 @@ for j in range(paras.numRepeats):
 		g.node[i]['prob_victim'] = prob_victim
 		temp = sybilframe.create_node_func(prob_sybil)
 		g.node[i][SF_Keys.Potential] = sybilframe.create_node_func(prob_sybil)
-		#g.node[i][SF_Keys.Potential] = {1:temp(1), -1:temp(-1)}
 
 	g_votetrust = g.copy()
 	g_sybilframe = nx.DiGraph(nx.Graph(g.copy()))
@@ -103,9 +102,7 @@ for j in range(paras.numRepeats):
 		else:
 			print('ATTACK EDGE!!')
 			prob = getSybilEdgeProb()
-		temp = sybilframe.create_edge_func(prob)
 		g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
-		#g_sybilframe[start][end][SF_Keys.Potential] = {(1,1): temp(1,1), (1,-1):temp(1,-1), (-1,1):temp(-1,1), (-1,-1): temp(-1,-1)}
 
 	g = nx.Graph(g)
 
@@ -118,7 +115,7 @@ for j in range(paras.numRepeats):
 	g_back_sybilframe = g_sybilframe.copy()
 
 	for i in range(MAX_REQUESTS):
-		if i % paras.evalInterval == 0:
+		if i == 50:
 			print('eval')
 			results['integro'].append(eval_systems.eval_system(g, system='integro'))
 			results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))

@@ -10,9 +10,8 @@ def eval_system(g, system=None):
 			seeds.append(i)
 
 	if system == 'integro':
-		g_temp = g.copy()
-		integro.set_weights_and_start_seed(g_temp, seeds=seeds, trust=len(g.nodes()))
-		ranks = integro.get_ranks(g_temp)
+		integro.set_weights_and_start_seed(g, seeds=seeds, trust=len(g.nodes()))
+		ranks = integro.get_ranks(g)
 
 	elif system == 'votetrust':
 		votetrust.vote_assignment(g, seeds)
@@ -21,10 +20,8 @@ def eval_system(g, system=None):
 		ranks = votetrust.vote_combined(g, d=0.99)
 
 	elif system == 'sybilframe':
-		g_temp = g.copy()
-		sybilframe.inferPosteriorsEdgeImproveNew(g_temp)
-		ranks = sybilframe.getRanks(g_temp)
-		print(ranks)
+		sybilframe.inferPosteriorsEdgeImproveNew(g)
+		ranks = sybilframe.getRanks(g)
 
 
 	real = [g.node[i]['label'] for i in g.nodes_iter()]

@@ -6,7 +6,7 @@ g = nx.read_adjlist('/home/martin/Downloads/facebook_combined.txt')
 
 partition = community.best_partition(g)
 print(partition)
-"""
+X
 
 g = nx.Graph()
 
@@ -31,3 +31,14 @@ for x, y in g.edges_iter():
 
 print('pickle')
 pickle.dump(g, open('../pickles/lambdaTest.p','wb+'))
+
+
+g = nx.read_edgelist('../datasets/FINAL_BA_RND_0.3.txt')
+print(len(g.nodes()))
+print(sorted(g.nodes()))
+"""
+
+with open('../datasets/FINAL_BA_RND_0.3.txt','r') as f:
+	with open('../datasets/FINAL_BA_RND_0.3.txt', 'w+') as g:
+		for l in f.readline():
+			g.write('h')
