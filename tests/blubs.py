@@ -17,4 +17,12 @@ d = list(g.degree(range(len(g.nodes()))).values())
 
 print(sorted(d))
 print(np.mean(d))
+
+
+with open('../datasets/facebook-links.txt.anon','r') as f:
+	with open('../datasets/newOrleans.txt','w+') as n:
+		for l in f.readlines():
+			s = l.split('\t')
+			n.write('{} {}\n'.format(s[0],s[1]))
 """
+g = nx.re

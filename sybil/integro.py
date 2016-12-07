@@ -16,6 +16,9 @@ from math import ceil
 from sklearn import metrics
 from scipy import sparse
 import random
+import json
+
+paras = json.load(open('../evaluations/baseparameters.json','r'))
 
 def merge_and_renumber(a,b):
 	mapping = dict(zip(b.nodes(), list(range(len(a.nodes()), len(a.nodes()) + len(b.nodes())))))
@@ -24,7 +27,7 @@ def merge_and_renumber(a,b):
 	return f
 
 
-def set_weights_and_start_seed(g, seeds=None, BETA=2, trust=1):
+def set_weights_and_start_seed(g, seeds=None, BETA=paras['beta'], trust=1):
 	#get number of nodes
 	#set edge weights
 	weight_list = []

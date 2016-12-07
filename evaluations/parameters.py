@@ -35,37 +35,39 @@ class ParameterSettings():
 		self.nodeProbNonSybil = base['nodeProbNonSybil']
 		self.edgeProbSybil = base['edgeProbSybil']
 		self.edgeProbNonSybil = base['edgeProbNonSybil']
+		self.numDummies = base['numDummies']
 		self.seedsList = base['seedsList']
-		self.seedStrategy = base['seedStrategy']
+		self.seedsStrategy = base['seedStrategy']
+		self.numSybils = base['numSybils']
+		self.sizeSmallWorld = base['sizeSmallWorld']
+		self.edgesSmallWorld = base['edgesSmallWorld']
+		self.smallWorldType = base['smallWorldType']
+		self.sizeSybilRegion = base['sizeSybilRegion']
+		self.datasetLocations =base['datasetLocations']
+
 
 class ParameterSettingsSR(ParameterSettings):
-	def __init__(self, maxRequests = 501, numIter=5, evalInterval=20, evalAt=False, graph='facebook', sizeSybilRegion = 100):
+
+	def __init__(self, maxRequests = 501, numRepeats=5, evalInterval=20, evalAt=False, graph='facebook'):
 		super(ParameterSettingsSR, self).__init__()
 
 		self.scenario = 'SR'
-		self.sizeSybilRegion = sizeSybilRegion
 		self.maxRequests = maxRequests
-		self.numIter = numIter
+		self.numRepeats = numRepeats
 		self.evalInterval = evalInterval
 		self.evalAt = evalAt
 		self.graph = graph
 
 
 class ParameterSettingsP(ParameterSettings):
-	def __init__(self, maxRequests=51, numIter=5, evalInterval=2, evalAt=False, graph='facebook', strategy='random', boosted='False'):
-		super(ParameterSettingsSR, self).__init__()
+	def __init__(self, maxRequests=51, numRepeats=5, evalInterval=2, evalAt=False, graph='facebook', strategy='random', boosted='False'):
+		super(ParameterSettingsP, self).__init__()
 
-		paras = json.load(open('srparameters.json', 'r'))
-		self.scenario = 'SR'
-		self.sizeSybilRegion = paras['sizeSybilRegion']
+		self.scenario = 'P'
 		self.maxRequests = maxRequests
-		self.numIter = numIter
+		self.numRepeats = numRepeats
 		self.evalInterval = evalInterval
 		self.evalAt = evalAt
 		self.graph = graph
 		self.strategy = strategy
 		self.boosted = boosted
-
-
-p = json.load(open('parameters.json'))
-print(type(p))

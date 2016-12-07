@@ -5,7 +5,9 @@ import time
 import numpy as np
 import random
 import scipy.sparse as sparse
+import json
 
+paras = json.load(open('../evaluations/baseparameters.json','r'))
 MIN_LIMIT = 0.01
 
 def vote_aggregation(g):
@@ -83,7 +85,7 @@ def vote_assignment(g, initials):
 			data['initial_trust'] = 0
 
 
-def vote_propagation_mat(g, d=0.8):
+def vote_propagation_mat(g, d=paras['d']):
 	""" create adjacency matrix"""
 	shape = len(g.nodes())
 	a = np.zeros((shape, shape))

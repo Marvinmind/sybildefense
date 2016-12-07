@@ -5,6 +5,7 @@ import numpy as np
 
 class Benchmarks():
 	def __init__(self, real, predValues):
+
 		"""invert ranks.
 		ranks are expected to have high values for benign node and low for sybils.
 		ROC AUC expects the opposite. 1 - predValue inverses the order
