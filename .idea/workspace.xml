@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="497e91ea-7906-4fa1-99d2-a169d07c2020" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datasets/newOrleansCon" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/baseparameters.json" afterPath="$PROJECT_DIR$/evaluations/baseparameters.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sybil/integro.py" afterPath="$PROJECT_DIR$/sybil/integro.py" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -906,7 +905,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481311910624</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="use connected dataset">
+      <created>1481312618715</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1481312618715</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -943,9 +949,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22664456" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22664456" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32756868" sideWeight="0.5328911" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1006,7 +1012,8 @@
     <MESSAGE value="fixed integro bug" />
     <MESSAGE value="all node labels are integers" />
     <MESSAGE value="more integro rounds due to high degree" />
-    <option name="LAST_COMMIT_MESSAGE" value="more integro rounds due to high degree" />
+    <MESSAGE value="use connected dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="use connected dataset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
