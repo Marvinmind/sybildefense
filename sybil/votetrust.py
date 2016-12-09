@@ -127,8 +127,8 @@ def vote_combined(g, d=0.8):
 		edges = g.out_edges(i)
 		length = len(edges)
 		for e in edges:
-			a[i][e[1]] = 1 / length
-			b[i][e[1]] = g[e[0]][e[1]]['trust']
+			a[i, e[1]] = 1 / length
+			b[i, e[1]] = g[e[0]][e[1]]['trust']
 	b = sparse.csc_matrix(b)
 	count = 0
 	a = sparse.csc_matrix(a)

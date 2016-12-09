@@ -175,9 +175,6 @@ def get_ranks(g):
 			print(g.node[i])
 	"""
 	degrees = calc_weighted_degrees(g)
-	print(min(degrees.values()))
-	print('max degree')
-	print(max(degrees.values()))
 	degrees = [degrees[x] for x in g.nodes()]
 	rank = raw / np.array(degrees)
 	return rank
