@@ -12,49 +12,48 @@ from util import graph_creation
 
 
 def run_experiment(paras):
+	results_list = []
+	return_package = (results_list, paras)
+
+	" set parameters "
+	getAcceptance = calc.getAcceptanceClosure(paras.acceptanceRatioLimits[0], paras.acceptanceRatioLimits[1])
+
+	getVictimNodeProb = calc.getNodeProbClosure(paras.nodeProbVictim)
+	getNonVictimNodeProb = calc.getNodeProbClosure(paras.nodeProbNonVictim)
+
+	getSybilNodeProb = calc.getNodeProbClosure(paras.nodeProbSybil)
+	getNonSybilNodeProb = calc.getNodeProbClosure(paras.nodeProbNonSybil)
+	getSybilEdgeProb = calc.getNodeProbClosure(paras.edgeProbSybil)
+	getNonSybilEdgeProb = calc.getNodeProbClosure(paras.edgeProbNonSybil)
+
+	"create benign region from graph"
+	if paras.graph == 'smallWorld':
+		g_org = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
+	elif paras.graph == 'facebook':
+		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph])
+		g_org = nx.convert_node_labels_to_integers(g_org)
+		g_org = graph_creation.undirected_to_directed(g_org)
+	elif paras.graph == 'newOrleans':
+		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph])
+		g_org = nx.convert_node_labels_to_integers(g_org)
+		g_org = graph_creation.undirected_to_directed(g_org)
+
+	elif paras.graph == 'david':
+		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
+		g_org = nx.convert_node_labels_to_integers(g_org)
+		g_org = graph_creation.undirected_to_directed(g_org)
+
+	nx.set_node_attributes(g_org, 'label', 0)
+	NUM_HONEST = len(g_org.nodes())
+	NUM_ATTACKERS = paras.numSybils
+
+	seeds = []
+	if paras.seedsStrategy == 'list':
+		for s in paras.seedsList:
+			seeds.append(s)
+
 	for i in range(paras.numRepeats):
-
-		" set parameters "
-		getAcceptance = calc.getAcceptanceClosure(paras.acceptanceRatioLimits[0], paras.acceptanceRatioLimits[1])
-
-		getVictimNodeProb = calc.getNodeProbClosure(paras.nodeProbVictim)
-		getNonVictimNodeProb = calc.getNodeProbClosure(paras.nodeProbNonVictim)
-
-		getSybilNodeProb = calc.getNodeProbClosure(paras.nodeProbSybil)
-		getNonSybilNodeProb = calc.getNodeProbClosure(paras.nodeProbNonSybil)
-		getSybilEdgeProb = calc.getNodeProbClosure(paras.edgeProbSybil)
-		getNonSybilEdgeProb = calc.getNodeProbClosure(paras.edgeProbNonSybil)
-
-		results_list = []
-		return_package = (results_list, paras)
-
-		"create benign region from graph"
-		if paras.graph == 'smallWorld':
-			g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
-		elif paras.graph == 'facebook':
-			g = nx.read_edgelist(paras.datasetLocations[paras.graph])
-			g = nx.convert_node_labels_to_integers(g)
-			g = graph_creation.undirected_to_directed(g)
-		elif paras.graph == 'newOrleans':
-			g = nx.read_edgelist(paras.datasetLocations[paras.graph])
-			g = nx.convert_node_labels_to_integers(g)
-			g = graph_creation.undirected_to_directed(g)
-			g_d = nx.Graph(g)
-
-		elif paras.graph == 'david':
-			g = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
-			g = nx.convert_node_labels_to_integers(g)
-			g = graph_creation.undirected_to_directed(g)
-
-		nx.set_node_attributes(g, 'label', 0)
-		NUM_HONEST = len(g.nodes())
-		NUM_ATTACKERS = paras.numSybils
-
-		seeds = []
-		if paras.seedsStrategy == 'list':
-			for s in paras.seedsList:
-				seeds.append(s)
-
+		g = g_org.copy()
 		"add boosting region"
 		if paras.boosted:
 			r = []
