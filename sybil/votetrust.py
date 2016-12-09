@@ -118,8 +118,8 @@ def vote_combined(g, d=0.8):
 	neighbors = tuple(neighbors)
 	""" create adjacency matrix"""
 	shape = len(g.nodes())
-	a = np.zeros((shape, shape))
-	b = np.zeros((shape, shape))
+	a = sparse.lil_matrix((shape, shape))
+	b = sparse.lil_matrix((shape, shape))
 	v = np.zeros(shape)
 	initial = np.array([g.node[x]['initial_trust'] for x in sorted(g.nodes())]) * (1 - d)
 
