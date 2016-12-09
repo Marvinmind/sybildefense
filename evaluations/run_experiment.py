@@ -34,13 +34,15 @@ def run_experiment(paras):
 				g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
 			elif paras.graph == 'facebook':
 				g = nx.read_adjlist(paras.datasetLocations[paras.graph])
+				g = nx.convert_node_labels_to_integers(g)
 				g = graph_creation.undirected_to_directed(g)
 			elif paras.graph == 'newOrleans':
 				g = nx.read_adjlist(paras.datasetLocations[paras.graph])
+				g = nx.convert_node_labels_to_integers(g)
 				g = graph_creation.undirected_to_directed(g)
 			elif paras.graph == 'david':
-				g = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int, create_using=nx.DiGraph())
-				g = nx.Graph(g)
+				g = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
+				g = nx.convert_node_labels_to_integers(g)
 				g = graph_creation.undirected_to_directed(g)
 
 		nx.set_node_attributes(g, 'label', 0)
@@ -226,5 +228,5 @@ def run_experiment(paras):
 
 #paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
 #paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='random', boosted=False, evalAt=50, maxRequests=51)
-paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11)
+paras = parameters.ParameterSettingsSR(graph='david', evalAt=10, maxRequests=11)
 run_experiment(paras)

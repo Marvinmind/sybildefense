@@ -21,7 +21,6 @@ def get_cdf(v):
 			currCount = 1
 			currEl = e
 
-
 	v_new[l-currCount:] = 1.0
 
 	return list(v_new)
@@ -75,6 +74,7 @@ ranks_sr_no = getMergedRanks(sr_no)
 
 print (sum(ranks_peripheral_random_noboost_no['integro'][0]))
 print(np.median(ranks_peripheral_random_noboost_no['integro'][0]))
+print(np.argmax(ranks_peripheral_random_noboost_no['integro'][0]))
 
 
 
