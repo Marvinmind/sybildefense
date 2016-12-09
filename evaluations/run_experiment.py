@@ -2,7 +2,6 @@ __author__ = 'Martin'
 import random
 import pickle
 import networkx as nx
-import matplotlib.pyplot as plt
 from util import calc
 from util.keys import SF_Keys
 from evaluations import eval_systems, parameters
@@ -225,5 +224,7 @@ def run_experiment(paras):
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
 
-paras = parameters.ParameterSettingsP(graph='david', boosted=True, evalAt=1, maxRequests=2)
+#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
+#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='random', boosted=False, evalAt=50, maxRequests=51)
+paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11)
 run_experiment(paras)
