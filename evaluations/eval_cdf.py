@@ -117,11 +117,8 @@ x_h = scaler.transform(x_h)
 x_s = scaler.transform(x_s)
 
 
-
 y_h = get_cdf(x_h)
 y_s = get_cdf(x_s)
-
-
 
 
 axarr[1,0].set_ylim((0,1.1))
@@ -193,7 +190,7 @@ y_s = get_cdf(x_s)
 axarr[1,1].set_ylim((0,1.1))
 axarr[1,1].set_xlim((-0.1,1.1))
 
-axarr[1,1].plot(x_s, y_s, 'r--')
+axarr[1,1].plot(x_s, y_s, 'rs')
 axarr[1,1].plot(x_h, y_h, 'b--')
 
 """ Random Peripheral Sybilframe"""
