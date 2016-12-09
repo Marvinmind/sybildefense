@@ -29,21 +29,22 @@ def run_experiment(paras):
 		return_package = (results_list, paras)
 
 		"create benign region from graph"
-		for j in range(paras.numRepeats):
-			if paras.graph == 'smallWorld':
-				g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
-			elif paras.graph == 'facebook':
-				g = nx.read_adjlist(paras.datasetLocations[paras.graph])
-				g = nx.convert_node_labels_to_integers(g)
-				g = graph_creation.undirected_to_directed(g)
-			elif paras.graph == 'newOrleans':
-				g = nx.read_adjlist(paras.datasetLocations[paras.graph])
-				g = nx.convert_node_labels_to_integers(g)
-				g = graph_creation.undirected_to_directed(g)
-			elif paras.graph == 'david':
-				g = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
-				g = nx.convert_node_labels_to_integers(g)
-				g = graph_creation.undirected_to_directed(g)
+		if paras.graph == 'smallWorld':
+			g = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
+		elif paras.graph == 'facebook':
+			g = nx.read_edgelist(paras.datasetLocations[paras.graph])
+			g = nx.convert_node_labels_to_integers(g)
+			g = graph_creation.undirected_to_directed(g)
+		elif paras.graph == 'newOrleans':
+			g = nx.read_edgelist(paras.datasetLocations[paras.graph])
+			g = nx.convert_node_labels_to_integers(g)
+			g = graph_creation.undirected_to_directed(g)
+			g_d = nx.Graph(g)
+
+		elif paras.graph == 'david':
+			g = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
+			g = nx.convert_node_labels_to_integers(g)
+			g = graph_creation.undirected_to_directed(g)
 
 		nx.set_node_attributes(g, 'label', 0)
 		NUM_HONEST = len(g.nodes())
@@ -117,6 +118,7 @@ def run_experiment(paras):
 		"create customized graph for each system"
 		g_votetrust = g.copy()
 		g_integro = nx.Graph(g)
+
 		g_sybilframe = nx.DiGraph(g_integro)
 
 

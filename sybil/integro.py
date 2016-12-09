@@ -59,15 +59,15 @@ def set_weights_and_start_seed(g, seeds=None, BETA=paras['beta'], trust=None):
 			g.node[n]['init_trust'] = trust/len(seeds)
 
 def calc_weighted_degrees(g):
-	"!!! Experimental! not actual Integro implementation!!!"
 	degrees = {}
 	for n in g.nodes():
 		neighbors = g.neighbors(n)
 		deg = sum(g[n][x]['weight'] for x in neighbors)
 		if n in neighbors:
 			deg += g[n][n]['weight']
+		if deg > 10000:
+			print('insane degree {}. reg degree: {}'.format(deg, g.degree(n)))
 		degrees[n] = deg
-		#degrees[n] = g.degree(n)
 	return degrees
 
 # construct propagation matrix:
@@ -164,7 +164,7 @@ def get_ranks(g):
 	mult = 1
 	"ugly hack to deal with newOrleans degree of 15!!"
 	if len(g.nodes()) > 50000:
-		mult = 60
+		mult = 2
 	for i in range(ceil(np.log2(len(g.nodes())))*mult):
 		raw = raw * a
 
@@ -176,10 +176,11 @@ def get_ranks(g):
 	"""
 	degrees = calc_weighted_degrees(g)
 	print(min(degrees.values()))
+	print('max degree')
 	print(max(degrees.values()))
 	degrees = [degrees[x] for x in g.nodes()]
 	rank = raw / np.array(degrees)
-	return raw
+	return rank
 
 def run_integro(g, seeds=(0,1,2)):
 	g_work = g.copy()
