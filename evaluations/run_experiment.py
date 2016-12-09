@@ -157,7 +157,7 @@ def run_experiment(paras):
 			"determine if systems should be run"
 			if paras.evalAt == i or (not paras.evalAt and paras.evalInterval % i == 0):
 				print('eval')
-				results['integro'].append(eval_systems.eval_system(g, system='integro'))
+				results['integro'].append(eval_systems.eval_system(g_integro, system='integro'))
 				results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
 				results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
 
@@ -227,5 +227,5 @@ def run_experiment(paras):
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
 
-paras = parameters.ParameterSettingsP(graph='newOrleans', boosted=True, evalAt=1, maxRequests=2)
+paras = parameters.ParameterSettingsP(graph='david', boosted=True, evalAt=1, maxRequests=2)
 run_experiment(paras)

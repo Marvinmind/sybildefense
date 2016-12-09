@@ -155,11 +155,17 @@ def add_apriori(g, auc=0.7, mode='soft'):
 
 def get_ranks(g):
 	a = sparse.csc_matrix(construct_transition_matrix(g))
+	print('first row')
+	print(a.todense().shape)
+	print(a.sum(1))
+
 	v_0 = [g.node[x]['init_trust'] for x in g.nodes()]
 	v_0 = np.array(v_0)
 	raw = v_0
 	for i in range(ceil(np.log2(len(g.nodes())))):
+		#print(sum(raw))
 		raw = raw * a
+
 	"""
 	for i, val in enumerate(raw):
 		if val == 0:

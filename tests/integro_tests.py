@@ -266,3 +266,16 @@ class IntegroTests(unittest.TestCase):
 
 		c = integro.merge_and_renumber(a,b)
 		print(len(c.edges()))
+
+	def test_toy_new(self):
+		g = nx.Graph()
+		g.add_edges_from([(0,1),(0,2),(1,3),(3,2),(3,4),(3,5)])
+		nx.set_node_attributes(g, 'label', 0)
+		g.node[5]['label'] = 1
+
+		integro.add_apriori(g)
+		integro.set_weights_and_start_seed(g,(0,))
+		print(sum(g.node[x]['init_trust'] for x in g.nodes_iter()))
+		ranks = integro.get_ranks(g)
+		print(sum(ranks))
+		print(ranks)

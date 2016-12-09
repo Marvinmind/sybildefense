@@ -25,4 +25,30 @@ with open('../datasets/facebook-links.txt.anon','r') as f:
 			s = l.split('\t')
 			n.write('{} {}\n'.format(s[0],s[1]))
 """
-g = nx.re
+
+def getcdfs(v):
+	l = len(v)
+	v_new = np.array(v, dtype=np.float)
+	print(v_new)
+	currEl = v[0]
+	currCount = 0
+
+	for i, e in enumerate(v):
+		if e == currEl:
+			currCount += 1
+
+		else:
+			print(i/l)
+			v_new[i-currCount:i] = i/l
+			currCount = 1
+			currEl = e
+
+
+	v_new[l-currCount:] = 1.0
+
+	return v_new
+
+
+
+v = [1,1,1,2,2,3,4,4]
+print(getcdfs(v))
