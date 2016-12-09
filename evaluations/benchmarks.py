@@ -16,6 +16,6 @@ class Benchmarks():
 		predValues = 1 - predValues
 		self.auc = metrics.roc_auc_score(np.array(real), predValues)
 		predLabels = [round(x) for x in predValues]
-		mat =  metrics.confusion_matrix(real, predLabels)
-		self.FN = mat[1,0]
-		self.FP = mat[0,1]
+		#mat =  metrics.confusion_matrix(real, predLabels)
+		#self.FN = mat[1,0]
+		#self.FP = mat[0,1]

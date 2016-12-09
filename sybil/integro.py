@@ -27,9 +27,11 @@ def merge_and_renumber(a,b):
 	return f
 
 
-def set_weights_and_start_seed(g, seeds=None, BETA=paras['beta'], trust=1):
+def set_weights_and_start_seed(g, seeds=None, BETA=paras['beta'], trust=None):
 	#get number of nodes
 	#set edge weights
+	if trust == None:
+		trust = len(g.nodes())
 	weight_list = []
 	for i,j in g.edges_iter():
 
@@ -37,6 +39,7 @@ def set_weights_and_start_seed(g, seeds=None, BETA=paras['beta'], trust=1):
 		prob_j = g.node[j]['prob_victim']
 
 		if prob_i > 0.5 or prob_j > 0.5:
+			#print('set not zero weight')
 			w = min(1, BETA*(1-max(prob_i, prob_j)))
 		else:
 			w = 1
@@ -70,7 +73,6 @@ def calc_weighted_degrees(g):
 # construct propagation matrix:
 def construct_transition_matrix(g):
 	N = len(g.nodes())
-	#a = np.zeros((N, N))
 	a = sparse.lil_matrix((N,N))
 	nx.set_node_attributes(g,'degree', 0)
 	degrees = calc_weighted_degrees(g)
@@ -154,12 +156,16 @@ def add_apriori(g, auc=0.7, mode='soft'):
 				g.node[i]['prob_victim'] = 0.1
 
 def get_ranks(g):
+	" return needs to be reset to rank from raw!!"
 	a = sparse.csc_matrix(construct_transition_matrix(g))
-
 	v_0 = [g.node[x]['init_trust'] for x in g.nodes()]
 	v_0 = np.array(v_0)
 	raw = v_0
-	for i in range(ceil(np.log2(len(g.nodes())))):
+	mult = 1
+	"ugly hack to deal with newOrleans degree of 15!!"
+	if len(g.nodes) > 50000:
+		mult = 60
+	for i in range(ceil(np.log2(len(g.nodes())))*mult):
 		raw = raw * a
 
 	"""
@@ -169,12 +175,13 @@ def get_ranks(g):
 			print(g.node[i])
 	"""
 	degrees = calc_weighted_degrees(g)
-	rank = raw / np.array(list(degrees.values()))
-	return rank
+	print(min(degrees.values()))
+	print(max(degrees.values()))
+	degrees = [degrees[x] for x in g.nodes()]
+	rank = raw / np.array(degrees)
+	return raw
 
-def calc_auc(g):
-	rank = get_ranks(g)
-	real = list(map(lambda x, g=g: 0 if g.node[x]['label'] == 0 else 1, g.nodes()))
-	rankInverse = 1 / rank
-	return metrics.roc_auc_score(np.array(real), rankInverse)
-
+def run_integro(g, seeds=(0,1,2)):
+	g_work = g.copy()
+	set_weights_and_start_seed(g_work, seeds=seeds)
+	return get_ranks(g_work)

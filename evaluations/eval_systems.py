@@ -10,8 +10,8 @@ def eval_system(g, system=None):
 			seeds.append(i)
 
 	if system == 'integro':
-		integro.set_weights_and_start_seed(g, seeds=seeds, trust=len(g.nodes()))
-		ranks = integro.get_ranks(g)
+		#integro.set_weights_and_start_seed(g, seeds=seeds, trust=len(g.nodes()))
+		ranks = integro.run_integro(g, seeds=seeds)
 
 	elif system == 'votetrust':
 		votetrust.vote_assignment(g, seeds)
