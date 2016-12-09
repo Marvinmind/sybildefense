@@ -45,7 +45,6 @@ def run_experiment(paras):
 				g = graph_creation.undirected_to_directed(g)
 
 		nx.set_node_attributes(g, 'label', 0)
-		print(len(g.nodes()))
 		NUM_HONEST = len(g.nodes())
 		NUM_ATTACKERS = paras.numSybils
 
@@ -96,7 +95,6 @@ def run_experiment(paras):
 				g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 2, {'trust': 1})
 
 			attackers.append(NUM_HONEST+offset+i)
-		print(len(g.nodes()))
 
 		""" set node prob"""
 		for i in g.nodes_iter():
