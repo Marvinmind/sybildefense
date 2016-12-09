@@ -163,7 +163,7 @@ def get_ranks(g):
 	raw = v_0
 	mult = 1
 	"ugly hack to deal with newOrleans degree of 15!!"
-	if len(g.nodes) > 50000:
+	if len(g.nodes()) > 50000:
 		mult = 60
 	for i in range(ceil(np.log2(len(g.nodes())))*mult):
 		raw = raw * a

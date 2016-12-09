@@ -20,7 +20,7 @@
     {
      "facebook" : "../datasets/facebook_combined.txt",
       "david" : "../datasets/davidGraph.txt",
-      "newOrleans" : "../datasets/newOrleans.txt"
+      "newOrleans" : "../datasets/newOrleansCon"
     }
 
 }
