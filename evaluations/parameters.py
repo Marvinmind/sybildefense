@@ -48,10 +48,12 @@ class ParameterSettings():
 
 class ParameterSettingsSR(ParameterSettings):
 
-	def __init__(self, maxRequests = 501, numRepeats=5, evalInterval=20, evalAt=False, graph='facebook'):
+	def __init__(self, strategy='random', maxRequests = 501, numRepeats=5, evalInterval=20, evalAt=False, graph='facebook'):
 		super(ParameterSettingsSR, self).__init__()
-
+		
 		self.scenario = 'SR'
+		self.boosted = False
+		self.strategy = strategy
 		self.maxRequests = maxRequests
 		self.numRepeats = numRepeats
 		self.evalInterval = evalInterval
