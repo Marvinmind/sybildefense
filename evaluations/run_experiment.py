@@ -91,11 +91,12 @@ def run_experiment(paras):
 				if paras.boosted:
 					offset = 3
 				g.add_node(NUM_HONEST + i + offset, {'label': 1})
-				g.add_edge(NUM_HONEST + i + offset, NUM_HONEST, {'trust': 1})
-				g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 1, {'trust': 1})
-				g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 2, {'trust': 1})
-
-			attackers.append(NUM_HONEST+offset+i)
+				if paras.boosted:
+					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST, {'trust': 1})
+					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 1, {'trust': 1})
+					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 2, {'trust': 1})
+				attackers.append(NUM_HONEST+offset+i)
+		print(attackers)
 
 		""" set node prob"""
 		for i in g.nodes_iter():
@@ -228,7 +229,7 @@ def run_experiment(paras):
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
 
-#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
-#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='random', boosted=False, evalAt=50, maxRequests=51)
-paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11)
+#paras = parameters.ParameterSettingsP(graph='david', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
+#paras = parameters.ParameterSettingsP(graph='david', strategy='random', boosted=False, evalAt=50, maxRequests=51)
+paras = parameters.ParameterSettingsSR(graph='david', evalAt=10, maxRequests=11)
 run_experiment(paras)

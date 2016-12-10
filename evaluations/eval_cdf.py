@@ -72,7 +72,7 @@ ranks_sr_sm = getMergedRanks(sr_sm)
 ranks_sr_da = getMergedRanks(sr_da)
 ranks_sr_no = getMergedRanks(sr_no)
 
-print (sum(ranks_peripheral_random_noboost_no['integro'][0]))
+print(len(ranks_peripheral_random_noboost_no['integro'][0]))
 print(np.median(ranks_peripheral_random_noboost_no['integro'][0]))
 print(np.argmax(ranks_peripheral_random_noboost_no['integro'][0]))
 
@@ -251,7 +251,7 @@ y_s = get_cdf(x_s)
 axarr[1,2].set_ylim((0,1.1))
 axarr[1,2].set_xlim((-0.1,1.1))
 
-axarr[1,2].plot(x_s, y_s, 'r--')
+axarr[1,2].plot(x_s, y_s, 'rs')
 axarr[1,2].plot(x_h, y_h, 'b--')
 
 """ SR Sybilframe"""
