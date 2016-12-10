@@ -160,6 +160,7 @@ def run_experiment(paras):
 				results['integro'].append(eval_systems.eval_system(g_integro, system='integro'))
 				results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
 				results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
+				results_list.append(results)
 
 			"Select new victims"
 			for s in attackers:
@@ -203,14 +204,13 @@ def run_experiment(paras):
 						seen_add = seen.add
 						pools[s] = [x for x in pools[s] if not (x in seen or seen_add(x)) and x not in requested[s]+seeds]
 
-					g.node[h]['prob_victim'] = getVictimNodeProb()
+					g_integro.node[h]['prob_victim'] = getVictimNodeProb()
 
 					g_sybilframe.add_edge(s, h, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
 					g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
-					g.add_edge(s, h)
+					g_integro.add_edge(s, h)
 
 				requested[s].append(h)
-			results_list.append(results)
 
 	"create filename from parameters"
 	filename = 'res_'
@@ -221,13 +221,14 @@ def run_experiment(paras):
 	else:
 		filename += 'noboost_'
 
-	filename += paras.graph+'_'
+	filename += 'newOrleans_'
+	"change back to paras.scenario!"
 	filename += paras.scenario+'.p'
 
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
 
-#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
-#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='random', boosted=False, evalAt=50, maxRequests=51)
-paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11)
+#paras = parameters.ParameterSettingsP(graph='david', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
+#paras = parameters.ParameterSettingsP(graph='david', strategy='random', boosted=False, evalAt=50, maxRequests=51)
+paras = parameters.ParameterSettingsSR(graph='david', evalAt=10, maxRequests=11)
 run_experiment(paras)
