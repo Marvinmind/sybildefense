@@ -231,5 +231,5 @@ def run_experiment(paras):
 
 #paras = parameters.ParameterSettingsP(graph='david', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
 #paras = parameters.ParameterSettingsP(graph='david', strategy='random', boosted=False, evalAt=50, maxRequests=51)
-paras = parameters.ParameterSettingsSR(graph='david', evalAt=10, maxRequests=11)
+paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11, numRepeats=1)
 run_experiment(paras)
