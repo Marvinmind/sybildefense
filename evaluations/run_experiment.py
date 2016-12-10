@@ -228,7 +228,7 @@ def run_experiment(paras):
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
 
-#paras = parameters.ParameterSettingsP(graph='david', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
-#paras = parameters.ParameterSettingsP(graph='david', strategy='random', boosted=False, evalAt=50, maxRequests=51)
-paras = parameters.ParameterSettingsSR(graph='david', evalAt=10, maxRequests=11)
+#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
+#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='random', boosted=False, evalAt=50, maxRequests=51)
+paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11)
 run_experiment(paras)
