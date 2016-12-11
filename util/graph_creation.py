@@ -66,6 +66,7 @@ def add_community(g, SIZE_SYBIL, NUMBER_IN, type='sybil', num_honest=None):
 
 	for i in range(SIZE_SYBIL):
 		g.add_node(NUM_NODES + i)
+
 	for i in range(SIZE_SYBIL):
 		for j in range(SIZE_SYBIL):
 			if j != i:

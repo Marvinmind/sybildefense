@@ -77,9 +77,9 @@ def construct_transition_matrix(g):
 	nx.set_node_attributes(g,'degree', 0)
 	degrees = calc_weighted_degrees(g)
 	nx.set_node_attributes(g,'degree', degrees)
-	for from_node, to_node in g.edges_iter():
-		a[from_node,to_node] = g[from_node][to_node]['weight'] / g.node[from_node]['degree']
-		a[to_node,from_node] = g[from_node][to_node]['weight'] / g.node[to_node]['degree']
+	for from_node, to_node, data in g.edges_iter(data=True):
+		a[from_node,to_node] = data['weight'] / g.node[from_node]['degree']
+		a[to_node,from_node] = data['weight'] / g.node[to_node]['degree']
 
 		if to_node == from_node:
 			a[from_node,to_node] *= 2
@@ -166,7 +166,7 @@ def get_ranks(g):
 	if len(g.nodes()) > 50000:
 		print('increase mult')
 		mult = 1
-	for i in range(ceil(np.log2(len(g.nodes())))*mult):
+	for i in range(ceil(np.log2(len(g.nodes())))*mult+5):
 		raw = raw * a
 
 	"""
@@ -178,9 +178,15 @@ def get_ranks(g):
 	degrees = calc_weighted_degrees(g)
 	degrees = [degrees[x] for x in g.nodes()]
 	rank = raw / np.array(degrees)
-	return rank
+	return raw, rank
 
 def run_integro(g, seeds=(0,1,2)):
+	if seeds == None:
+		seeds = (0,1,2)
+	elif seeds == 'interval':
+		print('jo')
+		seeds = [ceil(x*len(g.nodes())/10) for x in range(10)]
+		print(seeds)
 	g_work = g.copy()
 	set_weights_and_start_seed(g_work, seeds=seeds)
 	return get_ranks(g_work)

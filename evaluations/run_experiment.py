@@ -7,7 +7,7 @@ from util.keys import SF_Keys
 from evaluations import eval_systems, parameters
 from sybil import integro, sybilframe
 from collections import defaultdict
-
+import numpy as np
 from util import graph_creation
 
 
@@ -46,6 +46,8 @@ def run_experiment(paras):
 	nx.set_node_attributes(g_org, 'label', 0)
 	NUM_HONEST = len(g_org.nodes())
 	NUM_ATTACKERS = paras.numSybils
+	if paras.scenario == 'SR':
+		NUM_ATTACKERS = paras.sizeSybilRegion
 
 	seeds = []
 	if paras.seedsStrategy == 'list':
@@ -77,7 +79,7 @@ def run_experiment(paras):
 
 		"create sybil region for sybil region scenario"
 		if paras.scenario == 'SR':
-			graph_creation.add_community(g, paras.sizeSybilRegion, 0, type='sybil')
+			graph_creation.add_community(g, NUM_ATTACKERS, 0, type='sybil')
 			for i in range(NUM_HONEST, NUM_HONEST+NUM_ATTACKERS):
 				g.node[i]['label'] = 1
 				attackers.append(i)
@@ -96,7 +98,6 @@ def run_experiment(paras):
 					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 1, {'trust': 1})
 					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 2, {'trust': 1})
 				attackers.append(NUM_HONEST+offset+i)
-		print(attackers)
 
 		""" set node prob"""
 		for i in g.nodes_iter():
@@ -189,13 +190,13 @@ def run_experiment(paras):
 					trust = calc.getSuccessByProb(paras.vulnAcceptanceProb)
 
 				else:
-					num_common_friends = len(set(g.neighbors(h)).intersection(set(g.neighbors(s))))
+					num_common_friends = len(set(g_integro.neighbors(h)).intersection(set(g_integro.neighbors(s))))
 					trust = getAcceptance(num_common_friends)
-
+				#print('{} {}'.format(s,h))
 				g_votetrust.add_edge(s, h, {'trust': trust})
 				if trust == 1:
 					if paras.strategy in ('breadthFirst', 'twoPhase'):
-						friends_of_friend = g.neighbors(h)
+						friends_of_friend = g_integro.neighbors(h)
 						if s in friends_of_friend:
 							friends_of_friend.remove(s)
 						pools[s].extend(friends_of_friend)
@@ -229,7 +230,7 @@ def run_experiment(paras):
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
 
-#paras = parameters.ParameterSettingsP(graph='david', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51)
-#paras = parameters.ParameterSettingsP(graph='david', strategy='random', boosted=False, evalAt=50, maxRequests=51)
-paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11, numRepeats=1)
+paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51, numRepeats=3)
+#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='random', boosted=False, evalAt=50, maxRequests=51, numRepeats=3)
+#paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11, numRepeats=3)
 run_experiment(paras)

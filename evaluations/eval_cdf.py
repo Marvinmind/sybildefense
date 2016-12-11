@@ -72,10 +72,9 @@ ranks_sr_sm = getMergedRanks(sr_sm)
 ranks_sr_da = getMergedRanks(sr_da)
 ranks_sr_no = getMergedRanks(sr_no)
 
-print(len(ranks_peripheral_random_noboost_no['integro'][0]))
-print(np.median(ranks_peripheral_random_noboost_no['integro'][0]))
-print(np.argmax(ranks_peripheral_random_noboost_no['integro'][0]))
-
+print(len(ranks_peripheral_tar_boosted_no['integro'][0]))
+print(np.median(ranks_peripheral_tar_boosted_no['integro'][0]))
+print(np.max(ranks_peripheral_tar_boosted_no['integro'][0]))
 
 
 f, axarr = plt.subplots(3,3)
@@ -88,15 +87,11 @@ x_s = sorted(ranks_peripheral_tar_boosted_no['integro'][0][-23:])
 
 scaler = prep.MinMaxScaler()
 scaler.fit(sorted(ranks_peripheral_tar_boosted_no['integro'][0]))
-print('scaled')
 x_h = scaler.transform(x_h)
 x_s = scaler.transform(x_s)
-print('transformed two')
-
 
 y_h = get_cdf(x_h)
 y_s = get_cdf(x_s)
-print('rand per int')
 
 axarr[0,0].set_ylim((0,1.1))
 axarr[0,0].set_xlim((-0.1,1.1))
@@ -151,7 +146,7 @@ axarr[2,0].set_xlim((-0.1,1.1))
 sybil, = axarr[2,0].plot(x_s, y_s, 'r--', label='sybil')
 honest, = axarr[2,0].plot(x_h, y_h, 'b--', label='honest')
 
-print(sybil)
+
 """ Random Peripheral Integro"""
 x_h = sorted(ranks_peripheral_random_noboost_no['integro'][0][:-20])
 x_s = sorted(ranks_peripheral_random_noboost_no['integro'][0][-20:])
@@ -255,7 +250,6 @@ axarr[1,2].plot(x_s, y_s, 'rs')
 axarr[1,2].plot(x_h, y_h, 'b--')
 
 """ SR Sybilframe"""
-print(len)
 x_h = sorted(ranks_sr_no['sybilframe'][0][:-100])
 x_s = sorted(ranks_sr_no['sybilframe'][0][-100:])
 
@@ -281,5 +275,4 @@ axarr[0,2].set_title('Sybil Region')
 
 
 plt.figlegend((honest, sybil), ('honest', 'sybil'),  'upper left')
-print('show')
 plt.show()
