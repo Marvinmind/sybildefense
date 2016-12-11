@@ -178,9 +178,9 @@ def get_ranks(g):
 	degrees = calc_weighted_degrees(g)
 	degrees = [degrees[x] for x in g.nodes()]
 	rank = raw / np.array(degrees)
-	return raw, rank
+	return rank
 
-def run_integro(g, seeds=(0,1,2)):
+def run_integro(g, seeds=None):
 	if seeds == None:
 		seeds = (0,1,2)
 	elif seeds == 'interval':
