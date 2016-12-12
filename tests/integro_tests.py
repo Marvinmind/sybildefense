@@ -17,7 +17,7 @@ class IntegroTests(unittest.TestCase):
 		g.add_nodes_from(list(range(5)))
 		for i in range(5):
 			g.add_weighted_edges_from([(0,0,0.1), (0,1,0.8), (1,2,0.5),(1,3,0.5),(2,3,2),(3,4,1)])
-		a = integro.construct_transition_matrix(g)
+		a = integro.construct_transition_matrix(g).todense()
 		expect = np.array([[0.2, 0.8, 0, 0, 0], [0.44, 0, 0.28, 0.28, 0], [0, 0.2, 0, 0.8, 0], [0, 0.14, 0.57, 0, 0.29], [0, 0, 0, 1, 0]])
 		self.assertEqual((np.around(a, 2)-expect).any(), False)
 
@@ -269,13 +269,13 @@ class IntegroTests(unittest.TestCase):
 
 	def test_toy_new(self):
 		g = nx.Graph()
-		g.add_edges_from([(0,1),(0,2),(1,3),(3,2),(3,4),(3,5)])
-		nx.set_node_attributes(g, 'label', 0)
-		g.node[5]['label'] = 1
-
-		integro.add_apriori(g)
-		integro.set_weights_and_start_seed(g,(0,))
-		print(sum(g.node[x]['init_trust'] for x in g.nodes_iter()))
+		g.add_weighted_edges_from([(0,1,0.8),(0,2,1),(2,3,1),(2,4,1),(3,4,0.7), (1,1,0.1)])
+		seeds = (0,)
+		nx.set_node_attributes(g, 'init_trust', 0)
+		g.node[0]['init_trust'] = 5
+		nx.set_node_attributes(g, 'prob_victim', 0)
 		ranks = integro.get_ranks(g)
-		print(sum(ranks))
-		print(ranks)
+		expect = np.array([0.19753086,  1.29053498, 0.86379408, 0.22427272,  0.22427272])
+
+		self.assertEqual((np.around(ranks, 2)-np.around(expect,2)).any(), False)
+

@@ -54,7 +54,7 @@ sr_fb = pickle.load(open('../pickles/results_random_noboost_SR_fb.p','rb'))[0]
 sr_sm = pickle.load(open('../pickles/results_random_noboost_SR_sm.p','rb'))[0]
 sr_da = pickle.load(open('../pickles/results_random_noboost_SR_da.p','rb'))[0]
 sr_no = pickle.load(open('../pickles/res_random_noboost_newOrleans_SR.p','rb'))[0]
-
+print(pickle.load(open('../pickles/res_random_noboost_newOrleans_P.p','rb'))[1].graph)
 
 ranks_peripheral_tar_boosted_fb = getMergedRanks(peripheral_tar_boosted_fb)
 ranks_peripheral_tar_boosted_sm = getMergedRanks(peripheral_tar_boosted_sm)

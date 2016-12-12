@@ -166,7 +166,7 @@ def get_ranks(g):
 	if len(g.nodes()) > 50000:
 		print('increase mult')
 		mult = 1
-	for i in range(ceil(np.log2(len(g.nodes())))*mult+5):
+	for i in range(ceil(np.log2(len(g.nodes())))*mult):
 		raw = raw * a
 
 	"""
