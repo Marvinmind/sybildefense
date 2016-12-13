@@ -3,6 +3,7 @@ import scipy.stats as stats
 import numpy as np
 from math import exp
 from sybil.integro import getValues
+from collections import defaultdict
 
 
 def wilsonScore(p, n, alpha=0.05):
@@ -45,3 +46,34 @@ def getAcceptanceClosure(min, max):
 	def retFunc(f):
 		return getSuccessByFriends(f, start=min, max=max)
 	return retFunc
+
+def get_cdf(v):
+	l = len(v)
+	v_new = np.array(v, dtype=np.float)
+	currEl = v[0]
+	currCount = 0
+
+	for i, e in enumerate(v):
+		if e == currEl:
+			currCount += 1
+
+		else:
+			v_new[i-currCount:i] = i/l
+			currCount = 1
+			currEl = e
+
+	v_new[l-currCount:] = 1.0
+
+	return list(v_new)
+
+def getMergedRanks(b):
+	d = {'integro': defaultdict(lambda: 0), 'votetrust': defaultdict(lambda: 0), 'sybilframe':  defaultdict(lambda: 0)}
+	for e in b:
+		for i, x in enumerate(e['integro']):
+			d['integro'][i] += x.ranks/len(b)
+		for i, x in enumerate(e['votetrust']):
+			d['votetrust'][i] += x.ranks/len(b)
+		for i, x in enumerate(e['sybilframe']):
+			d['sybilframe'][i] += x.ranks/len(b)
+
+	return d

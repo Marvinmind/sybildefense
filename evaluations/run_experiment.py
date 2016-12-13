@@ -159,6 +159,7 @@ def run_experiment(paras):
 			"determine if systems should be run"
 			if paras.evalAt == i or (not paras.evalAt and paras.evalInterval % i == 0):
 				print('eval')
+				print(i)
 				results['integro'].append(eval_systems.eval_system(g_integro, system='integro'))
 				results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
 				results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
@@ -223,14 +224,14 @@ def run_experiment(paras):
 	else:
 		filename += 'noboost_'
 
-	filename += 'newOrleans_'
+	filename += '{}_'.format(paras.graph)
 	"change back to paras.scenario!"
 	filename += paras.scenario+'.p'
 
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
 
-paras = parameters.ParameterSettingsP(graph='david', strategy='breadthFirst', boosted='True', evalAt=50, maxRequests=51, numRepeats=3)
-#paras = parameters.ParameterSettingsP(graph='newOrleans', strategy='random', boosted=False, evalAt=50, maxRequests=51, numRepeats=3)
-#paras = parameters.ParameterSettingsSR(graph='newOrleans', evalAt=10, maxRequests=11, numRepeats=3)
+paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=False, evalAt=100, maxRequests=101, numRepeats=2)
+#paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=False, evalAt=50, maxRequests=51, numRepeats=2)
+#paras = parameters.ParameterSettingsSR(graph='facebook', evalAt=10, maxRequests=11, numRepeats=2)
 run_experiment(paras)

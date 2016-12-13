@@ -1,5 +1,6 @@
 from sybil import integro, votetrust, sybilframe
 from scipy import stats
+import numpy as np
 from evaluations import benchmarks
 
 
