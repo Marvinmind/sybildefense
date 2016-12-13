@@ -11,7 +11,7 @@ import numpy as np
 from util import graph_creation
 
 
-def run_experiment(paras):
+def run_experiment(paras, saveAs):
 	results_list = []
 	return_package = (results_list, paras)
 
@@ -53,7 +53,15 @@ def run_experiment(paras):
 	if paras.seedsStrategy == 'list':
 		for s in paras.seedsList:
 			seeds.append(s)
+	elif paras.seedsStrategy == 'random':
+		for i in range(paras.numSeeds):
+			while True:
+				r = random.randint(0, NUM_HONEST-1)
+				if r not in seeds:
+					seeds.append(r)
+					break
 
+	print(seeds)
 	for i in range(paras.numRepeats):
 		g = g_org.copy()
 		"add boosting region"
@@ -157,9 +165,8 @@ def run_experiment(paras):
 
 		for i in range(paras.maxRequests):
 			"determine if systems should be run"
-			if paras.evalAt == i or (not paras.evalAt and paras.evalInterval % i == 0):
+			if i in paras.evalAt or (not paras.evalAt and paras.evalInterval % i == 0):
 				print('eval')
-				print(i)
 				results['integro'].append(eval_systems.eval_system(g_integro, system='integro'))
 				results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
 				results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
@@ -215,23 +222,48 @@ def run_experiment(paras):
 
 				requested[s].append(h)
 
-	"create filename from parameters"
-	filename = 'res_'
-	filename += paras.strategy+'_'
+	if not saveAs:
+		"create filename from parameters"
+		filename = 'res_'
+		filename += paras.strategy+'_'
 
-	if paras.boosted:
-		filename += 'boosted_'
+		if paras.boosted:
+			filename += 'boosted_'
+		else:
+			filename += 'noboost_'
+
+		filename += '{}_'.format(paras.graph)
+		"change back to paras.scenario!"
+		filename += paras.scenario+'.p'
 	else:
-		filename += 'noboost_'
-
-	filename += '{}_'.format(paras.graph)
-	"change back to paras.scenario!"
-	filename += paras.scenario+'.p'
+		filename = saveAs
 
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
+evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
 
-paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=False, evalAt=100, maxRequests=101, numRepeats=2)
-#paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=False, evalAt=50, maxRequests=51, numRepeats=2)
-#paras = parameters.ParameterSettingsSR(graph='facebook', evalAt=10, maxRequests=11, numRepeats=2)
-run_experiment(paras)
+"""
+	Experiment:
+	Determine how the number of seeds influences the performance
+
+	Variations:
+	Number of seeds: 1, 3, 10, 100, 1000
+
+	Systems:
+	All Systems, all scenarios
+
+"""
+for i in (1, 3, 10, 100, 1000):
+	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=True, evalAt=(50,), maxRequests=51, numRepeats=3)
+	paras.numSeeds = i
+	run_experiment(paras, saveAs='seeds{}PTar.p'.format(i))
+
+	paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=False, evalAt=(50,), maxRequests=51, numRepeats=3)
+	paras.numSeeds = i
+	run_experiment(paras, saveAs='seeds{}PRand.p'.format(i))
+
+	paras = parameters.ParameterSettingsSR(graph='facebook', evalAt=(50,), maxRequests=51, numRepeats=3)
+	paras.numSeeds = i
+	run_experiment(paras, saveAs='seeds{}SRRand.p'.format(i))
+
+

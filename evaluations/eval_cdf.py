@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import sklearn.preprocessing as prep
 import numpy as np
 
-graph = 'newOrleans'
+graph = 'facebook'
 def get_cdf(v):
 	l = len(v)
 	v_new = np.array(v, dtype=np.float)

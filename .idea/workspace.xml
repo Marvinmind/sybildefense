@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="497e91ea-7906-4fa1-99d2-a169d07c2020" name="Default" comment="hm">
+    <list default="true" id="19cd0809-4433-4eda-b270-22739ebfafcf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/res_random_noboost_david_P.p" afterPath="$PROJECT_DIR$/pickles/res_random_noboost_david_P.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/implementations.iml" afterPath="$PROJECT_DIR$/.idea/implementations.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/baseparameters.json" afterPath="$PROJECT_DIR$/evaluations/baseparameters.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/eval_cdf.py" afterPath="$PROJECT_DIR$/evaluations/eval_cdf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/parameters.py" afterPath="$PROJECT_DIR$/evaluations/parameters.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/run_experiment.py" afterPath="$PROJECT_DIR$/evaluations/run_experiment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sybil/integro.py" afterPath="$PROJECT_DIR$/sybil/integro.py" />
     </list>
+    <ignored path="implementations.iws" />
+    <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,117 +22,113 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sybildefense$extractNewOrleans.coverage" NAME="extractNewOrleans Coverage Results" MODIFIED="1481307859065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
-    <SUITE FILE_PATH="coverage/sybildefense$eval_systems.coverage" NAME="eval_systems Coverage Results" MODIFIED="1480771148411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_toy_new.coverage" NAME="Unittest IntegroTests.test_toy_new Coverage Results" MODIFIED="1481221709324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_VoteTrustTests_test_voteComb.coverage" NAME="Unittest VoteTrustTests.test_voteComb Coverage Results" MODIFIED="1480457277051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_sybilframe_tests_test_infer.coverage" NAME="Unittest sybilframe_tests.test_infer Coverage Results" MODIFIED="1480600193930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_boosted_P.coverage" NAME="scenario_targeted_boosted_P Coverage Results" MODIFIED="1480521538505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_VoteTrustTests_test_toy_propagation.coverage" NAME="Unittest VoteTrustTests.test_toy_propagation Coverage Results" MODIFIED="1480446838974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$run_experiment.coverage" NAME="run_experiment Coverage Results" MODIFIED="1481318631942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$eval_cdf.coverage" NAME="eval_cdf Coverage Results" MODIFIED="1481322953945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$readDavid.coverage" NAME="readDavid Coverage Results" MODIFIED="1480521011472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$eval_pickles_fb.coverage" NAME="eval_pickles_fb Coverage Results" MODIFIED="1480785791534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$other_plots.coverage" NAME="other_plots Coverage Results" MODIFIED="1480954332162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_merge_renumber.coverage" NAME="Unittest IntegroTests.test_merge_renumber Coverage Results" MODIFIED="1481221468408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$scenario_random_noboost_P.coverage" NAME="scenario_random_noboost_P Coverage Results" MODIFIED="1481241889978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$generator_tests.coverage" NAME="generator_tests Coverage Results" MODIFIED="1480435694067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$scenario_random_noboost_SR.coverage" NAME="scenario_random_noboost_SR Coverage Results" MODIFIED="1480983491044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_com_v_sib.coverage" NAME="Unittest IntegroTests.test_com_v_sib Coverage Results" MODIFIED="1481221265031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_VoteTrustTests_test_Collusion_vs_d.coverage" NAME="Unittest VoteTrustTests.test_Collusion_vs_d Coverage Results" MODIFIED="1480448896413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_noboost_P.coverage" NAME="scenario_targeted_noboost_P Coverage Results" MODIFIED="1480463879546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$blubs.coverage" NAME="blubs Coverage Results" MODIFIED="1481217569155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$votetrust.coverage" NAME="votetrust Coverage Results" MODIFIED="1478432350434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_merge_renumber.coverage" NAME="Unittest IntegroTests.test_merge_renumber Coverage Results" MODIFIED="1478820643964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$peripheral_scenario.coverage" NAME="peripheral_scenario Coverage Results" MODIFIED="1479495036270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_VoteTrustTests.coverage" NAME="Unittests in VoteTrustTests Coverage Results" MODIFIED="1475420795358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_authors_attachement.coverage" NAME="Unittest sybilframe_tests.test_authors_attachement Coverage Results" MODIFIED="1478726774910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$testpyopencl.coverage" NAME="testpyopencl Coverage Results" MODIFIED="1478345969781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_base.coverage" NAME="Unittest VoteTrustTests.test_propagation_base Coverage Results" MODIFIED="1477414731043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weights_frequencies.coverage" NAME="Unittest IntegroTests.test_weights_frequencies Coverage Results" MODIFIED="1478817344087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_com_v_sib.coverage" NAME="Unittest IntegroTests.test_com_v_sib Coverage Results" MODIFIED="1478616574403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_rank_toy.coverage" NAME="Unittest IntegroTests.test_rank_toy Coverage Results" MODIFIED="1478450171461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weight_setting.coverage" NAME="Unittest IntegroTests.test_weight_setting Coverage Results" MODIFIED="1478825872741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_IntegroTests.coverage" NAME="Unittests in IntegroTests Coverage Results" MODIFIED="1478615649252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$test_ipyton.coverage" NAME="test_ipyton Coverage Results" MODIFIED="1474040996225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1478815304136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_mult.coverage" NAME="Unittest VoteTrustTests.test_propagation_mult Coverage Results" MODIFIED="1477416674832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_test_boosting_test_smallWorld.coverage" NAME="Unittest test_boosting.test_smallWorld Coverage Results" MODIFIED="1479995524404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$eval_pickles_fb.coverage" NAME="eval_pickles_fb Coverage Results" MODIFIED="1480415057881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation.coverage" NAME="Unittest VoteTrustTests.test_propagation Coverage Results" MODIFIED="1477218664414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_Collusion_vs_d__1_.coverage" NAME="Unittest VoteTrustTests.test_Collusion_vs_d (1) Coverage Results" MODIFIED="1477335887139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_peripheral_vs_little_connected.coverage" NAME="Unittest IntegroTests.test_peripheral_vs_little_connected Coverage Results" MODIFIED="1478522277004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_random.coverage" NAME="peripheral_scenario_random Coverage Results" MODIFIED="1479915617855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_propagation.coverage" NAME="Unittest IntegroTests.test_propagation Coverage Results" MODIFIED="1478534948479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$multiprocess_test.coverage" NAME="multiprocess_test Coverage Results" MODIFIED="1479652592446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_Sybilframe_attack_tests_breadth_first_test.coverage" NAME="Unittest Sybilframe_attack_tests.breadth_first_test Coverage Results" MODIFIED="1478440040147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_serious.coverage" NAME="Unittest IntegroTests.test_serious Coverage Results" MODIFIED="1474383034703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_auc.coverage" NAME="Unittest ProbTests.test_auc Coverage Results" MODIFIED="1479318657355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_boosted.coverage" NAME="Unittest VoteTrustTests.test_boosted Coverage Results" MODIFIED="1477515993192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_rank_authors.coverage" NAME="Unittest IntegroTests.test_rank_authors Coverage Results" MODIFIED="1478825979200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$votetrust_digest.coverage" NAME="votetrust_digest Coverage Results" MODIFIED="1477170146745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_transition_matrix.coverage" NAME="Unittest IntegroTests.test_transition_matrix Coverage Results" MODIFIED="1478814381318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$sybil_region_scenario.coverage" NAME="sybil_region_scenario Coverage Results" MODIFIED="1479499803017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$sybil_region_scenario.coverage" NAME="sybil_region_scenario Coverage Results" MODIFIED="1479909486531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_targeted.coverage" NAME="peripheral_scenario_targeted Coverage Results" MODIFIED="1479914727556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_integro.coverage" NAME="Unittest sybilframe_tests.test_integro Coverage Results" MODIFIED="1477933976649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_sybil_region.coverage" NAME="Unittest IntegroTests.test_sybil_region Coverage Results" MODIFIED="1478456731400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_nodeProb.coverage" NAME="Unittest ProbTests.test_nodeProb Coverage Results" MODIFIED="1479576776784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$integro.coverage" NAME="integro Coverage Results" MODIFIED="1474045369065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_VoteTrustTests__1_.coverage" NAME="Unittests in VoteTrustTests (1) Coverage Results" MODIFIED="1476187076485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_weights.coverage" NAME="Unittest MyTest.test_weights Coverage Results" MODIFIED="1474140098521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$test_dist.coverage" NAME="test_dist Coverage Results" MODIFIED="1474031891016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_weights_frequencies.coverage" NAME="Unittest IntegroTests.test_weights_frequencies Coverage Results" MODIFIED="1479991222148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$integro_evaluations.coverage" NAME="integro_evaluations Coverage Results" MODIFIED="1478616620747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_Collusion_vs_d.coverage" NAME="Unittest VoteTrustTests.test_Collusion_vs_d Coverage Results" MODIFIED="1477335707239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_attack.coverage" NAME="Unittest VoteTrustTests.test_attack Coverage Results" MODIFIED="1476983138251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$testMatrixMult.coverage" NAME="testMatrixMult Coverage Results" MODIFIED="1477241726794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/implementations$votetrust_timing.coverage" NAME="votetrust_timing Coverage Results" MODIFIED="1477236374172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/timing" />
+    <SUITE FILE_PATH="coverage/sybildefense$test_facebook_ego.coverage" NAME="test_facebook_ego Coverage Results" MODIFIED="1480461294055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_weight_setting.coverage" NAME="Unittest MyTest.test_weight_setting Coverage Results" MODIFIED="1474301186404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_run.coverage" NAME="Unittest VoteTrustTests.test_run Coverage Results" MODIFIED="1476297093422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_smallWorld.coverage" NAME="Unittest sybilframe_tests.test_smallWorld Coverage Results" MODIFIED="1478090941253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1479991202623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$scenario_random_noboost_SR.coverage" NAME="scenario_random_noboost_SR Coverage Results" MODIFIED="1480557668914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$run_experiment.coverage" NAME="run_experiment Coverage Results" MODIFIED="1481641497867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_random.coverage" NAME="Unittest VoteTrustTests.test_random Coverage Results" MODIFIED="1478440837752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_assignment.coverage" NAME="Unittest VoteTrustTests.test_assignment Coverage Results" MODIFIED="1476193042143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_breadth_first.coverage" NAME="Unittest VoteTrustTests.test_breadth_first Coverage Results" MODIFIED="1478440568157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_acceptance_closure.coverage" NAME="Unittest ProbTests.test_acceptance_closure Coverage Results" MODIFIED="1479499779523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_collusion.coverage" NAME="Unittest VoteTrustTests.test_collusion Coverage Results" MODIFIED="1477482278911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_getFriends.coverage" NAME="Unittest VoteTrustTests.test_getFriends Coverage Results" MODIFIED="1476980649969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$eval_pickles.coverage" NAME="eval_pickles Coverage Results" MODIFIED="1480201801500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$eval_cdf.coverage" NAME="eval_cdf Coverage Results" MODIFIED="1481624926091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_collusion_once.coverage" NAME="Unittest VoteTrustTests.test_collusion_once Coverage Results" MODIFIED="1476560131850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test.coverage" NAME="Unittest VoteTrustTests.test Coverage Results" MODIFIED="1477090453075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_noboost_P.coverage" NAME="scenario_targeted_noboost_P Coverage Results" MODIFIED="1480014232260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_transition_matrix.coverage" NAME="Unittest IntegroTests.test_transition_matrix Coverage Results" MODIFIED="1479991194911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_peripheral.coverage" NAME="Unittest VoteTrustTests.test_peripheral Coverage Results" MODIFIED="1476530130850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_new_dist.coverage" NAME="Unittest sybilframe_tests.test_new_dist Coverage Results" MODIFIED="1477951139376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$eval_cdf_boost_vs_noboost.coverage" NAME="eval_cdf_boost_vs_noboost Coverage Results" MODIFIED="1481626747800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$votetrust_evaluations.coverage" NAME="votetrust_evaluations Coverage Results" MODIFIED="1479505127954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_noboost.coverage" NAME="peripheral_scenario_noboost Coverage Results" MODIFIED="1479914793935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_getprobs.coverage" NAME="Unittest IntegroTests.test_getprobs Coverage Results" MODIFIED="1478449949428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_boosted_P.coverage" NAME="scenario_targeted_boosted_P Coverage Results" MODIFIED="1481027790087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_rank_toy.coverage" NAME="Unittest IntegroTests.test_rank_toy Coverage Results" MODIFIED="1479991114813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$parameters.coverage" NAME="parameters Coverage Results" MODIFIED="1481030349521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_serious.coverage" NAME="Unittest MyTest.test_serious Coverage Results" MODIFIED="1474322351507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_Sybilframe_attack_tests_test_smallword.coverage" NAME="Unittest Sybilframe_attack_tests.test_smallword Coverage Results" MODIFIED="1478104351523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$peripheral_scenario_targeted.coverage" NAME="peripheral_scenario_targeted Coverage Results" MODIFIED="1479679106054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_infer.coverage" NAME="Unittest sybilframe_tests.test_infer Coverage Results" MODIFIED="1477734787294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_aggregation.coverage" NAME="Unittest VoteTrustTests.test_aggregation Coverage Results" MODIFIED="1476190236219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_IntegroTests__1_.coverage" NAME="Unittests in IntegroTests (1) Coverage Results" MODIFIED="1478615663903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1474299300573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="sybildefense" />
+    <favorites_list name="implementations" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="eval_cdf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf.py">
+      <file leaf-file-name="scenario_random_noboost_SR.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2052">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/parameters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
-              <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+            <state relative-caret-position="702">
+              <caret line="47" column="50" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
-                <marker date="1481244686665" expanded="true" signature="2188:2331" ph="..." />
+                <element signature="e#22#43#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="benchmarks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/benchmarks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="votetrust.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sybil/votetrust.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2214">
-              <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="integro.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sybil/integro.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
-              <folding>
-                <element signature="e#462#496#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blubs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/blubs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="22" column="14" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extractNewOrleans.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/extractNewOrleans.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_experiment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/run_experiment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="224" column="35" selection-start-line="224" selection-start-column="35" selection-end-line="224" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -133,9 +136,21 @@
       <file leaf-file-name="eval_systems.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="198">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eval_cdf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,8 +158,72 @@
       <file leaf-file-name="baseparameters.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="156">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eval_cdf_boost_vs_noboost.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf_boost_vs_noboost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scenario_targeted_boosted_P.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="162" column="20" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_experiment.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evaluations/run_experiment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1062">
+              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="integro.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sybil/integro.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-175">
+              <caret line="167" column="16" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/calc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding>
+                <marker date="1481622415804" expanded="false" signature="0:117" placeholder="import ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/parameters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -159,44 +238,62 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>lil</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/generator_tests.py" />
+        <option value="$PROJECT_DIR$/tests/tests.py" />
+        <option value="$PROJECT_DIR$/sybil/test_ipyton.py" />
+        <option value="$PROJECT_DIR$/results/votetrust/random.csv" />
+        <option value="$PROJECT_DIR$/evaluations/votetrust_digest.py" />
+        <option value="$PROJECT_DIR$/timing/votetrust_timing.py" />
+        <option value="$PROJECT_DIR$/util/testMatrixMult.py" />
         <option value="$PROJECT_DIR$/tests/voteTrust_test.py" />
-        <option value="$PROJECT_DIR$/datasets/davidGraph.txt" />
-        <option value="$PROJECT_DIR$/evaluations/scenario_targeted_noboost_P.py" />
-        <option value="$PROJECT_DIR$/tests/readDavid.py" />
+        <option value="$PROJECT_DIR$/sybil/test_dist.py" />
+        <option value="$PROJECT_DIR$/results/votetrust/breadthFirst_boosting.csv" />
+        <option value="$PROJECT_DIR$/results/votetrust/breadthFirst.csv" />
+        <option value="$PROJECT_DIR$/tests/testpyopencl.py" />
+        <option value="$PROJECT_DIR$/evaluations/votetrust.py" />
+        <option value="$PROJECT_DIR$/tests/sybilframe_attack_tests.py" />
+        <option value="$PROJECT_DIR$/attacks/attacks_votetrust.py" />
+        <option value="$PROJECT_DIR$/tests/votetrust_attack_tests.py" />
+        <option value="$PROJECT_DIR$/evaluations/integro_evaluations.py" />
         <option value="$PROJECT_DIR$/tests/sybilframe_tests.py" />
-        <option value="$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py" />
-        <option value="$PROJECT_DIR$/evaluations/eval_pickles_fb.py" />
-        <option value="$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py" />
-        <option value="$PROJECT_DIR$/util/calc.py" />
-        <option value="$PROJECT_DIR$/evaluations/other_plots.py" />
-        <option value="$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py" />
-        <option value="$PROJECT_DIR$/exp/vectorMatrixMult.py" />
-        <option value="$PROJECT_DIR$/exp/fastMult2.pyx.py" />
-        <option value="$PROJECT_DIR$/exp/fastMult2.pyx" />
-        <option value="$PROJECT_DIR$/sybil/sybilframe.py" />
-        <option value="$PROJECT_DIR$/evaluations/parameters.py" />
-        <option value="$PROJECT_DIR$/tests/blubs.py" />
-        <option value="$PROJECT_DIR$/tests/integro_tests.py" />
-        <option value="$PROJECT_DIR$/util/extractNewOrleans.py" />
-        <option value="$PROJECT_DIR$/evaluations/eval_systems.py" />
+        <option value="$PROJECT_DIR$/evaluations/sybilRegionScenario.py" />
+        <option value="$PROJECT_DIR$/util/keys.py" />
+        <option value="$PROJECT_DIR$/evaluations/sybil_Region_Scenario.py" />
         <option value="$PROJECT_DIR$/evaluations/benchmarks.py" />
-        <option value="$PROJECT_DIR$/evaluations/baseparameters.json" />
         <option value="$PROJECT_DIR$/sybil/votetrust.py" />
+        <option value="$PROJECT_DIR$/evaluations/peripheral_scenario.py" />
+        <option value="$PROJECT_DIR$/attacks/generic_attacks.py" />
+        <option value="$PROJECT_DIR$/tests/calc_tests.py" />
+        <option value="$PROJECT_DIR$/evaluations/votetrust_evaluations.py" />
+        <option value="$PROJECT_DIR$/tests/multiprocess_test.py" />
+        <option value="$PROJECT_DIR$/evaluations/peripheral_scenario_targeted.py" />
+        <option value="$PROJECT_DIR$/evaluations/peripheral_scenario_random.py" />
+        <option value="$PROJECT_DIR$/evaluations/peripheral_scenario_noboost.py" />
+        <option value="$PROJECT_DIR$/evaluations/sybil_region_scenario.py" />
+        <option value="$PROJECT_DIR$/tests/integro_tests.py" />
+        <option value="$PROJECT_DIR$/tests/integro_attack_tests.py" />
+        <option value="$PROJECT_DIR$/evaluations/eval_pickles.py" />
+        <option value="$PROJECT_DIR$/evaluations/scenario_targeted_noboost_P.py" />
+        <option value="$PROJECT_DIR$/util/graph_creation.py" />
+        <option value="$PROJECT_DIR$/evaluations/eval_pickles_fb.py" />
+        <option value="$PROJECT_DIR$/tests/test_facebook_ego.py" />
+        <option value="$PROJECT_DIR$/sybil/sybilframe.py" />
+        <option value="$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py" />
+        <option value="$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py" />
+        <option value="$PROJECT_DIR$/evaluations/parameters.json" />
+        <option value="$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py" />
+        <option value="$PROJECT_DIR$/util/calc.py" />
+        <option value="$PROJECT_DIR$/evaluations/eval_systems.py" />
         <option value="$PROJECT_DIR$/evaluations/eval_cdf.py" />
-        <option value="$PROJECT_DIR$/evaluations/run_experiment.py" />
+        <option value="$PROJECT_DIR$/evaluations/parameters.py" />
         <option value="$PROJECT_DIR$/sybil/integro.py" />
+        <option value="$PROJECT_DIR$/evaluations/run_experiment.py" />
+        <option value="$PROJECT_DIR$/evaluations/baseparameters.json" />
       </list>
     </option>
   </component>
@@ -207,10 +304,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="y" value="27" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -220,46 +316,18 @@
             <id />
           </State>
           <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Code style issuesCSS</id>
-          </State>
-          <State>
-            <id>Control flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>DOM issuesJavaScript</id>
-          </State>
-          <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>Invalid elementsCSS</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>Probable bugsCSS</id>
-          </State>
-          <State>
             <id>Python</id>
           </State>
-          <State>
-            <id>ReST</id>
-          </State>
-          <State>
-            <id>SQL</id>
-          </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -285,6 +353,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -331,19 +400,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pickles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evaluations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_interpreter_path" value="G:/Programme/nodejs/node" />
-    <property name="js.eslint.eslintPackage" value="" />
-    <property name="js-jscs-nodeInterpreter" value="G:\Programme\nodejs\node.exe" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="rank&#9;null&#9;null" />
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
     <UpdatedFiles>
@@ -359,20 +459,31 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/implementations.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/attacks/__pycache__/attacks_votetrust.cpython-35.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/__pycache__/benchmarks.cpython-35.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/__pycache__/eval_systems.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/benchmarks.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/eval_cdf.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/eval_systems.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/parameters.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/run_experiment.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_boosted_david_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_newOrleans_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_newOrleans_SR.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/__pycache__/__init__.cpython-35.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/__pycache__/integro.cpython-35.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/__pycache__/sybilframe.cpython-35.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/__pycache__/votetrust.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/integro.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/votetrust.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/blubs.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/integro_tests.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/util/__pycache__/calc.cpython-35.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/util/__pycache__/graph_creation.cpython-35.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/util/__pycache__/keys.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/calc.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/graph_creation.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -380,7 +491,57 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/vcs.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/bla</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/datasets/facebook-links.txt.anon</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/datasets/newOrleans.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/datasets/newOrleansCon</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/datasets/newOrleansConA</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/__pycache__/parameters.cpython-35.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/baseparameters.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/eval_cdf_boost_vs_noboost.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/pokec.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_boosted_david_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_boosted_facebook_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_boosted_newOrleans_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_noboost_facebook_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_boosted_david_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_boosted_facebook_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_boosted_smallWorld_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_david_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_david_SR.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_facebook_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_facebook_SR.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_newOrleans_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_newOrleans_SR.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_randomboosted_david_P.p</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/extractNewOrleans.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/_psparse</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/_psparse.cpython-35m-x86_64-linux-gnu.so</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/_psparse.so</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/build/temp.linux-x86_64-2.7/cs_gaxpy.o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/build/temp.linux-x86_64-2.7/psparse.o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/build/temp.linux-x86_64-3.5/cs_gaxpy.o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/build/temp.linux-x86_64-3.5/psparse.o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/cs.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/cs_gaxpy.c</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/psparse.c</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/psparse.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/psparse.pyx</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/setup.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/_psparse</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/_psparse.cpython-35m-x86_64-linux-gnu.so</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/_psparse.so</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/build/temp.linux-x86_64-2.7/cs_gaxpy.o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/build/temp.linux-x86_64-2.7/psparse.o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/build/temp.linux-x86_64-3.5/cs_gaxpy.o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/build/temp.linux-x86_64-3.5/psparse.o</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/cs.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/cs_gaxpy.c</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/psparse.c</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/psparse.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/psparse.pyx</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/setup.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -388,6 +549,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/parameters.json</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -469,28 +631,43 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Python.eval_cdf">
-    <configuration default="false" name="Unittest IntegroTests.test_toy_new" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.run_experiment">
+    <configuration default="false" name="scenario_targeted_boosted_P" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="implementations" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/integro_tests.py" />
-      <option name="CLASS_NAME" value="IntegroTests" />
-      <option name="METHOD_NAME" value="test_toy_new" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="parameters" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/parameters.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="eval_cdf" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -511,6 +688,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="eval_cdf_boost_vs_noboost" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/eval_cdf_boost_vs_noboost.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="run_experiment" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -525,42 +720,6 @@
       <module name="implementations" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/run_experiment.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="scenario_random_noboost_P" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="extractNewOrleans" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/extractNewOrleans.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -653,6 +812,7 @@
       <gulpfile />
       <tasks />
       <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
@@ -774,239 +934,183 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest IntegroTests.test_toy_new" />
-      <item index="1" class="java.lang.String" itemvalue="Python.eval_cdf" />
-      <item index="2" class="java.lang.String" itemvalue="Python.run_experiment" />
-      <item index="3" class="java.lang.String" itemvalue="Python.scenario_random_noboost_P" />
-      <item index="4" class="java.lang.String" itemvalue="Python.extractNewOrleans" />
+      <item index="0" class="java.lang.String" itemvalue="Python.scenario_targeted_boosted_P" />
+      <item index="1" class="java.lang.String" itemvalue="Python.parameters" />
+      <item index="2" class="java.lang.String" itemvalue="Python.eval_cdf" />
+      <item index="3" class="java.lang.String" itemvalue="Python.eval_cdf_boost_vs_noboost" />
+      <item index="4" class="java.lang.String" itemvalue="Python.run_experiment" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.eval_cdf" />
-        <item index="1" class="java.lang.String" itemvalue="Python.run_experiment" />
-        <item index="2" class="java.lang.String" itemvalue="Python.extractNewOrleans" />
-        <item index="3" class="java.lang.String" itemvalue="Python.scenario_random_noboost_P" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest IntegroTests.test_toy_new" />
+        <item index="0" class="java.lang.String" itemvalue="Python.run_experiment" />
+        <item index="1" class="java.lang.String" itemvalue="Python.eval_cdf_boost_vs_noboost" />
+        <item index="2" class="java.lang.String" itemvalue="Python.eval_cdf" />
+        <item index="3" class="java.lang.String" itemvalue="Python.parameters" />
+        <item index="4" class="java.lang.String" itemvalue="Python.scenario_targeted_boosted_P" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="497e91ea-7906-4fa1-99d2-a169d07c2020" name="Default" comment="" />
-      <created>1480430886752</created>
+      <changelist id="19cd0809-4433-4eda-b270-22739ebfafcf" name="Default" comment="" />
+      <created>1473601912024</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1480430886752</updated>
+      <updated>1473601912024</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added Votetrust Matrix Mult">
-      <created>1480457443833</created>
+    <task id="LOCAL-00001" summary="Changed scenarios">
+      <created>1479916950126</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1480457443834</updated>
+      <updated>1479916950126</updated>
     </task>
-    <task id="LOCAL-00002" summary="Start sybilframe optimization">
-      <created>1480535715694</created>
+    <task id="LOCAL-00002" summary="Added Pickles">
+      <created>1479917319971</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1480535715694</updated>
+      <updated>1479917319971</updated>
     </task>
-    <task id="LOCAL-00003" summary="added david graph">
-      <created>1480557614774</created>
+    <task id="LOCAL-00003" summary="Unified Parameters">
+      <created>1479923524448</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1480557614774</updated>
+      <updated>1479923524448</updated>
     </task>
-    <task id="LOCAL-00004" summary="ready for cluster">
-      <created>1480980066128</created>
+    <task id="LOCAL-00004" summary="scenarios return return packages">
+      <created>1479923729731</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1480980066128</updated>
+      <updated>1479923729731</updated>
     </task>
-    <task id="LOCAL-00005" summary="ready for cluster">
-      <created>1481121787958</created>
+    <task id="LOCAL-00005" summary="scenarios return return packages">
+      <created>1479923861339</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1481121787958</updated>
+      <updated>1479923861339</updated>
     </task>
-    <task id="LOCAL-00006" summary="fixed integro bug">
-      <created>1481242173125</created>
+    <task id="LOCAL-00006" summary="changed maxRequests for SR">
+      <created>1479924135263</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1481242173125</updated>
+      <updated>1479924135264</updated>
     </task>
-    <task id="LOCAL-00007" summary="fixed integro bug">
-      <created>1481242239550</created>
+    <task id="LOCAL-00007" summary="forgot para setting in targeted peripheral">
+      <created>1479939052066</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1481242239550</updated>
+      <updated>1479939052066</updated>
     </task>
-    <task id="LOCAL-00008" summary="all node labels are integers">
-      <created>1481287249028</created>
+    <task id="LOCAL-00008" summary="Prohibit friendship requests to seeds">
+      <created>1479996323195</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1481287249028</updated>
+      <updated>1479996323195</updated>
     </task>
-    <task id="LOCAL-00009" summary="more integro rounds due to high degree">
-      <created>1481311910624</created>
+    <task id="LOCAL-00009" summary="Improved sybilframe">
+      <created>1480557781692</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1481311910624</updated>
+      <updated>1480557781692</updated>
     </task>
-    <task id="LOCAL-00010" summary="use connected dataset">
-      <created>1481312618715</created>
+    <task id="LOCAL-00010" summary="ready for cluster">
+      <created>1481027044918</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1481312618715</updated>
+      <updated>1481027044918</updated>
     </task>
-    <task id="LOCAL-00011" summary="add con file">
-      <created>1481312802184</created>
+    <task id="LOCAL-00011" summary="added fb graph&#10;">
+      <created>1481027424149</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1481312802184</updated>
+      <updated>1481027424149</updated>
     </task>
-    <task id="LOCAL-00012" summary="fix read in">
-      <created>1481317202413</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1481317202413</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fixed level issues run exp">
-      <created>1481318241399</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1481318241399</updated>
-    </task>
-    <task id="LOCAL-00014" summary="sparse in votetrust">
-      <created>1481318471521</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1481318471521</updated>
-    </task>
-    <task id="LOCAL-00015" summary="sparse in votetrust, fixed">
-      <created>1481318662804</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1481318662804</updated>
-    </task>
-    <task id="LOCAL-00016" summary="hm">
-      <created>1481322551860</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1481322551860</updated>
-    </task>
-    <task id="LOCAL-00017" summary="hm">
-      <created>1481322618980</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1481322618980</updated>
-    </task>
-    <task id="LOCAL-00018" summary="hm">
-      <created>1481322635002</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1481322635002</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_IntegroTests_test_com_v_sib - 2016.12.08 at 19h 21m 06s.xml">
-      <configuration name="Unittest IntegroTests.test_com_v_sib" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 16m 41s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_IntegroTests_test_merge_renumber - 2016.12.08 at 19h 24m 29s.xml">
-      <configuration name="Unittest IntegroTests.test_merge_renumber" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 16m 49s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_IntegroTests_test_toy_new - 2016.12.08 at 19h 21m 13s.xml">
-      <configuration name="Unittest IntegroTests.test_toy_new" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 17m 45s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_IntegroTests_test_toy_new - 2016.12.08 at 19h 22m 47s.xml">
-      <configuration name="Unittest IntegroTests.test_toy_new" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 18m 45s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_IntegroTests_test_toy_new - 2016.12.08 at 19h 22m 59s.xml">
-      <configuration name="Unittest IntegroTests.test_toy_new" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 19m 01s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_IntegroTests_test_toy_new - 2016.12.08 at 19h 27m 26s.xml">
-      <configuration name="Unittest IntegroTests.test_toy_new" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 19m 24s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_IntegroTests_test_toy_new - 2016.12.08 at 19h 27m 52s.xml">
-      <configuration name="Unittest IntegroTests.test_toy_new" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 18h 48m 44s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_IntegroTests_test_toy_new - 2016.12.08 at 19h 28m 30s.xml">
-      <configuration name="Unittest IntegroTests.test_toy_new" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 18h 49m 05s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_sybilframe_tests_test_infer - 2016.12.01 at 14h 49m 22s.xml">
-      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 18h 49m 17s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_sybilframe_tests_test_infer - 2016.12.01 at 14h 49m 56s.xml">
-      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
+    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 18h 50m 58s.xml">
+      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2835821" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39776194" sideWeight="0.50193477" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5212825" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858595" sideWeight="0.45605308" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31739572" sideWeight="0.5566611" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.49806523" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39776194" sideWeight="0.49806523" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26439393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31795716" sideWeight="0.5356061" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38220757" sideWeight="0.47954544" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.4939394" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20263591" sideWeight="0.46439394" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39532295" sideWeight="0.49806523" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1020,407 +1124,393 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Votetrust Matrix Mult" />
-    <MESSAGE value="Start sybilframe optimization" />
-    <MESSAGE value="added david graph" />
+    <MESSAGE value="Changed scenarios" />
+    <MESSAGE value="Added Pickles" />
+    <MESSAGE value="Unified Parameters" />
+    <MESSAGE value="scenarios return return packages" />
+    <MESSAGE value="changed maxRequests for SR" />
+    <MESSAGE value="forgot para setting in targeted peripheral" />
+    <MESSAGE value="Prohibit friendship requests to seeds" />
+    <MESSAGE value="Improved sybilframe" />
     <MESSAGE value="ready for cluster" />
-    <MESSAGE value="fixed integro bug" />
-    <MESSAGE value="all node labels are integers" />
-    <MESSAGE value="more integro rounds due to high degree" />
-    <MESSAGE value="use connected dataset" />
-    <MESSAGE value="add con file" />
-    <MESSAGE value="fix read in" />
-    <MESSAGE value="fixed level issues run exp" />
-    <MESSAGE value="sparse in votetrust" />
-    <MESSAGE value="sparse in votetrust, fixed" />
-    <MESSAGE value="hm" />
-    <option name="LAST_COMMIT_MESSAGE" value="hm" />
+    <MESSAGE value="added fb graph&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fb graph&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/evaluations/eval_cdf.py</url>
-          <line>186</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-          <folding>
-            <marker date="1481059165585" expanded="true" signature="4531:5645" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4531:5675" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4562:5645" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4606:4739" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4622:4739" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4748:4789" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4983:5613" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/readDavid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/benchmarks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/eval_pickles_fb.py">
+    <entry file="file://$PROJECT_DIR$/sybil/votetrust.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/parameters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="321" selection-start-line="2" selection-start-column="321" selection-end-line="2" selection-end-column="321" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/graph_creation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sybil/integro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#462#496#0" expanded="true" />
-          </folding>
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/voteTrust_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7880">
-          <caret line="400" column="34" selection-start-line="400" selection-start-column="34" selection-end-line="400" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/calc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/generator_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/graph_creation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sybil/votetrust.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/generator_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Programme/Anaconda3/Lib/site-packages/networkx/readwrite/edgelist.py" />
     <entry file="file://$PROJECT_DIR$/tests/voteTrust_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="400" column="34" selection-start-line="400" selection-start-column="34" selection-end-line="400" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_noboost_P.py">
+    <entry file="file://$PROJECT_DIR$/sybil/votetrust.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/FINAL_BA_RND_0.3.txt" />
-    <entry file="file://$PROJECT_DIR$/util/graph_creation.py">
+    <entry file="file://$PROJECT_DIR$/results/votetrust/random.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/readDavid.py">
+    <entry file="file://$PROJECT_DIR$/results/votetrust/mostCommon.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="140" selection-start-line="0" selection-start-column="140" selection-end-line="0" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/testMatrixMult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timing/votetrust_timing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/votetrust/trustDist.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/votetrust/seed_attack_turnout.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/votetrust/breadthFirst.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/votetrust/breadthFirst_boosting.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/testpyopencl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attacks/attacks_votetrust.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sybil/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/sybilframe_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/eval_pickles_fb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/eval_pickles.py">
+    <entry file="file://$PROJECT_DIR$/evaluations/integro_evaluations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding>
-            <marker date="1481059165585" expanded="true" signature="4531:5645" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4531:5675" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4562:5645" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4606:4739" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4622:4739" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4748:4789" ph="..." />
-            <marker date="1481059165585" expanded="true" signature="4983:5613" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.5/copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/other_plots.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp/fastMult2.pyx" />
-    <entry file="file:///usr/lib/python3.5/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4212">
-          <caret line="240" column="25" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp/vectorMatrixMult.py" />
-    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/scipy/stats/morestats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/integro_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3762">
-          <caret line="216" column="24" selection-start-line="216" selection-start-column="24" selection-end-line="216" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="221" column="32" selection-start-line="221" selection-start-column="32" selection-end-line="221" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/newOrleans.txt">
+    <entry file="file://$PROJECT_DIR$/tests/voteTrust_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="201" column="14" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/davidGraph.txt">
+    <entry file="file://$PROJECT_DIR$/tests/votetrust_attack_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="44" column="53" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/calc.py">
+    <entry file="file://$PROJECT_DIR$/tests/sybilframe_attack_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/blubs.py">
+    <entry file="file://$PROJECT_DIR$/util/keys.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="14" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/extractNewOrleans.py">
+    <entry file="file://$PROJECT_DIR$/evaluations/votetrust_evaluations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
+    <entry file="file://$PROJECT_DIR$/tests/multiprocess_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/benchmarks.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/calc_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attacks/generic_attacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27018">
+          <caret line="1536" column="0" selection-start-line="1536" selection-start-column="0" selection-end-line="1536" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/peripheral_scenario_targeted.py" />
+    <entry file="file://$PROJECT_DIR$/tests/integro_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integro_attack_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_noboost_P.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2124">
+          <caret line="127" column="27" selection-start-line="127" selection-start-column="27" selection-end-line="127" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/eval_pickles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/eval_pickles_fb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/graph_creation.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_facebook_ego.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sybil/votetrust.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2214">
-          <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+        <state relative-caret-position="324">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3312">
+          <caret line="193" column="37" selection-start-line="193" selection-start-column="37" selection-end-line="193" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/parameters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/calc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <marker date="1481622415804" expanded="false" signature="0:117" placeholder="import ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf_boost_vs_noboost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="162" column="20" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/parameters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-          <folding>
-            <marker date="1481244686665" expanded="true" signature="2188:2331" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/run_experiment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="224" column="35" selection-start-line="224" selection-start-column="35" selection-end-line="224" selection-end-column="35" />
+        <state relative-caret-position="40">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sybil/integro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
-          <folding>
-            <element signature="e#462#496#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-175">
+          <caret line="167" column="16" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/run_experiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

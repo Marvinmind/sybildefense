@@ -38,6 +38,7 @@ class ParameterSettings():
 		self.numDummies = base['numDummies']
 		self.seedsList = base['seedsList']
 		self.seedsStrategy = base['seedStrategy']
+		self.numSeeds = base['numSeeds']
 		self.numSybils = base['numSybils']
 		self.sizeSmallWorld = base['sizeSmallWorld']
 		self.edgesSmallWorld = base['edgesSmallWorld']
