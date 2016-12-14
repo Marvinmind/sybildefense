@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19cd0809-4433-4eda-b270-22739ebfafcf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/res_random_noboost_david_P.p" afterPath="$PROJECT_DIR$/pickles/res_random_noboost_david_P.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/implementations.iml" afterPath="$PROJECT_DIR$/.idea/implementations.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.1, 0.5)PRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.1, 0.5)PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.1, 0.5)SRRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.2, 0.7)PRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.2, 0.7)PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.2, 0.7)SRRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1000PRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1000PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1000SRRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds100PRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds100PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds100SRRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds10PRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds10PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds10SRRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1PRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1SRRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds3PRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds3PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds3SRRand.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.8PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.95PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.999PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.99PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.9PTar.p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/evalRatioInfluence.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/evalSeedInfluence.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/runD.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/runSeedInfluence.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/runSuccessRate.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations/scenario_targeted_noboost_P.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/baseparameters.json" afterPath="$PROJECT_DIR$/evaluations/baseparameters.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/eval_cdf.py" afterPath="$PROJECT_DIR$/evaluations/eval_cdf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/parameters.py" afterPath="$PROJECT_DIR$/evaluations/parameters.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/other_plots.py" afterPath="$PROJECT_DIR$/evaluations/other_plots.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/run_experiment.py" afterPath="$PROJECT_DIR$/evaluations/run_experiment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sybil/integro.py" afterPath="$PROJECT_DIR$/sybil/integro.py" />
     </list>
@@ -37,6 +67,7 @@
     <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weight_setting.coverage" NAME="Unittest IntegroTests.test_weight_setting Coverage Results" MODIFIED="1478825872741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittests_in_IntegroTests.coverage" NAME="Unittests in IntegroTests Coverage Results" MODIFIED="1478615649252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$test_ipyton.coverage" NAME="test_ipyton Coverage Results" MODIFIED="1474040996225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalRatioInfluence.coverage" NAME="evalRatioInfluence Coverage Results" MODIFIED="1481727287205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1478815304136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_mult.coverage" NAME="Unittest VoteTrustTests.test_propagation_mult Coverage Results" MODIFIED="1477416674832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$Unittest_test_boosting_test_smallWorld.coverage" NAME="Unittest test_boosting.test_smallWorld Coverage Results" MODIFIED="1479995524404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -76,7 +107,7 @@
     <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_smallWorld.coverage" NAME="Unittest sybilframe_tests.test_smallWorld Coverage Results" MODIFIED="1478090941253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1479991202623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$scenario_random_noboost_SR.coverage" NAME="scenario_random_noboost_SR Coverage Results" MODIFIED="1480557668914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$run_experiment.coverage" NAME="run_experiment Coverage Results" MODIFIED="1481641497867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$run_experiment.coverage" NAME="run_experiment Coverage Results" MODIFIED="1481720891635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_random.coverage" NAME="Unittest VoteTrustTests.test_random Coverage Results" MODIFIED="1478440837752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_assignment.coverage" NAME="Unittest VoteTrustTests.test_assignment Coverage Results" MODIFIED="1476193042143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_breadth_first.coverage" NAME="Unittest VoteTrustTests.test_breadth_first Coverage Results" MODIFIED="1478440568157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -97,9 +128,12 @@
     <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_getprobs.coverage" NAME="Unittest IntegroTests.test_getprobs Coverage Results" MODIFIED="1478449949428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_boosted_P.coverage" NAME="scenario_targeted_boosted_P Coverage Results" MODIFIED="1481027790087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_rank_toy.coverage" NAME="Unittest IntegroTests.test_rank_toy Coverage Results" MODIFIED="1479991114813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$runD.coverage" NAME="runD Coverage Results" MODIFIED="1481729273742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/sybildefense$parameters.coverage" NAME="parameters Coverage Results" MODIFIED="1481030349521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$runSuccessRate.coverage" NAME="runSuccessRate Coverage Results" MODIFIED="1481725815175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_serious.coverage" NAME="Unittest MyTest.test_serious Coverage Results" MODIFIED="1474322351507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_Sybilframe_attack_tests_test_smallword.coverage" NAME="Unittest Sybilframe_attack_tests.test_smallword Coverage Results" MODIFIED="1478104351523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalSeedInfluence.coverage" NAME="evalSeedInfluence Coverage Results" MODIFIED="1481725274388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$peripheral_scenario_targeted.coverage" NAME="peripheral_scenario_targeted Coverage Results" MODIFIED="1479679106054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_infer.coverage" NAME="Unittest sybilframe_tests.test_infer Coverage Results" MODIFIED="1477734787294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_aggregation.coverage" NAME="Unittest VoteTrustTests.test_aggregation Coverage Results" MODIFIED="1476190236219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -121,33 +155,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scenario_random_noboost_SR.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="47" column="50" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="e#22#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eval_systems.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="eval_cdf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+            <state relative-caret-position="-666">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -158,8 +170,8 @@
       <file leaf-file-name="baseparameters.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -177,54 +189,84 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scenario_targeted_boosted_P.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="162" column="20" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_experiment.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run_experiment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluations/run_experiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1062">
-              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="integro.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sybil/integro.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="167" column="16" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/calc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="-296">
+              <caret line="178" column="36" selection-start-line="178" selection-start-column="36" selection-end-line="178" selection-end-column="36" />
               <folding>
-                <marker date="1481622415804" expanded="false" signature="0:117" placeholder="import ..." />
+                <element signature="e#22#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parameters.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/parameters.py">
+      <file leaf-file-name="votetrust_evaluations.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/votetrust_evaluations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="-978">
+              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runSeedInfluence.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/runSeedInfluence.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-72">
+              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runSuccessRate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/runSuccessRate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-144">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runD.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evaluations/runD.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalRatioInfluence.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalRatioInfluence.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalSeedInfluence.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalSeedInfluence.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -244,11 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/tests.py" />
-        <option value="$PROJECT_DIR$/sybil/test_ipyton.py" />
-        <option value="$PROJECT_DIR$/results/votetrust/random.csv" />
-        <option value="$PROJECT_DIR$/evaluations/votetrust_digest.py" />
-        <option value="$PROJECT_DIR$/timing/votetrust_timing.py" />
         <option value="$PROJECT_DIR$/util/testMatrixMult.py" />
         <option value="$PROJECT_DIR$/tests/voteTrust_test.py" />
         <option value="$PROJECT_DIR$/sybil/test_dist.py" />
@@ -291,9 +328,15 @@
         <option value="$PROJECT_DIR$/evaluations/eval_systems.py" />
         <option value="$PROJECT_DIR$/evaluations/eval_cdf.py" />
         <option value="$PROJECT_DIR$/evaluations/parameters.py" />
-        <option value="$PROJECT_DIR$/sybil/integro.py" />
-        <option value="$PROJECT_DIR$/evaluations/run_experiment.py" />
         <option value="$PROJECT_DIR$/evaluations/baseparameters.json" />
+        <option value="$PROJECT_DIR$/evaluations/evalSeedInfluence.py" />
+        <option value="$PROJECT_DIR$/sybil/integro.py" />
+        <option value="$PROJECT_DIR$/evaluations/other_plots.py" />
+        <option value="$PROJECT_DIR$/evaluations/runSeedInfluence.py" />
+        <option value="$PROJECT_DIR$/evaluations/runSuccessRate.py" />
+        <option value="$PROJECT_DIR$/evaluations/evalRatioInfluence.py" />
+        <option value="$PROJECT_DIR$/evaluations/runD.py" />
+        <option value="$PROJECT_DIR$/evaluations/run_experiment.py" />
       </list>
     </option>
   </component>
@@ -424,6 +467,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pickles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeedInfluence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pickles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RatioInfluence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="evaluations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -444,6 +523,12 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistoryKey" value="rank&#9;null&#9;null" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pickles/RatioInfluence" />
+      <recent name="$PROJECT_DIR$/pickles/SeedInfluence" />
+    </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
     <UpdatedFiles>
@@ -631,81 +716,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Python.run_experiment">
-    <configuration default="false" name="scenario_targeted_boosted_P" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="parameters" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/parameters.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="eval_cdf" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/eval_cdf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="eval_cdf_boost_vs_noboost" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/eval_cdf_boost_vs_noboost.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.runD">
     <configuration default="false" name="run_experiment" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -720,6 +731,78 @@
       <module name="implementations" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/run_experiment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="evalSeedInfluence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalSeedInfluence.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="runSuccessRate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/runSuccessRate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="evalRatioInfluence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalRatioInfluence.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="runD" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/runD.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -934,19 +1017,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.scenario_targeted_boosted_P" />
-      <item index="1" class="java.lang.String" itemvalue="Python.parameters" />
-      <item index="2" class="java.lang.String" itemvalue="Python.eval_cdf" />
-      <item index="3" class="java.lang.String" itemvalue="Python.eval_cdf_boost_vs_noboost" />
-      <item index="4" class="java.lang.String" itemvalue="Python.run_experiment" />
+      <item index="0" class="java.lang.String" itemvalue="Python.run_experiment" />
+      <item index="1" class="java.lang.String" itemvalue="Python.evalSeedInfluence" />
+      <item index="2" class="java.lang.String" itemvalue="Python.runSuccessRate" />
+      <item index="3" class="java.lang.String" itemvalue="Python.evalRatioInfluence" />
+      <item index="4" class="java.lang.String" itemvalue="Python.runD" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.run_experiment" />
-        <item index="1" class="java.lang.String" itemvalue="Python.eval_cdf_boost_vs_noboost" />
-        <item index="2" class="java.lang.String" itemvalue="Python.eval_cdf" />
-        <item index="3" class="java.lang.String" itemvalue="Python.parameters" />
-        <item index="4" class="java.lang.String" itemvalue="Python.scenario_targeted_boosted_P" />
+        <item index="0" class="java.lang.String" itemvalue="Python.runD" />
+        <item index="1" class="java.lang.String" itemvalue="Python.evalRatioInfluence" />
+        <item index="2" class="java.lang.String" itemvalue="Python.runSuccessRate" />
+        <item index="3" class="java.lang.String" itemvalue="Python.evalSeedInfluence" />
+        <item index="4" class="java.lang.String" itemvalue="Python.run_experiment" />
       </list>
     </recent_temporary>
   </component>
@@ -1041,7 +1124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481027424149</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Experiments:&#10;&#10;Seed Influence">
+      <created>1481641815960</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1481641815960</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1087,17 +1177,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26439393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31795716" sideWeight="0.5356061" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30642503" sideWeight="0.5356061" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38220757" sideWeight="0.47954544" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.4939394" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20263591" sideWeight="0.46439394" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38220757" sideWeight="0.47954544" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.4939394" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30642503" sideWeight="0.46439394" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39532295" sideWeight="0.49806523" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1105,7 +1195,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1134,7 +1224,8 @@
     <MESSAGE value="Improved sybilframe" />
     <MESSAGE value="ready for cluster" />
     <MESSAGE value="added fb graph&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added fb graph&#10;" />
+    <MESSAGE value="Experiments:&#10;&#10;Seed Influence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Experiments:&#10;&#10;Seed Influence" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,48 +1234,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sybil/votetrust.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/voteTrust_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sybil/votetrust.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/voteTrust_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sybil/votetrust.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/votetrust/random.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results/votetrust/mostCommon.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1294,13 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/votetrust_evaluations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1430,9 +1472,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="47" column="50" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#43#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1454,13 +1494,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/parameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+        <state relative-caret-position="-666">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="162" column="20" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sybil/integro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="184" column="37" selection-start-line="184" selection-start-column="37" selection-end-line="184" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/other_plots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/votetrust_evaluations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-978">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,43 +1564,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py">
+    <entry file="file://$PROJECT_DIR$/evaluations/runSeedInfluence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="162" column="20" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="-72">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/parameters.py">
+    <entry file="file://$PROJECT_DIR$/evaluations/evalRatioInfluence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sybil/integro.py">
+    <entry file="file://$PROJECT_DIR$/evaluations/evalSeedInfluence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="167" column="16" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="144">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
+    <entry file="file://$PROJECT_DIR$/evaluations/runSuccessRate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-144">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/run_experiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="-296">
+          <caret line="178" column="36" selection-start-line="178" selection-start-column="36" selection-end-line="178" selection-end-column="36" />
+          <folding>
+            <element signature="e#22#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/runD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

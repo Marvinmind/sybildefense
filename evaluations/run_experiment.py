@@ -11,7 +11,11 @@ import numpy as np
 from util import graph_creation
 
 
-def run_experiment(paras, saveAs):
+def run_experiment(paras, saveAs, systems=None):
+	if not systems:
+		print('set systems default')
+		systems = ('integro', 'votetrust', 'sybilframe')
+
 	results_list = []
 	return_package = (results_list, paras)
 
@@ -167,9 +171,12 @@ def run_experiment(paras, saveAs):
 			"determine if systems should be run"
 			if i in paras.evalAt or (not paras.evalAt and paras.evalInterval % i == 0):
 				print('eval')
-				results['integro'].append(eval_systems.eval_system(g_integro, system='integro'))
-				results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
-				results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
+				if 'integro' in systems:
+					results['integro'].append(eval_systems.eval_system(g_integro, system='integro'))
+				elif 'votetrust' in systems:
+					results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
+				elif 'sybilframe' in systems:
+					results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
 				results_list.append(results)
 
 			"Select new victims"
@@ -240,30 +247,8 @@ def run_experiment(paras, saveAs):
 
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
-evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
+#evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
 
-"""
-	Experiment:
-	Determine how the number of seeds influences the performance
 
-	Variations:
-	Number of seeds: 1, 3, 10, 100, 1000
-
-	Systems:
-	All Systems, all scenarios
-
-"""
-for i in (1, 3, 10, 100, 1000):
-	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=True, evalAt=(50,), maxRequests=51, numRepeats=3)
-	paras.numSeeds = i
-	run_experiment(paras, saveAs='seeds{}PTar.p'.format(i))
-
-	paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=False, evalAt=(50,), maxRequests=51, numRepeats=3)
-	paras.numSeeds = i
-	run_experiment(paras, saveAs='seeds{}PRand.p'.format(i))
-
-	paras = parameters.ParameterSettingsSR(graph='facebook', evalAt=(50,), maxRequests=51, numRepeats=3)
-	paras.numSeeds = i
-	run_experiment(paras, saveAs='seeds{}SRRand.p'.format(i))
 
 

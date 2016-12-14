@@ -182,9 +182,10 @@ def get_ranks(g):
 
 def run_integro(g, seeds=None):
 	if seeds == None:
+		print('Default seed placement')
 		seeds = (0,1,2)
 	elif seeds == 'interval':
-		print('jo')
+		print('Interval seed Placement')
 		seeds = [ceil(x*len(g.nodes())/10) for x in range(10)]
 		print(seeds)
 	g_work = g.copy()
