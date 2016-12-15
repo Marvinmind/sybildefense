@@ -10,20 +10,20 @@ graph = 'facebook'
 
 for sys in ('integro', 'votetrust', 'sybilframe'):
 	f, axarr = plt.subplots(3, 2)
-	f.suptitle(sys)
+	f.suptitle('Influence of Acceptance Ratio: '+sys, fontsize=14, weight='bold')
 	for enu, i in enumerate(((0.2,0.7),(0.1, 0.5))):
-		perTar = pickle.load(open('../pickles/RatioInfluence/ratio{}PTar.p'.format(i),'rb'))[0]
-		perRand = pickle.load(open('../pickles/RatioInfluence/ratio{}PRand.p'.format(i),'rb'))[0]
-		sr = pickle.load(open('../pickles/RatioInfluence/ratio{}SRRand.p'.format(i),'rb'))[0]
+		perTar = pickle.load(open('../pickles/ratio/ratio{}PTar.p'.format(i),'rb'))[0]
+		perRand = pickle.load(open('../pickles/ratio/ratio{}PRand.p'.format(i),'rb'))[0]
+		sr = pickle.load(open('../pickles/ratio/ratio{}SRRand.p'.format(i),'rb'))[0]
 
-		paras = pickle.load(open('../pickles/RatioInfluence/ratio{}SRRand.p'.format(i),'rb'))[1]
+		paras = pickle.load(open('../pickles/ratio/ratio{}SRRand.p'.format(i),'rb'))[1]
 
 		ranksPerTar = getMergedRanks(perTar)
 		ranksPerRand = getMergedRanks(perRand)
 		ranksSR = getMergedRanks(sr)
 
 		print(paras.numSybils)
-
+		print(ranksPerTar[sys])
 		"plot tar boosted"
 		x_h = sorted(ranksPerTar[sys][0][:-(paras.numSybils)+3])
 		x_s = sorted(ranksPerTar[sys][0][-(paras.numSybils)+3:])
@@ -83,6 +83,8 @@ for sys in ('integro', 'votetrust', 'sybilframe'):
 
 		axarr[2, enu].set_ylim((0,1.1))
 		axarr[2, enu].set_xlim((-0.1,1.1))
+
+		axarr[0, enu].set_title('Ratio Limits: '+str(i))
 
 		sybil, = axarr[2, enu].plot(x_s, y_s, 'r--', label='sybil')
 		honest, = axarr[2, enu].plot(x_h, y_h, 'b--', label='honest')

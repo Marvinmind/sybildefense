@@ -40,6 +40,8 @@ class ParameterSettings():
 		self.seedsStrategy = base['seedStrategy']
 		self.numSeeds = base['numSeeds']
 		self.numSybils = base['numSybils']
+		self.numVuln = base['numVuln']
+		self.vulnAcceptanceProb = base['vulnAcceptanceProb']
 		self.sizeSmallWorld = base['sizeSmallWorld']
 		self.edgesSmallWorld = base['edgesSmallWorld']
 		self.smallWorldType = base['smallWorldType']
@@ -49,13 +51,12 @@ class ParameterSettings():
 
 class ParameterSettingsSR(ParameterSettings):
 
-	def __init__(self, strategy='random', maxRequests = 501, numRepeats=5, evalInterval=20, evalAt=False, graph='facebook'):
+	def __init__(self, strategy='random', numRepeats=5, evalInterval=20, evalAt=False, graph='facebook'):
 		super(ParameterSettingsSR, self).__init__()
 		
 		self.scenario = 'SR'
 		self.boosted = False
 		self.strategy = strategy
-		self.maxRequests = maxRequests
 		self.numRepeats = numRepeats
 		self.evalInterval = evalInterval
 		self.evalAt = evalAt
@@ -63,11 +64,10 @@ class ParameterSettingsSR(ParameterSettings):
 
 
 class ParameterSettingsP(ParameterSettings):
-	def __init__(self, maxRequests=51, numRepeats=5, evalInterval=2, evalAt=False, graph='facebook', strategy='random', boosted='False'):
+	def __init__(self, numRepeats=5, evalInterval=2, evalAt=False, graph='facebook', strategy='random', boosted='False'):
 		super(ParameterSettingsP, self).__init__()
 
 		self.scenario = 'P'
-		self.maxRequests = maxRequests
 		self.numRepeats = numRepeats
 		self.evalInterval = evalInterval
 		self.evalAt = evalAt

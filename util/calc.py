@@ -77,3 +77,15 @@ def getMergedRanks(b):
 			d['sybilframe'][i] += x.ranks/len(b)
 
 	return d
+
+def getMergedAuc(b):
+	d = {'integro': defaultdict(lambda: 0), 'votetrust': defaultdict(lambda: 0), 'sybilframe':  defaultdict(lambda: 0)}
+	for e in b:
+		for i, x in enumerate(e['integro']):
+			d['integro'][i] += x.auc/len(b)
+		for i, x in enumerate(e['votetrust']):
+			d['votetrust'][i] += x.auc/len(b)
+		for i, x in enumerate(e['sybilframe']):
+			d['sybilframe'][i] += x.auc/len(b)
+
+	return d

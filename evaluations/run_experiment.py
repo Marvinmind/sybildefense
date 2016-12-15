@@ -12,7 +12,7 @@ from util import graph_creation
 
 
 def run_experiment(paras, saveAs, systems=None):
-	if not systems:
+	if systems==None:
 		print('set systems default')
 		systems = ('integro', 'votetrust', 'sybilframe')
 
@@ -131,7 +131,6 @@ def run_experiment(paras, saveAs, systems=None):
 		"create customized graph for each system"
 		g_votetrust = g.copy()
 		g_integro = nx.Graph(g)
-
 		g_sybilframe = nx.DiGraph(g_integro)
 
 
@@ -162,21 +161,21 @@ def run_experiment(paras, saveAs, systems=None):
 					pools_vuln[j].append(r)
 
 		"successively add attack edges"
-		requested = defaultdict(lambda : [])
+		requested = defaultdict(lambda: [])
 
 		"container for results"
 		results = {'integro': [], 'votetrust': [], 'sybilframe': []}
 
-		for i in range(paras.maxRequests):
+		for i in range(max(paras.evalAt)+1):
 			"determine if systems should be run"
 			if i in paras.evalAt or (not paras.evalAt and paras.evalInterval % i == 0):
 				print('eval')
 				if 'integro' in systems:
-					results['integro'].append(eval_systems.eval_system(g_integro, system='integro'))
-				elif 'votetrust' in systems:
-					results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust'))
-				elif 'sybilframe' in systems:
-					results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe'))
+					results['integro'].append(eval_systems.eval_system(g_integro, system='integro', paras=paras))
+				if 'votetrust' in systems:
+					results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust', paras=paras))
+				if 'sybilframe' in systems:
+					results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe', paras=paras))
 				results_list.append(results)
 
 			"Select new victims"
@@ -190,7 +189,7 @@ def run_experiment(paras, saveAs, systems=None):
 
 					elif paras.strategy == 'twoPhase':
 						if len(pools_vuln[s]) > 0:
-							h = pools[s][0]
+							h = pools_vuln[s][0]
 							pools_vuln[s].remove(h)
 							vuln_flag = True
 

@@ -4,21 +4,18 @@ import numpy as np
 from evaluations import benchmarks
 
 
-def eval_system(g, system=None):
+def eval_system(g, system=None, paras=None):
 	seeds = []
 	for i in g.nodes_iter():
 		if g.node[i]['seed'] == 1:
 			seeds.append(i)
 
 	if system == 'integro':
-		#integro.set_weights_and_start_seed(g, seeds=seeds, trust=len(g.nodes()))
 		ranks = integro.run_integro(g, seeds=seeds)
 
 	elif system == 'votetrust':
 		votetrust.vote_assignment(g, seeds)
-		#votetrust.vote_propagation_mat(g, d=0.99)
-		#votetrust.vote_aggregation(g)
-		ranks = votetrust.vote_combined(g, d=0.99)
+		ranks = votetrust.vote_combined(g, paras.d)
 
 	elif system == 'sybilframe':
 		sybilframe.inferPosteriorsEdgeImproveNew(g)

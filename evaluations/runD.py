@@ -18,4 +18,4 @@ for i in (0.8, 0.9, 0.95,  0.99, 0.999):
 	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=True, evalAt=(50,), maxRequests=51, numRepeats=3)
 	paras.d = i
 	paras.numSeeds = 100
-	run_experiment(paras, saveAs='d{}PTar.p'.format(i), systems=('votetrust',))
+	run_experiment(paras, saveAs='./d/d{}PTar.p'.format(i), systems=('votetrust',))

@@ -14,9 +14,11 @@
   "edgesSmallWorld": 4,
   "numDummies" : 5,
   "numSybils" : 100,
+  "numVuln" : 5,
+  "vulnAcceptanceProb" : 0.7,
   "seedsList" : [0, 1, 2, 3],
   "seedStrategy": "random",
-  "numSeeds":1,
+  "numSeeds":100,
   "datasetLocations" :
     {
      "facebook" : "../datasets/facebook_combined.txt",

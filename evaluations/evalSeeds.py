@@ -40,13 +40,13 @@ def getMergedRanks(b):
 
 for sys in ('integro', 'votetrust', 'sybilframe'):
 	f, axarr = plt.subplots(3, 5)
-	f.suptitle(sys)
+	f.suptitle('Influence of Number of Seeds: '+sys, fontsize=14, weight='bold')
 	for enu, i in enumerate((1, 3, 10, 100, 1000)):
-		perTar = pickle.load(open('../pickles/SeedInfluence/seeds{}PTar.p'.format(i),'rb'))[0]
-		perRand = pickle.load(open('../pickles/SeedInfluence/seeds{}PRand.p'.format(i),'rb'))[0]
-		sr = pickle.load(open('../pickles/SeedInfluence/seeds{}SRRand.p'.format(i),'rb'))[0]
+		perTar = pickle.load(open('../pickles/seeds/seeds{}PTar.p'.format(i),'rb'))[0]
+		perRand = pickle.load(open('../pickles/seeds/seeds{}PRand.p'.format(i),'rb'))[0]
+		sr = pickle.load(open('../pickles/seeds/seeds{}SRRand.p'.format(i),'rb'))[0]
 
-		paras = pickle.load(open('../pickles/SeedInfluence/seeds{}SRRand.p'.format(i),'rb'))[1]
+		paras = pickle.load(open('../pickles/seeds/seeds{}SRRand.p'.format(i),'rb'))[1]
 
 		ranksPerTar = getMergedRanks(perTar)
 		ranksPerRand = getMergedRanks(perRand)
@@ -113,6 +113,7 @@ for sys in ('integro', 'votetrust', 'sybilframe'):
 
 		axarr[2, enu].set_ylim((0,1.1))
 		axarr[2, enu].set_xlim((-0.1,1.1))
+		axarr[0, enu].set_title('Number of Seeds: '+str(i))
 
 		sybil, = axarr[2, enu].plot(x_s, y_s, 'r--', label='sybil')
 		honest, = axarr[2, enu].plot(x_h, y_h, 'b--', label='honest')
