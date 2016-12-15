@@ -4,11 +4,15 @@ from util.calc import getSuccessProb
 "Plot success distribution"
 x = list(range(10))
 
-y = [getSuccessProb(z, max=0.8) for z in x]
+y_low = [getSuccessProb(z, start=0.1, max=0.5) for z in x]
+y_high = [getSuccessProb(z, start=0.2, max=0.7) for z in x]
 
-print(y)
-plt.plot(x,y, 'b--')
+plt.plot(x,y_low, 'b--', label='low=0.1, high=0.5')
+plt.plot(x,y_high, 'r-.', label='low=0.2, high=0.7')
+plt.legend()
+
 plt.ylabel('Success Probability')
 plt.xlabel('Number of Common Friends')
 plt.title('Success Probability Function')
+plt.ylim(0,1)
 plt.show()
