@@ -13,15 +13,15 @@ from evaluations.run_experiment import run_experiment
 
 """
 for i in (1, 3, 10, 100, 1000):
-	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=True, evalAt=(50,), maxRequests=51, numRepeats=3)
+	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=True, evalAt=(50,), numRepeats=3)
 	paras.numSeeds = i
 	run_experiment(paras, saveAs='./seeds/seeds{}PTar.p'.format(i))
 
-	paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=False, evalAt=(50,), maxRequests=51, numRepeats=3)
+	paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=False, evalAt=(50,), numRepeats=3)
 	paras.numSeeds = i
 	run_experiment(paras, saveAs='./seeds/seeds{}PRand.p'.format(i))
 
-	paras = parameters.ParameterSettingsSR(graph='facebook', evalAt=(50,), maxRequests=51, numRepeats=3)
+	paras = parameters.ParameterSettingsSR(graph='facebook', evalAt=(50,), numRepeats=3)
 	paras.numSeeds = i
 	run_experiment(paras, saveAs='./seeds/seeds{}SRRand.p'.format(i))
 

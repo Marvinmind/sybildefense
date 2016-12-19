@@ -9,10 +9,10 @@ graph = 'facebook'
 
 
 for sys in ('votetrust', ):
-	f, axarr = plt.subplots(1, 5)
+	f, axarr = plt.subplots(1, 7)
 	f.suptitle('Influence of \'d\' Parameter on Votetrust - Peripheral Targeted ', fontsize=14, weight='bold')
 
-	for enu, i in enumerate((0.8, 0.9, 0.95,  0.99, 0.999)):
+	for enu, i in enumerate((0.7, 0.75, 0.8, 0.9, 0.95,  0.99, 0.999)):
 		perTarAll = pickle.load(open('../pickles/d/d{}PTar.p'.format(i), 'rb'))
 		perTar = perTarAll[0]
 		paras = perTarAll[1]

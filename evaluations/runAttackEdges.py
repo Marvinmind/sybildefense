@@ -18,7 +18,7 @@ from evaluations.run_experiment import run_experiment
 graph = 'facebook'
 evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
 
-"""
+
 paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=True, evalAt=evalIntervals, numRepeats=3)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTar.p')
 
@@ -28,7 +28,7 @@ run_experiment(paras, saveAs='./attackEdges/attackEdgesPRand.p')
 paras = parameters.ParameterSettingsSR(graph=graph, evalAt=evalIntervals, numRepeats=3)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesSRRand.p')
 
-"""
+
 paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=evalIntervals, numRepeats=3)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTarNoboost.p')
 

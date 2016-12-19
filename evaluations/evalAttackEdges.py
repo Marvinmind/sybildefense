@@ -1,6 +1,7 @@
 from util.calc import getMergedAuc
 import pickle
 from matplotlib import pyplot as plt
+from util import setMatplotlib
 
 PRandAll = pickle.load(open('../pickles/attackEdges/attackEdgesPRand.p','rb'))
 PRandRes = PRandAll[0]
@@ -31,7 +32,7 @@ PTarNoboostParas = PTarNoboostAll[1]
 
 f, axarr = plt.subplots(1,5)
 
-f.suptitle('Systems Performance by Number of Attack Edges', fontsize=14, weight='bold')
+f.suptitle('Systems Performance by Number of Attack Edges', weight='bold')
 
 x = [x for x in PRandParas.evalAt]
 
@@ -42,14 +43,14 @@ axarr[0].plot(x, list(PTarAUC['sybilframe'].values()),'k-.', label='SybilFrame')
 axarr[0].set_ylabel('Area Under ROC')
 
 axarr[0].set_ylim((0,1.1))
-axarr[0].set_title('Peripheral Targeted')
+axarr[0].set_title('Peripheral Targeted', loc='left')
 
 axarr[1].plot(x, list(PRandAUC['integro'].values()), 'r-')
 axarr[1].plot(x, list(PRandAUC['votetrust'].values()),'b--')
 axarr[1].plot(x, list(PRandAUC['sybilframe'].values()),'k-.')
 
 axarr[1].set_ylim((0,1.1))
-axarr[1].set_title('Peripheral Random')
+axarr[1].set_title('Peripheral Random', loc='left')
 
 
 axarr[2].plot(x, list(SRRandAUC['integro'].values()), 'r-')
@@ -76,7 +77,7 @@ axarr[4].set_title('Peripheral Two Phase Boosted', loc='left')
 
 
 
-axarr[0].legend(bbox_to_anchor=(0,0.38), loc='upper left', prop={'size':12})
+axarr[0].legend(bbox_to_anchor=(0,0.2), loc='upper left')
 
 
 plt.show()

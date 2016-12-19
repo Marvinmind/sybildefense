@@ -113,9 +113,19 @@ for sys in ('integro', 'votetrust', 'sybilframe'):
 
 		axarr[2, enu].set_ylim((0,1.1))
 		axarr[2, enu].set_xlim((-0.1,1.1))
+
+		axarr[2, enu].plot(x_s, y_s, 'r--', label='sybil')
+		axarr[2, enu].plot(x_h, y_h, 'b--', label='honest')
+
 		axarr[0, enu].set_title('Number of Seeds: '+str(i))
 
-		sybil, = axarr[2, enu].plot(x_s, y_s, 'r--', label='sybil')
-		honest, = axarr[2, enu].plot(x_h, y_h, 'b--', label='honest')
+
+
+		pad = 3
+		rows = ['Peripheral\nTargeted', 'Peripheral\nRandom', 'Sybil Region\nRandom']
+		for ax, row in zip(axarr[:, 0], rows):
+			ax.annotate(row, xy=(0, 0.5), xytext=(-ax.yaxis.labelpad - pad, 0), xycoords=ax.yaxis.label,
+			            textcoords='offset points', size='medium', ha='right', va='center')
+	f.text(.1, .1, 'test')
 
 plt.show()
