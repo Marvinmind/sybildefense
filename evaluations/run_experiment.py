@@ -42,10 +42,11 @@ def run_experiment(paras, saveAs, systems=None):
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
 
-	elif paras.graph == 'david':
+	elif paras.graph in ('david', 'pokec'):
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
+
 
 	nx.set_node_attributes(g_org, 'label', 0)
 	NUM_HONEST = len(g_org.nodes())
@@ -133,7 +134,6 @@ def run_experiment(paras, saveAs, systems=None):
 		g_integro = nx.Graph(g)
 		g_sybilframe = nx.DiGraph(g_integro)
 
-
 		" set edge prob for sybilframe"
 		for start, end in g_sybilframe.edges_iter():
 			if g.node[start]['label'] == g.node[end]['label']:
@@ -206,7 +206,6 @@ def run_experiment(paras, saveAs, systems=None):
 				else:
 					num_common_friends = len(set(g_integro.neighbors(h)).intersection(set(g_integro.neighbors(s))))
 					trust = getAcceptance(num_common_friends)
-				#print('{} {}'.format(s,h))
 				g_votetrust.add_edge(s, h, {'trust': trust})
 				if trust == 1:
 					if paras.strategy in ('breadthFirst', 'twoPhase'):

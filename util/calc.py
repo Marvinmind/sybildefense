@@ -17,12 +17,15 @@ def getSuccessByFriends(f, k=0.3, start=0.2, max=1):
 		return True
 	else:
 		return False
+
+
 def getSuccessByProb(prob):
 	r = random.random()
 	if r < prob:
 		return True
 	else:
 		return False
+
 
 def getSuccessProb(f, k=0.3, start=0.2, max=1):
 	prob = max-(max-start)*exp(-1*k*f)
@@ -42,10 +45,12 @@ def getNodeProbClosure(middle):
 
 	return retFunc
 
+
 def getAcceptanceClosure(min, max):
 	def retFunc(f):
 		return getSuccessByFriends(f, start=min, max=max)
 	return retFunc
+
 
 def get_cdf(v):
 	l = len(v)
@@ -66,6 +71,7 @@ def get_cdf(v):
 
 	return list(v_new)
 
+
 def getMergedRanks(b):
 	d = {'integro': defaultdict(lambda: 0), 'votetrust': defaultdict(lambda: 0), 'sybilframe':  defaultdict(lambda: 0)}
 	for e in b:
@@ -77,6 +83,7 @@ def getMergedRanks(b):
 			d['sybilframe'][i] += x.ranks/len(b)
 
 	return d
+
 
 def getMergedAuc(b):
 	d = {'integro': defaultdict(lambda: 0), 'votetrust': defaultdict(lambda: 0), 'sybilframe':  defaultdict(lambda: 0)}

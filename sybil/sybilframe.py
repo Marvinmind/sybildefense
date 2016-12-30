@@ -228,7 +228,6 @@ def inferPosteriors(g, d=5):
 	for u,v in g.edges():
 		g[u][v][SF_Keys.Message] = defaultdict(lambda: 1)
 	for i in range(d):
-		#print('new round')
 		new_messages = {}
 		for e in g.edges_iter():
 			in_edges = g.in_edges(e[0])
@@ -243,7 +242,6 @@ def inferPosteriors(g, d=5):
 							prod *= g[f[0]][f[1]][SF_Keys.Message][u]
 					message[v] += prod
 			new_messages[e] = normalize(message)
-		#print(message)
 		for f, t in g.edges_iter():
 			g[f][t][SF_Keys.Message] = new_messages[(f,t)]
 
