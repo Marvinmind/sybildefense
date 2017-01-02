@@ -29,56 +29,57 @@ PTarNoboostRes = PTarNoboostAll[0]
 PTarNoboostAUC = getMergedAuc(PTarNoboostRes)
 PTarNoboostParas = PTarNoboostAll[1]
 
-
-f, axarr = plt.subplots(1,5)
-
+f, axarr = plt.subplots(1, 5, figsize=(8.25, 2.5), sharey=True)
 f.suptitle('Systems Performance by Number of Attack Edges', weight='bold')
 
 x = [x for x in PRandParas.evalAt]
 
-
-axarr[0].plot(x, list(PTarAUC['integro'].values()), 'r-', label='Integro')
-axarr[0].plot(x, list(PTarAUC['votetrust'].values()),'b--', label='Votetrust')
-axarr[0].plot(x, list(PTarAUC['sybilframe'].values()),'k-.', label='SybilFrame')
+"SR Random"
+axarr[0].plot(x, list(SRRandAUC['integro'].values()), 'r-', label='Integro')
+axarr[0].plot(x, list(SRRandAUC['votetrust'].values()),'b--', label='Votetrust')
+axarr[0].plot(x, list(SRRandAUC['sybilframe'].values()),'k-.', label='SybilFrame')
 axarr[0].set_ylabel('Area Under ROC')
 
 axarr[0].set_ylim((0,1.1))
-axarr[0].set_title('Peripheral Targeted', loc='left')
+axarr[0].set_title('S.R. Random', loc='left')
 
+"P Random"
 axarr[1].plot(x, list(PRandAUC['integro'].values()), 'r-')
 axarr[1].plot(x, list(PRandAUC['votetrust'].values()),'b--')
 axarr[1].plot(x, list(PRandAUC['sybilframe'].values()),'k-.')
 
-axarr[1].set_ylim((0,1.1))
-axarr[1].set_title('Peripheral Random', loc='left')
+axarr[1].set_ylim((0, 1.1))
+axarr[1].set_title('P. Random', loc='left')
 
 
-axarr[2].plot(x, list(SRRandAUC['integro'].values()), 'r-')
-axarr[2].plot(x, list(SRRandAUC['votetrust'].values()),'b--')
-axarr[2].plot(x, list(SRRandAUC['sybilframe'].values()),'k-.')
-
-axarr[2].set_ylim((0,1.1))
-axarr[2].set_title('Sybil Region Random', loc='left')
+"P Targeted Noboost"
+axarr[2].plot(x, list(PTarNoboostAUC['integro'].values()), 'r-')
+axarr[2].plot(x, list(PTarNoboostAUC['votetrust'].values()),'b--')
+axarr[2].plot(x, list(PTarNoboostAUC['sybilframe'].values()),'k-.')
 axarr[2].set_xlabel('Number of Attack Edges')
 
-axarr[3].plot(x, list(PTarNoboostAUC['integro'].values()), 'r-')
-axarr[3].plot(x, list(PTarNoboostAUC['votetrust'].values()),'b--')
-axarr[3].plot(x, list(PTarNoboostAUC['sybilframe'].values()),'k-.')
+axarr[2].set_ylim((0, 1.1))
+axarr[2].set_title('P. Targeted', loc='left')
 
-axarr[3].set_ylim((0,1.1))
-axarr[3].set_title('Peripheral Targeted Noboost', loc='left')
+"P Targeted Boost"
+axarr[3].plot(x, list(PTarAUC['integro'].values()), 'r-')
+axarr[3].plot(x, list(PTarAUC['votetrust'].values()),'b--')
+axarr[3].plot(x, list(PTarAUC['sybilframe'].values()),'k-.')
 
+axarr[3].set_title('P. Targeted Boost', loc='left')
+axarr[3].set_ylim((0, 1.1))
+
+
+"P Two Phase Boost"
 axarr[4].plot(x, list(PTarTwoPhaseAUC['integro'].values()), 'r-')
 axarr[4].plot(x, list(PTarTwoPhaseAUC['votetrust'].values()),'b--')
 axarr[4].plot(x, list(PTarTwoPhaseAUC['sybilframe'].values()),'k-.')
 
-axarr[4].set_ylim((0,1.1))
-axarr[4].set_title('Peripheral Two Phase Boosted', loc='left')
+axarr[4].set_ylim((0, 1.1))
+axarr[4].set_title('P. Two Phase Boost', loc='left')
+axarr[0].legend(bbox_to_anchor=(0,0.4), loc='upper left')
 
-
-
-axarr[0].legend(bbox_to_anchor=(0,0.2), loc='upper left')
-
-
-plt.show()
+plt.tight_layout()
+f.subplots_adjust(wspace=0.1)
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/AttackEdges.png', format='png')
 

@@ -2,45 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19cd0809-4433-4eda-b270-22739ebfafcf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.1, 0.5)PRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.1, 0.5)PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.1, 0.5)SRRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.2, 0.7)PRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.2, 0.7)PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/RatioInfluence/ratio(0.2, 0.7)SRRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1000PRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1000PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1000SRRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds100PRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds100PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds100SRRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds10PRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds10PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds10SRRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1PRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds1SRRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds3PRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds3PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/SeedInfluence/seeds3SRRand.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.8PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.95PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.999PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.99PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickles/d0.9PTar.p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/evalRatioInfluence.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/evalSeedInfluence.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/runD.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/runSeedInfluence.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluations/runSuccessRate.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/evaluations/scenario_targeted_noboost_P.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/sybilEdgeProb/sybilEdgeProb0.1PRand.p" afterPath="$PROJECT_DIR$/pickles/sybilEdgeProb/sybilEdgeProb0.1PRand.p" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/other_plots.py" afterPath="$PROJECT_DIR$/evaluations/other_plots.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/run_experiment.py" afterPath="$PROJECT_DIR$/evaluations/run_experiment.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sybil/integro.py" afterPath="$PROJECT_DIR$/sybil/integro.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalAttackEdges.py" afterPath="$PROJECT_DIR$/evaluations/evalAttackEdges.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalRatio.py" afterPath="$PROJECT_DIR$/evaluations/evalRatio.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py" afterPath="$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/eval_systems.py" afterPath="$PROJECT_DIR$/evaluations/eval_systems.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" afterPath="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sybil/sybilframe.py" afterPath="$PROJECT_DIR$/sybil/sybilframe.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/setMatplotlib.py" afterPath="$PROJECT_DIR$/util/setMatplotlib.py" />
     </list>
     <ignored path="implementations.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,6 +28,7 @@
     <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_merge_renumber.coverage" NAME="Unittest IntegroTests.test_merge_renumber Coverage Results" MODIFIED="1478820643964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$peripheral_scenario.coverage" NAME="peripheral_scenario Coverage Results" MODIFIED="1479495036270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittests_in_VoteTrustTests.coverage" NAME="Unittests in VoteTrustTests Coverage Results" MODIFIED="1475420795358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$runSybilEdgeProb.coverage" NAME="runSybilEdgeProb Coverage Results" MODIFIED="1483372588782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_authors_attachement.coverage" NAME="Unittest sybilframe_tests.test_authors_attachement Coverage Results" MODIFIED="1478726774910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$testpyopencl.coverage" NAME="testpyopencl Coverage Results" MODIFIED="1478345969781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_base.coverage" NAME="Unittest VoteTrustTests.test_propagation_base Coverage Results" MODIFIED="1477414731043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -104,6 +75,7 @@
     <SUITE FILE_PATH="coverage/sybildefense$test_facebook_ego.coverage" NAME="test_facebook_ego Coverage Results" MODIFIED="1480461294055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_weight_setting.coverage" NAME="Unittest MyTest.test_weight_setting Coverage Results" MODIFIED="1474301186404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_run.coverage" NAME="Unittest VoteTrustTests.test_run Coverage Results" MODIFIED="1476297093422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalRatio.coverage" NAME="evalRatio Coverage Results" MODIFIED="1483371968669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_smallWorld.coverage" NAME="Unittest sybilframe_tests.test_smallWorld Coverage Results" MODIFIED="1478090941253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1479991202623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$scenario_random_noboost_SR.coverage" NAME="scenario_random_noboost_SR Coverage Results" MODIFIED="1480557668914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
@@ -118,6 +90,7 @@
     <SUITE FILE_PATH="coverage/sybildefense$eval_cdf.coverage" NAME="eval_cdf Coverage Results" MODIFIED="1481624926091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_collusion_once.coverage" NAME="Unittest VoteTrustTests.test_collusion_once Coverage Results" MODIFIED="1476560131850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test.coverage" NAME="Unittest VoteTrustTests.test Coverage Results" MODIFIED="1477090453075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalSybilEdgeProb.coverage" NAME="evalSybilEdgeProb Coverage Results" MODIFIED="1483372499952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_noboost_P.coverage" NAME="scenario_targeted_noboost_P Coverage Results" MODIFIED="1480014232260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_transition_matrix.coverage" NAME="Unittest IntegroTests.test_transition_matrix Coverage Results" MODIFIED="1479991194911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_peripheral.coverage" NAME="Unittest VoteTrustTests.test_peripheral Coverage Results" MODIFIED="1476530130850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -131,6 +104,7 @@
     <SUITE FILE_PATH="coverage/sybildefense$runD.coverage" NAME="runD Coverage Results" MODIFIED="1481729273742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/sybildefense$parameters.coverage" NAME="parameters Coverage Results" MODIFIED="1481030349521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/sybildefense$runSuccessRate.coverage" NAME="runSuccessRate Coverage Results" MODIFIED="1481725815175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalAttackEdges.coverage" NAME="evalAttackEdges Coverage Results" MODIFIED="1483368439581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_serious.coverage" NAME="Unittest MyTest.test_serious Coverage Results" MODIFIED="1474322351507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_Sybilframe_attack_tests_test_smallword.coverage" NAME="Unittest Sybilframe_attack_tests.test_smallword Coverage Results" MODIFIED="1478104351523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$evalSeedInfluence.coverage" NAME="evalSeedInfluence Coverage Results" MODIFIED="1481725274388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
@@ -155,45 +129,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="eval_cdf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-666">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baseparameters.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eval_cdf_boost_vs_noboost.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf_boost_vs_noboost.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="run_experiment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluations/run_experiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-296">
-              <caret line="178" column="36" selection-start-line="178" selection-start-column="36" selection-end-line="178" selection-end-column="36" />
+            <state relative-caret-position="3024">
+              <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
               <folding>
                 <element signature="e#22#35#0" expanded="true" />
               </folding>
@@ -201,57 +141,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="votetrust_evaluations.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/votetrust_evaluations.py">
+      <file leaf-file-name="runSeedInfluence.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/runSeedInfluence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-978">
-              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="72">
+              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+                <marker date="1483355668875" expanded="true" signature="296:885" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalAttackEdges.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdges.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-434">
+              <caret line="47" column="15" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sybilframe.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="150" column="21" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runSeedInfluence.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/runSeedInfluence.py">
+      <file leaf-file-name="eval_systems.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runSuccessRate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/runSuccessRate.py">
+      <file leaf-file-name="evalRatio.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalRatio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runD.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/evaluations/runD.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evalRatioInfluence.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/evalRatioInfluence.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="282">
+              <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -259,14 +198,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evalSeedInfluence.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluations/evalSeedInfluence.py">
+      <file leaf-file-name="evalSybilEdgeProb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runSybilEdgeProb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/runSybilEdgeProb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runAttackEdges.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/runAttackEdges.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-686">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setMatplotlib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/setMatplotlib.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -286,11 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/util/testMatrixMult.py" />
-        <option value="$PROJECT_DIR$/tests/voteTrust_test.py" />
-        <option value="$PROJECT_DIR$/sybil/test_dist.py" />
-        <option value="$PROJECT_DIR$/results/votetrust/breadthFirst_boosting.csv" />
-        <option value="$PROJECT_DIR$/results/votetrust/breadthFirst.csv" />
         <option value="$PROJECT_DIR$/tests/testpyopencl.py" />
         <option value="$PROJECT_DIR$/evaluations/votetrust.py" />
         <option value="$PROJECT_DIR$/tests/sybilframe_attack_tests.py" />
@@ -319,13 +287,11 @@
         <option value="$PROJECT_DIR$/util/graph_creation.py" />
         <option value="$PROJECT_DIR$/evaluations/eval_pickles_fb.py" />
         <option value="$PROJECT_DIR$/tests/test_facebook_ego.py" />
-        <option value="$PROJECT_DIR$/sybil/sybilframe.py" />
         <option value="$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py" />
         <option value="$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py" />
         <option value="$PROJECT_DIR$/evaluations/parameters.json" />
         <option value="$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py" />
         <option value="$PROJECT_DIR$/util/calc.py" />
-        <option value="$PROJECT_DIR$/evaluations/eval_systems.py" />
         <option value="$PROJECT_DIR$/evaluations/eval_cdf.py" />
         <option value="$PROJECT_DIR$/evaluations/parameters.py" />
         <option value="$PROJECT_DIR$/evaluations/baseparameters.json" />
@@ -335,8 +301,15 @@
         <option value="$PROJECT_DIR$/evaluations/runSeedInfluence.py" />
         <option value="$PROJECT_DIR$/evaluations/runSuccessRate.py" />
         <option value="$PROJECT_DIR$/evaluations/evalRatioInfluence.py" />
-        <option value="$PROJECT_DIR$/evaluations/runD.py" />
         <option value="$PROJECT_DIR$/evaluations/run_experiment.py" />
+        <option value="$PROJECT_DIR$/evaluations/runD.py" />
+        <option value="$PROJECT_DIR$/util/setMatplotlib.py" />
+        <option value="$PROJECT_DIR$/evaluations/evalAttackEdges.py" />
+        <option value="$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py" />
+        <option value="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" />
+        <option value="$PROJECT_DIR$/evaluations/evalRatio.py" />
+        <option value="$PROJECT_DIR$/evaluations/eval_systems.py" />
+        <option value="$PROJECT_DIR$/sybil/sybilframe.py" />
       </list>
     </option>
   </component>
@@ -396,119 +369,10 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pickles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pickles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeedInfluence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pickles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RatioInfluence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sybildefense" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="evaluations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,7 +385,6 @@
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistoryKey" value="rank&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
@@ -530,265 +393,7 @@
       <recent name="$PROJECT_DIR$/pickles/SeedInfluence" />
     </key>
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/implementations.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/attacks/__pycache__/attacks_votetrust.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/__pycache__/benchmarks.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/__pycache__/eval_systems.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/benchmarks.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/eval_cdf.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/eval_systems.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/parameters.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/run_experiment.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/__pycache__/__init__.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/__pycache__/integro.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/__pycache__/sybilframe.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/__pycache__/votetrust.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/integro.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/sybil/votetrust.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/blubs.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/tests/integro_tests.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/__pycache__/calc.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/__pycache__/graph_creation.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/__pycache__/keys.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/calc.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/graph_creation.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/vcs.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bla</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/datasets/facebook-links.txt.anon</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/datasets/newOrleans.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/datasets/newOrleansCon</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/datasets/newOrleansConA</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/__pycache__/parameters.cpython-35.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/baseparameters.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/eval_cdf_boost_vs_noboost.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/pokec.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_boosted_david_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_boosted_facebook_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_boosted_newOrleans_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_breadthFirst_noboost_facebook_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_boosted_david_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_boosted_facebook_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_boosted_smallWorld_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_david_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_david_SR.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_facebook_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_facebook_SR.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_newOrleans_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_random_noboost_newOrleans_SR.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pickles/res_randomboosted_david_P.p</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/extractNewOrleans.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/_psparse</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/_psparse.cpython-35m-x86_64-linux-gnu.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/_psparse.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/build/temp.linux-x86_64-2.7/cs_gaxpy.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/build/temp.linux-x86_64-2.7/psparse.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/build/temp.linux-x86_64-3.5/cs_gaxpy.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/build/temp.linux-x86_64-3.5/psparse.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/cs.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/cs_gaxpy.c</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/psparse.c</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/psparse.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/psparse.pyx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/6019670-8d2f3a551a4a0263aa5b8979cbb723e76c86f513/setup.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/_psparse</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/_psparse.cpython-35m-x86_64-linux-gnu.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/_psparse.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/build/temp.linux-x86_64-2.7/cs_gaxpy.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/build/temp.linux-x86_64-2.7/psparse.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/build/temp.linux-x86_64-3.5/cs_gaxpy.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/build/temp.linux-x86_64-3.5/psparse.o</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/cs.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/cs_gaxpy.c</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/psparse.c</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/psparse.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/psparse.pyx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/util/sparsemult/setup.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/evaluations/parameters.json</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
-  <component name="RunManager" selected="Python.runD">
-    <configuration default="false" name="run_experiment" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/run_experiment.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="evalSeedInfluence" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalSeedInfluence.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="runSuccessRate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/runSuccessRate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="evalRatioInfluence" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalRatioInfluence.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.runSybilEdgeProb">
     <configuration default="false" name="runD" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -803,6 +408,78 @@
       <module name="implementations" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/runD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="evalAttackEdges" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalAttackEdges.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="evalRatio" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalRatio.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="runSybilEdgeProb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="evalSybilEdgeProb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -1017,19 +694,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.run_experiment" />
-      <item index="1" class="java.lang.String" itemvalue="Python.evalSeedInfluence" />
-      <item index="2" class="java.lang.String" itemvalue="Python.runSuccessRate" />
-      <item index="3" class="java.lang.String" itemvalue="Python.evalRatioInfluence" />
-      <item index="4" class="java.lang.String" itemvalue="Python.runD" />
+      <item index="0" class="java.lang.String" itemvalue="Python.runD" />
+      <item index="1" class="java.lang.String" itemvalue="Python.evalAttackEdges" />
+      <item index="2" class="java.lang.String" itemvalue="Python.evalRatio" />
+      <item index="3" class="java.lang.String" itemvalue="Python.runSybilEdgeProb" />
+      <item index="4" class="java.lang.String" itemvalue="Python.evalSybilEdgeProb" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.runD" />
-        <item index="1" class="java.lang.String" itemvalue="Python.evalRatioInfluence" />
-        <item index="2" class="java.lang.String" itemvalue="Python.runSuccessRate" />
-        <item index="3" class="java.lang.String" itemvalue="Python.evalSeedInfluence" />
-        <item index="4" class="java.lang.String" itemvalue="Python.run_experiment" />
+        <item index="0" class="java.lang.String" itemvalue="Python.runSybilEdgeProb" />
+        <item index="1" class="java.lang.String" itemvalue="Python.evalSybilEdgeProb" />
+        <item index="2" class="java.lang.String" itemvalue="Python.evalRatio" />
+        <item index="3" class="java.lang.String" itemvalue="Python.evalAttackEdges" />
+        <item index="4" class="java.lang.String" itemvalue="Python.runD" />
       </list>
     </recent_temporary>
   </component>
@@ -1131,7 +808,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481641815960</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Change back to PC">
+      <created>1481730473284</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1481730473285</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1177,15 +861,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2530303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30642503" sideWeight="0.5356061" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38220757" sideWeight="0.47954544" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.4939394" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30642503" sideWeight="0.46439394" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30642503" sideWeight="0.46439394" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1201,6 +885,29 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30642503" sideWeight="0.5356061" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38220757" sideWeight="0.47954544" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.4939394" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30642503" sideWeight="0.46439394" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2530303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39532295" sideWeight="0.49806523" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1225,7 +932,8 @@
     <MESSAGE value="ready for cluster" />
     <MESSAGE value="added fb graph&#10;" />
     <MESSAGE value="Experiments:&#10;&#10;Seed Influence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Experiments:&#10;&#10;Seed Influence" />
+    <MESSAGE value="Change back to PC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change back to PC" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1234,48 +942,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/results/votetrust/mostCommon.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="140" selection-start-line="0" selection-start-column="140" selection-end-line="0" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/testMatrixMult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timing/votetrust_timing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/votetrust/trustDist.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/votetrust/seed_attack_turnout.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/votetrust/breadthFirst.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results/votetrust/breadthFirst_boosting.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1403,13 +1069,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_noboost_P.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2124">
-          <caret line="127" column="27" selection-start-line="127" selection-start-column="27" selection-end-line="127" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_noboost_P.py" />
     <entry file="file://$PROJECT_DIR$/evaluations/eval_pickles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1445,51 +1105,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="193" column="37" selection-start-line="193" selection-start-column="37" selection-end-line="193" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/parameters.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="21" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_P.py" />
+    <entry file="file://$PROJECT_DIR$/evaluations/parameters.json" />
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_random_noboost_SR.py" />
     <entry file="file://$PROJECT_DIR$/util/calc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <marker date="1481622415804" expanded="false" signature="0:117" placeholder="import ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1504,27 +1126,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-666">
+        <state relative-caret-position="126">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="162" column="20" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/scenario_targeted_boosted_P.py" />
     <entry file="file://$PROJECT_DIR$/sybil/integro.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="184" column="37" selection-start-line="184" selection-start-column="37" selection-end-line="184" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1532,9 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1548,7 +1159,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/votetrust_evaluations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-978">
+        <state relative-caret-position="972">
           <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
           <folding />
         </state>
@@ -1556,7 +1167,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/eval_cdf_boost_vs_noboost.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="90">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
@@ -1566,48 +1177,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/runSeedInfluence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
+        <state relative-caret-position="72">
           <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
+            <marker date="1483355668875" expanded="true" signature="296:885" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/evalRatioInfluence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="234">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/evalSeedInfluence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="72">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/runSuccessRate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
+        <state relative-caret-position="108">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/run_experiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="178" column="36" selection-start-line="178" selection-start-column="36" selection-end-line="178" selection-end-column="36" />
+        <state relative-caret-position="3024">
+          <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
           </folding>
@@ -1616,11 +1222,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/runD.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#34#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/setMatplotlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/runAttackEdges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-686">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-434">
+          <caret line="47" column="15" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalRatio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/eval_systems.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/runSybilEdgeProb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="150" column="21" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

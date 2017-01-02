@@ -20,6 +20,12 @@ def eval_system(g, system=None, paras=None):
 	elif system == 'sybilframe':
 		sybilframe.inferPosteriorsEdgeImproveNew(g)
 		ranks = sybilframe.getRanks(g)
+		print('ranks from impro:')
+		print(ranks)
+		sybilframe.inferPosteriorsEdgeImprove(g)
+		ranks = sybilframe.getRanks(g)
+		print('ranks old:')
+		print(ranks)
 
 
 	real = [g.node[i]['label'] for i in g.nodes_iter()]

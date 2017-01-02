@@ -100,6 +100,7 @@ def inferPosteriorsParallel(g, d=5):
 def inferPosteriorsEdgeImprove(g, d=5):
 	for u,v in g.edges():
 		g[u][v][SF_Keys.Message] = defaultdict(lambda: 1)
+
 	for i in range(d):
 		#print('new round')
 		new_messages = {}
@@ -140,6 +141,7 @@ def inferPosteriorsEdgeImprove(g, d=5):
 		g.node[n][SF_Keys.Belief] = belief
 
 def inferPosteriorsEdgeImproveNew(g, d=5):
+	graphHealthCheck(g)
 	numNodes = len(g.nodes())
 
 	"Messages"
@@ -284,73 +286,7 @@ def normalize(message):
 
 	return message
 
-def jaccard_index(g,u,v):
-	n_u = g.neighbors(u)
-	n_v = g.neighbors(v)
 
-	len_intersect = len(set(n_u).intersection(set(n_v)))
-	return len_intersect/len(set(n_u).union(set(n_v)))
-
-def get_edge_priors_linreg(g):
-	positives = []
-	negatives = []
-	for e in g.edges():
-		index = jaccard_index(g,e[0],e[1])
-		if g.node[e[0]]['label'] == g.node[e[1]]['label']:
-			positives.append(index)
-		else:
-			negatives.append(index)
-	negatives = negatives*1000
-	num_positive = len(positives)
-	num_negative = len(negatives)
-
-	positives.extend(negatives)
-	model = linmod.LogisticRegression()
-	y = list([1]*num_positive)
-	y.extend([0]*num_negative)
-	y = np.array(y).astype(np.float)
-	x = np.array(positives)
-	x = x.reshape((len(x),1))
-
-	model.fit(x,y)
-	for e in g.edges():
-		index = jaccard_index(g,e[0],e[1])
-		g[e[0]][e[1]][SF_Keys.Potential] = create_edge_func(model.predict(np.array(index)))
-	#samples = np.array([0.0,0.9]).reshape((2,1))
-	#print(model.predict_proba(samples))
-
-def train_edge_classifier(n, d):
-	NUM_NODES = 4000
-	NUM_SYBILS = 1
-	g = nx.watts_strogatz_graph(NUM_NODES, n, d)
-	""" labels: 0-> honest 1-> sybil"""
-	nx.set_node_attributes(g, 'label', 0)
-
-	for i in range(200):
-		attacks_votetrust.attack_most_common_friends(g, 40, mode='strict', system='sybilframe')
-
-	positives = []
-	negatives = []
-	for e in g.edges():
-		index = jaccard_index(g,e[0],e[1])
-		if g.node[e[0]]['label'] == g.node[e[1]]['label']:
-			positives.append(index)
-		else:
-			negatives.append(index)
-	model = linmod.LogisticRegression()
-	num_positive = len(positives)
-	num_negative = len(negatives)
-	positives.extend(negatives)
-
-	y = list([1]*num_positive)
-	y.extend([0]*num_negative)
-	y = np.array(y).astype(np.float)
-	x = np.array(positives)
-	x = x.reshape((len(x),1))
-	print(x.shape)
-	print(y.shape)
-	model.fit(x,y)
-	return model
 
 def getRanks(g):
 	ranks = []
@@ -358,3 +294,18 @@ def getRanks(g):
 		ranks.append(g.node[i][SF_Keys.Belief][1])
 	return np.array(ranks)
 
+def graphHealthCheck(g):
+	message = []
+	for n, d in g.nodes(data=True):
+		if g.degree(n)==0:
+			message.append = 'node has zero degree: {}'.format(n)
+		if d[SF_Keys.Potential](1) <= 0 or d[SF_Keys.Potential](-1) <= 0:
+			message.append = 'node has zero or smaller node pot: {} {}'.format(n, d[SF_Keys.Potential])
+	for start, end, d in g.edges(data=True):
+		if d[SF_Keys.Potential](0,0) <= 0 or d[SF_Keys.Potential](0,1) <= 0 or d[SF_Keys.Potential](1,0) <= 0 or d[SF_Keys.Potential](1,1) <= 0:
+			message.append = 'edge has zero or smaller edge pot: {} {}'.format((start, end), d[SF_Keys.Potential])
+
+	if len(message) == 0:
+		print('graph healthy')
+	else:
+		print(message)
