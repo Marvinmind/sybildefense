@@ -6,11 +6,11 @@ from util.calc import get_cdf, getMergedRanks
 graph = 'facebook'
 sys = 'sybilframe'
 
-f, axarr = plt.subplots(1, 3)
+f, axarr = plt.subplots(1, 4)
 f.suptitle('Sybilframe Edge Prior Influence - - Peripheral Targeted', fontsize=14, weight='bold')
 
-for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
-	perTarAll = pickle.load(open('../pickles/sybilEdgeProb/sybilEdgeProb{}PRand.p'.format(i), 'rb'))
+for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
+	perTarAll = pickle.load(open('../pickles/sybilEdgeProb/sybilEdgeProb{}PTar.p'.format(i), 'rb'))
 	perTar = perTarAll[0]
 	paras = perTarAll[1]
 
@@ -43,5 +43,6 @@ for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
 	axarr[enu].plot(x_s, y_s, 'r--')
 	axarr[enu].plot(x_h, y_h, 'b--')
 
+plt.tight_layout()
 
 plt.show()

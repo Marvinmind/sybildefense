@@ -2,6 +2,7 @@ from sybil import integro, votetrust, sybilframe
 from scipy import stats
 import numpy as np
 from evaluations import benchmarks
+import time
 
 
 def eval_system(g, system=None, paras=None):
@@ -20,18 +21,11 @@ def eval_system(g, system=None, paras=None):
 	elif system == 'sybilframe':
 		sybilframe.inferPosteriorsEdgeImproveNew(g)
 		ranks = sybilframe.getRanks(g)
-		print('ranks from impro:')
-		print(ranks)
-		sybilframe.inferPosteriorsEdgeImprove(g)
-		ranks = sybilframe.getRanks(g)
-		print('ranks old:')
-		print(ranks)
-
 
 	real = [g.node[i]['label'] for i in g.nodes_iter()]
 	b = benchmarks.Benchmarks(real, ranks)
 	g_stripped = g.copy()
-
+	"""
 	for n in g_stripped.nodes_iter():
 		attr = tuple(g_stripped.node[n].keys())
 		for k in attr:
@@ -42,6 +36,6 @@ def eval_system(g, system=None, paras=None):
 		attr = tuple(g_stripped[x][y].keys())
 		for k in attr:
 			del g_stripped[x][y][k]
-
+	"""
 	#b.graph = g_stripped
 	return b

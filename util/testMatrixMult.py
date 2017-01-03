@@ -3,6 +3,7 @@ import pyopencl as cl
 import numpy as np
 import numpy.linalg as la
 from time import clock
+from scipy import sparse
 
 def mult(matrix1, matrix2):
 	ctx = cl.create_some_context()
@@ -48,4 +49,32 @@ def mult(matrix1, matrix2):
 a = np.array([[1,2],[2,3]])
 b = np.array([[1,2],[2,3]])
 
-mult(a,b)
+#mult(a,b)
+
+def wptr(M, empty_val=1):
+	res = np.multiply.reduceat(M.data, M.indptr[:-1])
+	mask = np.diff(M.indptr)==0
+	res[mask] = empty_val
+	return res
+
+oneM = np.array([[-1,2,0,0],[0,0,0,0],[2,0,3,0],[4,5,6,0],[1,9,0,2]])
+print(oneM)
+oneM = np.array([[1,2,0,0],[0,0,0,0],[2,0,3,0]])
+print(oneM)
+oneM = sparse.csc_matrix(oneM)
+
+r, c, v = sparse.find(oneM)
+out = np.zeros(oneM.shape[0], dtype=oneM.dtype)
+unqr, shift_idx = np.unique(r, return_index=True)
+out[unqr] = np.multiply.reduceat(v, shift_idx)
+oneMV = out
+
+print('go')
+print(oneMV)
+print(wptr(oneM))
+
+oneMV = np.exp(np.bincount(r, np.log(v), minlength=oneM.shape[0]))
+oneMV[np.setdiff1d(np.arange(oneMV.shape[0]), r)] = 0
+
+print(oneMV)
+

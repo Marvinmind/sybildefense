@@ -20,7 +20,7 @@
   "seedStrategy": "random",
   "numSeeds":100,
   "datasetLocations" :
-    {
+    { 
      "facebook" : "../datasets/facebook_combined.txt",
       "david" : "../datasets/davidGraph.txt",
       "newOrleans" : "../datasets/newOrleansCon",

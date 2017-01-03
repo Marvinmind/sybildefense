@@ -6,6 +6,7 @@ from sybil import sybilframe, integro
 from util import graph_creation
 import random
 from util.keys import SF_Keys
+from evaluations import eval_systems
 
 
 
@@ -42,10 +43,14 @@ class sybilframe_tests(unittest.TestCase):
 		g.node[4][SF_Keys.Potential] = sybilframe.create_node_func(0.9)
 
 		g = nx.DiGraph(g)
-		sybilframe.inferPosteriorsEdgeImproveNew(g, 4)
+		nx.set_node_attributes(g, 'seed', 0)
+		nx.set_node_attributes(g, 'label', 0)
 
-		print(g.node[0][SF_Keys.Potential](1))
-		print(g.node)
+		eval_systems.eval_system(g, system='sybilframe')
+		#sybilframe.inferPosteriorsEdgeImproveNew(g, 4)
+
+		#print(g.node[0][SF_Keys.Potential](1))
+		#print(g.node)
 
 	def test_smallWorld(self):
 		NUM_NODES = 2000
