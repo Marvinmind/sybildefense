@@ -11,7 +11,7 @@ f, axarr = plt.subplots(4, 1, figsize=(3.5, 6), sharex=True)
 f.suptitle('Sybilframe Edge Prior Influence', weight='bold')
 
 for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
-	perTarAll = pickle.load(open('../pickles/sybilEdgeProb/sybilEdgeProb{}PTar.p'.format(i), 'rb'))
+	perTarAll = pickle.load(open('../pickles/sybilEdgeProb/sybilEdgeProb{}PTardavid.p'.format(i), 'rb'))
 	perTar = perTarAll[0]
 	paras = perTarAll[1]
 
@@ -43,5 +43,5 @@ for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
 axarr[3].legend(loc='upper left')
 plt.tight_layout()
 plt.subplots_adjust(top=0.94)
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/EdgeProb.png', format='png', dpi=900)
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/EdgeProb.pdf', format='pdf')
 #plt.show()

@@ -19,11 +19,11 @@ import warnings
 
 """
 
-
+graph = 'facebook'
 for i in (0.1, 0.3, 0.5, 0.6):
 	print(i)
-	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=False, evalAt=(50,), numRepeats=3)
+	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=(50,), numRepeats=5)
 	paras.edgeProbSybil = 1-i
 	paras.edgeProbNonSybil = 0.1
 	paras.numSeeds = 100
-	run_experiment(paras, saveAs='./sybilEdgeProb/sybilEdgeProb{}PTar.p'.format(i), systems=('sybilframe',))
+	run_experiment(paras, saveAs='./sybilEdgeProb/sybilEdgeProb{}PTar{}.p'.format(i, graph), systems=('sybilframe',))

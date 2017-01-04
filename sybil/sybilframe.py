@@ -80,10 +80,10 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		oneP[n] = data[SF_Keys.Potential](1)
 		zeroP[n] = data[SF_Keys.Potential](-1)
 
-	zeroM = sparse.csc_matrix(zeroM, dtype='float128')
-	oneM = sparse.csc_matrix(oneM, dtype='float128')
-	sameP = sparse.csc_matrix(sameP, dtype='float128')
-	diffP = sparse.csc_matrix(diffP, dtype='float128')
+	zeroM = sparse.csc_matrix(zeroM, dtype='float64')
+	oneM = sparse.csc_matrix(oneM, dtype='float64')
+	sameP = sparse.csc_matrix(sameP, dtype='float64')
+	diffP = sparse.csc_matrix(diffP, dtype='float64')
 
 
 	for i in range(d):

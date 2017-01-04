@@ -41,7 +41,6 @@ def run_experiment(paras, saveAs, systems=None):
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph])
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
-
 	elif paras.graph in ('david', 'pokec'):
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
 		g_org = nx.convert_node_labels_to_integers(g_org)
@@ -130,18 +129,22 @@ def run_experiment(paras, saveAs, systems=None):
 			g.node[s]['seed'] = 1
 
 		"create customized graph for each system"
-		g_votetrust = g.copy()
-		g_integro = nx.Graph(g)
-		g_sybilframe = nx.DiGraph(g_integro)
+		if 'votetrust' in systems:
+			g_votetrust = g.copy()
+		if 'integro' in systems:
+			g_integro = nx.Graph(g)
+		if 'sybilframe' in systems:
+			g_sybilframe = nx.DiGraph(g)
 
 		" set edge prob for sybilframe"
-		for start, end in g_sybilframe.edges_iter():
-			if g.node[start]['label'] == g.node[end]['label']:
-				prob = getNonSybilEdgeProb()
-			else:
-				# print('ATTACK EDGE!!')
-				prob = getSybilEdgeProb()
-			g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
+		if 'sybilframe' in systems:
+			for start, end in g_sybilframe.edges_iter():
+				if g.node[start]['label'] == g.node[end]['label']:
+					prob = getNonSybilEdgeProb()
+				else:
+					# print('ATTACK EDGE!!')
+					prob = getSybilEdgeProb()
+				g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
 
 		"set pool for breadth first"
 		if paras.strategy == 'twoPhase' or paras.strategy == "breadthFirst":
@@ -204,12 +207,13 @@ def run_experiment(paras, saveAs, systems=None):
 					trust = calc.getSuccessByProb(paras.vulnAcceptanceProb)
 
 				else:
-					num_common_friends = len(set(g_integro.neighbors(h)).intersection(set(g_integro.neighbors(s))))
+					num_common_friends = len(set(g.neighbors(h)).intersection(set(g.neighbors(s))))
 					trust = getAcceptance(num_common_friends)
-				g_votetrust.add_edge(s, h, {'trust': trust})
+				if 'votetrust' in systems:
+					g_votetrust.add_edge(s, h, {'trust': trust})
 				if trust == 1:
 					if paras.strategy in ('breadthFirst', 'twoPhase'):
-						friends_of_friend = g_integro.neighbors(h)
+						friends_of_friend = g.neighbors(h)
 						if s in friends_of_friend:
 							friends_of_friend.remove(s)
 						pools[s].extend(friends_of_friend)
@@ -219,11 +223,12 @@ def run_experiment(paras, saveAs, systems=None):
 						seen_add = seen.add
 						pools[s] = [x for x in pools[s] if not (x in seen or seen_add(x)) and x not in requested[s]+seeds]
 
-					g_integro.node[h]['prob_victim'] = getVictimNodeProb()
-
-					g_sybilframe.add_edge(s, h, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
-					g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
-					g_integro.add_edge(s, h)
+					if 'integro' in systems:
+						g_integro.node[h]['prob_victim'] = getVictimNodeProb()
+						g_integro.add_edge(s, h)
+					if 'sybilframe' in systems:
+						g_sybilframe.add_edge(s, h, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
+						g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
 
 				requested[s].append(h)
 
@@ -245,8 +250,6 @@ def run_experiment(paras, saveAs, systems=None):
 
 	"save results as file"
 	pickle.dump(return_package, open("../pickles/"+filename, "wb+"))
-#evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
-
 
 
 
