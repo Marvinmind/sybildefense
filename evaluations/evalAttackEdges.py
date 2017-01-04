@@ -81,5 +81,5 @@ axarr[0].legend(bbox_to_anchor=(0,0.4), loc='upper left')
 
 plt.tight_layout()
 f.subplots_adjust(wspace=0.1)
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/AttackEdges.png', format='png')
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/AttackEdges.pdf', format='pdf')
 

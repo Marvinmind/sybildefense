@@ -2,12 +2,13 @@ import pickle
 from matplotlib import pyplot as plt
 import sklearn.preprocessing as prep
 from util.calc import get_cdf, getMergedRanks
+from util import setMatplotlib
 
 graph = 'facebook'
 sys = 'sybilframe'
 
-f, axarr = plt.subplots(1, 4)
-f.suptitle('Sybilframe Edge Prior Influence - - Peripheral Targeted', fontsize=14, weight='bold')
+f, axarr = plt.subplots(4, 1, figsize=(3.5, 6), sharex=True)
+f.suptitle('Sybilframe Edge Prior Influence', weight='bold')
 
 for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
 	perTarAll = pickle.load(open('../pickles/sybilEdgeProb/sybilEdgeProb{}PTar.p'.format(i), 'rb'))
@@ -15,9 +16,6 @@ for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
 	paras = perTarAll[1]
 
 	ranksPerTar = getMergedRanks(perTar)
-
-	print(paras.numSybils)
-
 
 	""" plot random per"""
 
@@ -37,12 +35,13 @@ for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
 
 	axarr[enu].set_ylim((0, 1.1))
 	axarr[enu].set_xlim((-0.1, 1.1))
-	axarr[enu].set_title('FN=FP='+str(i))
+	axarr[enu].set_ylabel('FN='+str(i))
 
+	axarr[enu].plot(x_h, y_h, 'b--', label='Honest')
+	axarr[enu].plot(x_s, y_s, 'r--', label='Sybil')
 
-	axarr[enu].plot(x_s, y_s, 'r--')
-	axarr[enu].plot(x_h, y_h, 'b--')
-
+axarr[3].legend(loc='upper left')
 plt.tight_layout()
-
-plt.show()
+plt.subplots_adjust(top=0.94)
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/EdgeProb.png', format='png', dpi=900)
+#plt.show()
