@@ -35,15 +35,15 @@ def run_experiment(paras, saveAs, systems=None):
 		g_org = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
 	elif paras.graph == 'facebook':
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph])
-		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
 	elif paras.graph == 'newOrleans':
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph])
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
 	elif paras.graph in ('david', 'pokec'):
+		print('start reading in')
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
-		g_org = nx.convert_node_labels_to_integers(g_org)
+		print('done reading in, start converting')
 		g_org = graph_creation.undirected_to_directed(g_org)
 
 
@@ -65,7 +65,6 @@ def run_experiment(paras, saveAs, systems=None):
 					seeds.append(r)
 					break
 
-	print(seeds)
 	for i in range(paras.numRepeats):
 		g = g_org.copy()
 		"add boosting region"
@@ -134,10 +133,12 @@ def run_experiment(paras, saveAs, systems=None):
 		if 'integro' in systems:
 			g_integro = nx.Graph(g)
 		if 'sybilframe' in systems:
+			print('start creating sybilframe')
 			if 'integro' in systems:
 				g_sybilframe = nx.DiGraph(g_integro)
 			else:
 				g_sybilframe = nx.DiGraph(nx.Graph(g))
+			print('done creating sybilframe')
 
 		" set edge prob for sybilframe"
 		if 'sybilframe' in systems:
@@ -147,7 +148,7 @@ def run_experiment(paras, saveAs, systems=None):
 				else:
 					# print('ATTACK EDGE!!')
 					prob = getSybilEdgeProb()
-				g_sybilframe[start][end][SF_Keys.Potential] = prob
+				g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
 
 		"set pool for breadth first"
 		if paras.strategy == 'twoPhase' or paras.strategy == "breadthFirst":
@@ -230,8 +231,8 @@ def run_experiment(paras, saveAs, systems=None):
 						g_integro.node[h]['prob_victim'] = getVictimNodeProb()
 						g_integro.add_edge(s, h)
 					if 'sybilframe' in systems:
-						g_sybilframe.add_edge(s, h, {SF_Keys.Potential: getSybilEdgeProb()})
-						g_sybilframe.add_edge(h, s, {SF_Keys.Potential: getSybilEdgeProb()})
+						g_sybilframe.add_edge(s, h, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
+						g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
 
 				requested[s].append(h)
 

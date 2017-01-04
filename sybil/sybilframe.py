@@ -1,12 +1,10 @@
 __author__ = 'Martin'
 import numpy as np
 from util.keys import SF_Keys
-from attacks import attacks_votetrust
-from math import sqrt, ceil
+from math import ceil
 from collections import defaultdict
 from scipy import sparse
 import time
-
 
 def inferPosteriorsEdgeImprove(g, d=5):
 	for u,v in g.edges():
@@ -48,13 +46,15 @@ def inferPosteriorsEdgeImprove(g, d=5):
 		g.node[n][SF_Keys.Belief] = belief
 
 def mult_rows(mat):
-		factors = defaultdict(lambda : [])
+		NUM_SLICES = 20
+
+		factors = defaultdict(lambda: [])
 		zeroMT = mat.T
 		r, c, v = sparse.find(zeroMT)
 		unqr = np.unique(c)
 		out = np.zeros(zeroMT.shape[1], dtype=zeroMT.dtype)
 		max_el = np.max(np.bincount(c))
-		size_slice = ceil(zeroMT.shape[1]/10)
+		size_slice = ceil(zeroMT.shape[1]/NUM_SLICES)
 		cur_ind = 0
 
 		for i in range(ceil(zeroMT.shape[1]/size_slice)):
@@ -88,39 +88,31 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 	"Node Potentials"
 	zeroP = np.empty(numNodes)
 	oneP = np.empty(numNodes)
-	t = time.clock()
 
 	for u,v, data in g.edges_iter(data=True):
-		zeroM.update({(v,u):0.5})
-		oneM.update({(v,u):0.5})
 
-		diffP.update({(v,u):1-data[SF_Keys.Potential]})
-		sameP.update({(v,u):data[SF_Keys.Potential]})
-	print(time.clock() -t)
+		zeroM.update({(v,u) : 0.5})
+		oneM.update({(v,u) : 0.5})
+
+		diffP.update({(v,u) : data[SF_Keys.Potential](1,-1)})
+		sameP.update({(v,u) : data[SF_Keys.Potential](1,1)})
 
 	for n, data in g.nodes_iter(data=True):
 		oneP[n] = data[SF_Keys.Potential](1)
 		zeroP[n] = data[SF_Keys.Potential](-1)
 
-	zeroM = sparse.csc_matrix(zeroM, dtype='float64')
-	oneM = sparse.csc_matrix(oneM, dtype='float64')
-	sameP = sparse.csc_matrix(sameP, dtype='float64')
-	diffP = sparse.csc_matrix(diffP, dtype='float64')
+	zeroM = sparse.csr_matrix(zeroM)
+	oneM = sparse.csr_matrix(oneM)
+	sameP = sparse.csr_matrix(sameP)
+	diffP = sparse.csr_matrix(diffP)
 
 
 	for i in range(d):
-
 		factsZero = mult_rows(zeroM)
 		factsOne = mult_rows(oneM)
-		a_s = []
-		b_s = []
 		ratios = []
 		for x in factsZero.items():
 			" stupid ratio"
-			a = np.multiply.reduce(x[1])
-			b = np.multiply.reduce(factsOne[x[0]])
-			a_s.append(a)
-			b_s.append(b)
 			ratios.append(np.multiply.reduce([y/factsOne[x[0]][i] for (i,y) in enumerate(x[1])]))
 
 		zeroMV = np.array(ratios) * zeroP
