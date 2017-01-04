@@ -19,8 +19,10 @@ def eval_system(g, system=None, paras=None):
 		ranks = votetrust.vote_combined(g, paras.d)
 
 	elif system == 'sybilframe':
+		t = time.clock()
 		sybilframe.inferPosteriorsEdgeImproveNew(g)
 		ranks = sybilframe.getRanks(g)
+		print(time.clock() -t)
 		print(ranks)
 		sybilframe.inferPosteriorsEdgeImprove(g)
 		ranks = sybilframe.getRanks(g)

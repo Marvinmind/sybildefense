@@ -147,7 +147,7 @@ def run_experiment(paras, saveAs, systems=None):
 				else:
 					# print('ATTACK EDGE!!')
 					prob = getSybilEdgeProb()
-				g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
+				g_sybilframe[start][end][SF_Keys.Potential] = prob
 
 		"set pool for breadth first"
 		if paras.strategy == 'twoPhase' or paras.strategy == "breadthFirst":
@@ -230,8 +230,8 @@ def run_experiment(paras, saveAs, systems=None):
 						g_integro.node[h]['prob_victim'] = getVictimNodeProb()
 						g_integro.add_edge(s, h)
 					if 'sybilframe' in systems:
-						g_sybilframe.add_edge(s, h, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
-						g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
+						g_sybilframe.add_edge(s, h, {SF_Keys.Potential: getSybilEdgeProb()})
+						g_sybilframe.add_edge(h, s, {SF_Keys.Potential: getSybilEdgeProb()})
 
 				requested[s].append(h)
 

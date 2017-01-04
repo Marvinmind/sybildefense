@@ -5,7 +5,7 @@ from attacks import attacks_votetrust
 from math import sqrt, ceil
 from collections import defaultdict
 from scipy import sparse
-
+import time
 
 
 def inferPosteriorsEdgeImprove(g, d=5):
@@ -74,26 +74,29 @@ def mult_rows(mat):
 
 def inferPosteriorsEdgeImproveNew(g, d=5):
 	#graphHealthCheck(g)
+
 	numNodes = len(g.nodes())
 
 	"Messages"
-	zeroM = sparse.lil_matrix((numNodes, numNodes))
-	oneM = sparse.lil_matrix((numNodes, numNodes))
+	zeroM = sparse.dok_matrix((numNodes, numNodes))
+	oneM = sparse.dok_matrix((numNodes, numNodes))
 
 	"Edge Potentials"
-	sameP = sparse.lil_matrix((numNodes, numNodes))
-	diffP = sparse.lil_matrix((numNodes, numNodes))
+	sameP = sparse.dok_matrix((numNodes, numNodes))
+	diffP = sparse.dok_matrix((numNodes, numNodes))
 
 	"Node Potentials"
 	zeroP = np.empty(numNodes)
 	oneP = np.empty(numNodes)
+	t = time.clock()
 
 	for u,v, data in g.edges_iter(data=True):
-		zeroM[v, u] = 0.5
-		oneM[v, u] = 0.5
+		zeroM.update({(v,u):0.5})
+		oneM.update({(v,u):0.5})
 
-		diffP[v, u] = data[SF_Keys.Potential](1,-1)
-		sameP[v, u] = data[SF_Keys.Potential](1,1)
+		diffP.update({(v,u):1-data[SF_Keys.Potential]})
+		sameP.update({(v,u):data[SF_Keys.Potential]})
+	print(time.clock() -t)
 
 	for n, data in g.nodes_iter(data=True):
 		oneP[n] = data[SF_Keys.Potential](1)
@@ -123,12 +126,9 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		zeroMV = np.array(ratios) * zeroP
 
 		oneMT = oneM.T
-		r, c, v = sparse.find(oneMT)
-		#out = np.zeros(oneMT.shape[1], dtype=oneM.dtype)
-		#unqr, shift_idx = np.unique(c, return_index=1)
-		#out[unqr] = np.multiply.reduceat(v, shift_idx)
-
 		oneMV = oneP
+
+		r, c, v = sparse.find(oneMT)
 
 		one1 = (sparse.spdiags(oneMV, 0, len(oneMV), len(oneMV)) * sameP.T).T
 		one2 = (sparse.spdiags(zeroMV, 0, len(zeroMV), len(zeroMV)) * diffP.T).T
@@ -148,7 +148,6 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 		zeroM[r1, c1] /= v1+v2
 		oneM[r2, c2] /= v1+v2
-
 
 	""" calc beliefs """
 	r, c, v = sparse.find(oneM)
