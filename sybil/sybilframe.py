@@ -88,7 +88,7 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 	"Node Potentials"
 	zeroP = np.empty(numNodes)
 	oneP = np.empty(numNodes)
-
+	print('start updating')
 	for u,v, data in g.edges_iter(data=True):
 
 		zeroM.update({(v,u) : 0.5})
@@ -96,7 +96,7 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 		diffP.update({(v,u) : data[SF_Keys.Potential](1,-1)})
 		sameP.update({(v,u) : data[SF_Keys.Potential](1,1)})
-
+	print('done updating')
 	for n, data in g.nodes_iter(data=True):
 		oneP[n] = data[SF_Keys.Potential](1)
 		zeroP[n] = data[SF_Keys.Potential](-1)
