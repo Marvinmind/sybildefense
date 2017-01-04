@@ -49,7 +49,6 @@ def inferPosteriorsEdgeImprove(g, d=5):
 
 def mult_rows(mat):
 		factors = defaultdict(lambda : [])
-
 		zeroMT = mat.T
 		r, c, v = sparse.find(zeroMT)
 		unqr = np.unique(c)
@@ -112,18 +111,9 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		factsOne = mult_rows(oneM)
 		a_s = []
 		b_s = []
-		print('run')
 		for x in factsZero.items():
 			" stupid ratio"
 			a = np.multiply.reduce(x[1])
-			if x[0] == 0:
-				print(x[1])
-				dens = oneM.toarray()
-				dens[dens==0] = 1
-				dens_prod = dens.prod(1)[0]
-				print('test')
-				print(dens_prod)
-				print(a)
 			b = np.multiply.reduce(factsOne[x[0]])
 			a_s.append(a)
 			b_s.append(b)
@@ -136,6 +126,7 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		out = np.zeros(oneMT.shape[1], dtype=oneM.dtype)
 		unqr, shift_idx = np.unique(c, return_index=1)
 		out[unqr] = np.multiply.reduceat(v, shift_idx)
+
 		oneMV = np.array(b_s) * oneP
 
 		one1 = (sparse.spdiags(oneMV, 0, len(oneMV), len(oneMV)) * sameP.T).T

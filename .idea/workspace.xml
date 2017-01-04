@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19cd0809-4433-4eda-b270-22739ebfafcf" name="Default" comment="ready for pokec">
+    <list default="true" id="19cd0809-4433-4eda-b270-22739ebfafcf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalAttackEdges.py" afterPath="$PROJECT_DIR$/evaluations/evalAttackEdges.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalRatio.py" afterPath="$PROJECT_DIR$/evaluations/evalRatio.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py" afterPath="$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/eval_systems.py" afterPath="$PROJECT_DIR$/evaluations/eval_systems.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/other_plots.py" afterPath="$PROJECT_DIR$/evaluations/other_plots.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" afterPath="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/run_experiment.py" afterPath="$PROJECT_DIR$/evaluations/run_experiment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sybil/sybilframe.py" afterPath="$PROJECT_DIR$/sybil/sybilframe.py" />
     </list>
     <ignored path="implementations.iws" />
@@ -28,9 +21,10 @@
     <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_merge_renumber.coverage" NAME="Unittest IntegroTests.test_merge_renumber Coverage Results" MODIFIED="1478820643964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$peripheral_scenario.coverage" NAME="peripheral_scenario Coverage Results" MODIFIED="1479495036270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittests_in_VoteTrustTests.coverage" NAME="Unittests in VoteTrustTests Coverage Results" MODIFIED="1475420795358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$runSybilEdgeProb.coverage" NAME="runSybilEdgeProb Coverage Results" MODIFIED="1483554084797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$runSybilEdgeProb.coverage" NAME="runSybilEdgeProb Coverage Results" MODIFIED="1483557831369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_authors_attachement.coverage" NAME="Unittest sybilframe_tests.test_authors_attachement Coverage Results" MODIFIED="1478726774910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$testpyopencl.coverage" NAME="testpyopencl Coverage Results" MODIFIED="1478345969781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_sybilframe_tests_test_infer.coverage" NAME="Unittest sybilframe_tests.test_infer Coverage Results" MODIFIED="1483555324075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_base.coverage" NAME="Unittest VoteTrustTests.test_propagation_base Coverage Results" MODIFIED="1477414731043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weights_frequencies.coverage" NAME="Unittest IntegroTests.test_weights_frequencies Coverage Results" MODIFIED="1478817344087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_com_v_sib.coverage" NAME="Unittest IntegroTests.test_com_v_sib Coverage Results" MODIFIED="1478616574403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -177,11 +171,21 @@
       <file leaf-file-name="sybilframe.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+            <state relative-caret-position="232">
+              <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
               <folding>
                 <element signature="e#22#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sybilframe_tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/sybilframe_tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -371,6 +375,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sybildefense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="sybil" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -437,6 +455,22 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="rank&#9;null&#9;null" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="103" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="128" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="129" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="917" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="114" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="124" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="125" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="914" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -581,24 +615,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="evalRatio" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalRatio.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="runSybilEdgeProb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -651,6 +667,29 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/other_plots.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest sybilframe_tests.test_infer" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/sybilframe_tests.py" />
+      <option name="CLASS_NAME" value="sybilframe_tests" />
+      <option name="METHOD_NAME" value="test_infer" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -864,18 +903,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.evalAttackEdges" />
-      <item index="1" class="java.lang.String" itemvalue="Python.evalRatio" />
-      <item index="2" class="java.lang.String" itemvalue="Python.runSybilEdgeProb" />
-      <item index="3" class="java.lang.String" itemvalue="Python.evalSybilEdgeProb" />
-      <item index="4" class="java.lang.String" itemvalue="Python.other_plots" />
+      <item index="1" class="java.lang.String" itemvalue="Python.runSybilEdgeProb" />
+      <item index="2" class="java.lang.String" itemvalue="Python.evalSybilEdgeProb" />
+      <item index="3" class="java.lang.String" itemvalue="Python.other_plots" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest sybilframe_tests.test_infer" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.runSybilEdgeProb" />
-        <item index="1" class="java.lang.String" itemvalue="Python.other_plots" />
-        <item index="2" class="java.lang.String" itemvalue="Python.evalSybilEdgeProb" />
-        <item index="3" class="java.lang.String" itemvalue="Python.evalAttackEdges" />
-        <item index="4" class="java.lang.String" itemvalue="Python.evalRatio" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest sybilframe_tests.test_infer" />
+        <item index="2" class="java.lang.String" itemvalue="Python.other_plots" />
+        <item index="3" class="java.lang.String" itemvalue="Python.evalSybilEdgeProb" />
+        <item index="4" class="java.lang.String" itemvalue="Python.evalAttackEdges" />
       </list>
     </recent_temporary>
   </component>
@@ -998,31 +1037,24 @@
       <option name="project" value="LOCAL" />
       <updated>1483535018972</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="candidate for improved message passing">
+      <created>1483554322446</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1483554322446</updated>
+    </task>
+    <task id="LOCAL-00017" summary="wtf">
+      <created>1483556902878</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1483556902878</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 16m 41s.xml">
-      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 16m 49s.xml">
-      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 17m 45s.xml">
-      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 18m 45s.xml">
-      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 19m 01s.xml">
-      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 16h 19m 24s.xml">
-      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 18h 48m 44s.xml">
-      <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 18h 49m 05s.xml">
       <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
     </history-entry>
@@ -1031,6 +1063,27 @@
     </history-entry>
     <history-entry file="Unittest_ProbTests_test_auc - 2016.11.16 at 18h 50m 58s.xml">
       <configuration name="Unittest ProbTests.test_auc" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_sybilframe_tests_test_infer - 2017.01.04 at 19h 26m 32s.xml">
+      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_sybilframe_tests_test_infer - 2017.01.04 at 19h 32m 56s.xml">
+      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_sybilframe_tests_test_infer - 2017.01.04 at 19h 33m 38s.xml">
+      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_sybilframe_tests_test_infer - 2017.01.04 at 19h 34m 35s.xml">
+      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_sybilframe_tests_test_infer - 2017.01.04 at 19h 37m 37s.xml">
+      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_sybilframe_tests_test_infer - 2017.01.04 at 19h 40m 03s.xml">
+      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_sybilframe_tests_test_infer - 2017.01.04 at 19h 42m 05s.xml">
+      <configuration name="Unittest sybilframe_tests.test_infer" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1052,11 +1105,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38220757" sideWeight="0.47954544" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.4939394" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35255355" sideWeight="0.46439394" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33278418" sideWeight="0.46439394" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39532295" sideWeight="0.49806523" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3937397" sideWeight="0.49806523" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1118,7 +1171,9 @@
     <MESSAGE value="Change back to PC" />
     <MESSAGE value="back home" />
     <MESSAGE value="ready for pokec" />
-    <option name="LAST_COMMIT_MESSAGE" value="ready for pokec" />
+    <MESSAGE value="candidate for improved message passing" />
+    <MESSAGE value="wtf" />
+    <option name="LAST_COMMIT_MESSAGE" value="wtf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1152,13 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sybilframe_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1478,10 +1526,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/sybilframe_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+        <state relative-caret-position="232">
+          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
           <folding>
             <element signature="e#22#40#0" expanded="true" />
           </folding>
