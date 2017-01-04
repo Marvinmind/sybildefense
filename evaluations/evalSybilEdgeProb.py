@@ -7,11 +7,11 @@ from util import setMatplotlib
 graph = 'facebook'
 sys = 'sybilframe'
 
-f, axarr = plt.subplots(4, 1, figsize=(3.5, 6), sharex=True)
-f.suptitle('Sybilframe Edge Prior Influence', weight='bold')
+f, axarr = plt.subplots(2, 2, figsize=(3.5, 3.5), sharex=True, sharey=True)
+f.suptitle('Sybilframe Edge Prior Influence')
 
 for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
-	perTarAll = pickle.load(open('../pickles/sybilEdgeProb/sybilEdgeProb{}PTardavid.p'.format(i), 'rb'))
+	perTarAll = pickle.load(open('../pickles/sybilEdgeProb/sybilEdgeProb{}PTar{}.p'.format(i, graph), 'rb'))
 	perTar = perTarAll[0]
 	paras = perTarAll[1]
 
@@ -32,16 +32,19 @@ for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
 	y_h = get_cdf(x_h)
 	y_s = get_cdf(x_s)
 
+	ind_row = lambda enu: 0 if enu in (0,1) else 1
+	ind_col = lambda enu: 0 if enu in (0, 2) else 1
 
-	axarr[enu].set_ylim((0, 1.1))
-	axarr[enu].set_xlim((-0.1, 1.1))
-	axarr[enu].set_ylabel('FN='+str(i))
+	axis = axarr[ind_row(enu)][ind_col(enu)]
+	axis.set_ylim((0, 1.1))
+	axis.set_xlim((-0.1, 1.1))
+	axis.set_ylabel('FN='+str(i))
 
-	axarr[enu].plot(x_h, y_h, 'b--', label='Honest')
-	axarr[enu].plot(x_s, y_s, 'r--', label='Sybil')
+	axis.plot(x_h, y_h, 'b--', label='Honest')
+	axis.plot(x_s, y_s, 'r--', label='Sybil')
 
-axarr[3].legend(loc='upper left')
+axis.legend(loc='upper left')
 plt.tight_layout()
-plt.subplots_adjust(top=0.94)
+plt.subplots_adjust(top=0.92)
 plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/EdgeProb.pdf', format='pdf')
 #plt.show()

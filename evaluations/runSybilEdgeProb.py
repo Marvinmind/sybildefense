@@ -19,7 +19,7 @@ import warnings
 
 """
 
-graph = 'facebook'
+graph = 'david'
 for i in (0.1, 0.3, 0.5, 0.6):
 	print(i)
 	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=(50,), numRepeats=5)

@@ -21,10 +21,13 @@ def eval_system(g, system=None, paras=None):
 	elif system == 'sybilframe':
 		sybilframe.inferPosteriorsEdgeImproveNew(g)
 		ranks = sybilframe.getRanks(g)
+		print(ranks)
+		sybilframe.inferPosteriorsEdgeImprove(g)
+		ranks = sybilframe.getRanks(g)
+		print(ranks)
 
 	real = [g.node[i]['label'] for i in g.nodes_iter()]
 	b = benchmarks.Benchmarks(real, ranks)
-	g_stripped = g.copy()
 	"""
 	for n in g_stripped.nodes_iter():
 		attr = tuple(g_stripped.node[n].keys())

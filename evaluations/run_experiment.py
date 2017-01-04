@@ -134,7 +134,10 @@ def run_experiment(paras, saveAs, systems=None):
 		if 'integro' in systems:
 			g_integro = nx.Graph(g)
 		if 'sybilframe' in systems:
-			g_sybilframe = nx.DiGraph(g)
+			if 'integro' in systems:
+				g_sybilframe = nx.DiGraph(g_integro)
+			else:
+				g_sybilframe = nx.DiGraph(nx.Graph(g))
 
 		" set edge prob for sybilframe"
 		if 'sybilframe' in systems:

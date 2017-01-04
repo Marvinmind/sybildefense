@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from util.calc import getSuccessProb
 from util import setMatplotlib
+plt.figure(figsize=(3.5, 2.5))
 
 "Plot success distribution"
 x = list(range(10))
@@ -14,6 +15,7 @@ plt.legend()
 
 plt.ylabel('Success Probability')
 plt.xlabel('Number of Common Friends')
-plt.suptitle('Success Probability Function', weight='bold')
+plt.suptitle('Success Probability Function')
 plt.ylim(0,1)
-plt.show()
+plt.tight_layout()
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/funcAcceptance.pdf', type='pdf')

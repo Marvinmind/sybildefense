@@ -8,7 +8,7 @@ from util import setMatplotlib
 graph = 'facebook'
 
 f, axarr = plt.subplots(3, 2, sharey=True, sharex=True, figsize=(3.5, 5))
-f.suptitle('Influence of Acceptance Ratio', weight='bold')
+f.suptitle('Influence of Acceptance Ratio')
 
 for j, sys in enumerate(('integro', 'votetrust', 'sybilframe')):
 	for enu, i in enumerate(((0.2,0.7),(0.1, 0.5))):
@@ -37,14 +37,15 @@ for j, sys in enumerate(('integro', 'votetrust', 'sybilframe')):
 		axarr[j, enu].plot(x_h, y_h, 'b--', label='Honest Nodes')
 
 		axarr[0, enu].set_title('Ratio Limits: ' + str(i))
-
-	axarr[j, 0].set_ylabel(sys)
+	name = str.upper(sys[0])+sys[1:]
+	axarr[j, 0].set_ylabel(name)
 	"""
 	pad = 3
 	rows = ['Peripheral\nTargeted', 'Peripheral\nRandom', 'Sybil Region\nRandom']
 	ax = axarr[j,0]
 	ax.annotate(sys, xy=(0, 0.5), xytext=(-ax.yaxis.labelpad - pad, 0), xycoords=ax.yaxis.label, textcoords='offset points', ha='right', va='center')
 	"""
-#plt.tight_layout()
+plt.tight_layout()
+plt.subplots_adjust(top=0.9)
 axarr[2, 0].legend(loc=(0.05, 0.7), borderpad=0.2)
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/AcceptanceRatio.png', format='png')
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/AcceptanceRatio.pdf', format='pdf')

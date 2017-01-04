@@ -1,21 +1,16 @@
 __author__ = 'Martin'
-import pickle
-import networkx as nx
 import numpy as np
 from util.keys import SF_Keys
 from attacks import attacks_votetrust
-from math import sqrt
+from math import sqrt, ceil
 from collections import defaultdict
-import sklearn.linear_model as linmod
-import multiprocessing
 from scipy import sparse
-import sys
 
 
 
 def inferPosteriorsEdgeImprove(g, d=5):
 	for u,v in g.edges():
-		g[u][v][SF_Keys.Message] = defaultdict(lambda: np.array(1, dtype='float128'))
+		g[u][v][SF_Keys.Message] = defaultdict(lambda: np.array(1, dtype='float64'))
 	for i in range(d):
 		#print('new round')
 		new_messages = {}
@@ -28,13 +23,12 @@ def inferPosteriorsEdgeImprove(g, d=5):
 				one_prob *= g[x][y][SF_Keys.Message][1]
 				minus_prob *= g[x][y][SF_Keys.Message][-1]
 			in_edge_prod[i] = {1: one_prob, -1: minus_prob}
-
 		for e in g.edges_iter():
 			message = {1: 0, -1: 0}
 			for v in (1, -1):
 				for u in (1, -1):
-					edge_pot = np.array(g[e[0]][e[1]][SF_Keys.Potential](u,v), dtype='float128')
-					node_pot = np.array(g.node[e[0]][SF_Keys.Potential](u), dtype='float128')
+					edge_pot = np.array(g[e[0]][e[1]][SF_Keys.Potential](u,v), dtype='float64')
+					node_pot = np.array(g.node[e[0]][SF_Keys.Potential](u), dtype='float64')
 					prod = edge_pot * node_pot
 					prod *= in_edge_prod[e[0]][u]/g[e[1]][e[0]][SF_Keys.Message][u]
 					message[v] += prod
@@ -70,8 +64,8 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 	oneP = np.empty(numNodes)
 
 	for u,v, data in g.edges_iter(data=True):
-		zeroM[v, u] = 1
-		oneM[v, u] = 1
+		zeroM[v, u] = 0.5
+		oneM[v, u] = 0.5
 
 		diffP[v, u] = data[SF_Keys.Potential](1,-1)
 		sameP[v, u] = data[SF_Keys.Potential](1,1)
@@ -87,39 +81,47 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 
 	for i in range(d):
-		""""
-		print(oneM.toarray())
-		r, c, v = sparse.find(zeroM)
-		zeroMV = np.exp(np.bincount(r, np.log(v), minlength=zeroM.shape[0]))
-		zeroMV[np.setdiff1d(np.arange(zeroM.shape[0]), r)] = 0
-		#zeroMV += np.finfo(np.dtype('float64')).eps
 
-		zeroMV = zeroMV * zeroP
+		def mult_rows(mat):
+			factors = defaultdict(lambda : [])
 
+			zeroMT = zeroM.T
+			r, c, v = sparse.find(zeroMT)
+			unqr = np.unique(c)
+			out = np.zeros(zeroMT.shape[1], dtype=zeroM.dtype)
+			max_el = np.max(np.bincount(c))
+			size_slice = ceil(zeroM.shape[1]/10)
+			cur_ind = 0
 
-		r, c, v = sparse.find(oneM)
-		oneMV = np.exp(np.bincount(r, np.log(v), minlength=oneM.shape[0]))
-		oneMV[np.setdiff1d(np.arange(oneM.shape[0]), r)] = 0
-		#oneMV += np.finfo(np.dtype('float64')).eps
-		print('old')
-		print(oneMV)
-		oneMV = oneMV * oneP
-		"""
+			for i in range(ceil(zeroM.shape[1]/size_slice)):
+				end_ind = cur_ind + size_slice
+				if cur_ind+size_slice > zeroM.shape[1] - 1:
+					end_ind = zeroM.shape[1]
+				curr_slice = zeroMT[cur_ind:end_ind,:]
+				r,c,v = sparse.find(curr_slice)
+				unqr_t, shift_idx_t = np.unique(c, return_index=1)
+				res_raw = np.multiply.reduceat(v, shift_idx_t)
+				for j, x in enumerate(unqr_t):
+					factor = 1 / res_raw[j]
+					factors[x].append(factor)
+				cur_ind = end_ind
 
-		zeroMT = zeroM.T
-		r, c, v = sparse.find(zeroMT)
-		out = np.zeros(zeroMT.shape[1], dtype=zeroM.dtype)
-		unqr, shift_idx = np.unique(c, return_index=1)
-		out[unqr] = np.multiply.reduceat(v, shift_idx)
-		zeroMV = out * zeroP
+			return factors
+
+		factsZero = mult_rows(zeroM)
+		factsOne = mult_rows(oneM)
+		ratios = []
+		for x in factsZero.items():
+			ratios.append(np.multiply.reduce([y/factsOne[x[0]][i] for (i,y) in enumerate(x[1])]))
+
+		zeroMV = zeroP
 
 		oneMT = oneM.T
 		r, c, v = sparse.find(oneMT)
 		out = np.zeros(oneMT.shape[1], dtype=oneM.dtype)
 		unqr, shift_idx = np.unique(c, return_index=1)
-
 		out[unqr] = np.multiply.reduceat(v, shift_idx)
-		oneMV = out * oneP
+		oneMV = 1/np.array(ratios) * oneP
 
 		one1 = (sparse.spdiags(oneMV, 0, len(oneMV), len(oneMV)) * sameP.T).T
 		one2 = (sparse.spdiags(zeroMV, 0, len(zeroMV), len(zeroMV)) * diffP.T).T
@@ -139,24 +141,6 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 		zeroM[r1, c1] /= v1+v2
 		oneM[r2, c2] /= v1+v2
-		"""
-
-		oneMd = oneM.toarray()
-		oneMd[oneMd==0]=1
-
-		zeroMd = zeroM.toarray()
-		zeroMd[zeroMd==0]=1
-
-		oneV = oneMd.prod(1)
-		zeroV = zeroMd.prod(1)
-		print(oneV[oneV==0])
-		print(zeroV[zeroV==0])
-		freak = np.flatnonzero(zeroV == 0)
-		print(freak)
-		freakRow = zeroMd[freak,:]
-		print(len(freakRow[freakRow<1]))
-		print(min(freakRow[freakRow<1]))
-		"""
 
 
 	""" calc beliefs """
