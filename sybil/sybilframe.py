@@ -47,6 +47,32 @@ def inferPosteriorsEdgeImprove(g, d=5):
 		belief = normalize(message)
 		g.node[n][SF_Keys.Belief] = belief
 
+def mult_rows(mat):
+		factors = defaultdict(lambda : [])
+
+		zeroMT = mat.T
+		r, c, v = sparse.find(zeroMT)
+		unqr = np.unique(c)
+		out = np.zeros(zeroMT.shape[1], dtype=zeroMT.dtype)
+		max_el = np.max(np.bincount(c))
+		size_slice = ceil(zeroMT.shape[1]/10)
+		cur_ind = 0
+
+		for i in range(ceil(zeroMT.shape[1]/size_slice)):
+			end_ind = cur_ind + size_slice
+			if cur_ind+size_slice > zeroMT.shape[1] - 1:
+				end_ind = zeroMT.shape[1]
+			curr_slice = zeroMT[cur_ind:end_ind,:]
+			r,c,v = sparse.find(curr_slice)
+			unqr_t, shift_idx_t = np.unique(c, return_index=1)
+			res_raw = np.multiply.reduceat(v, shift_idx_t)
+			for j, x in enumerate(unqr_t):
+				factor = res_raw[j]
+				factors[x].append(factor)
+			cur_ind = end_ind
+
+		return factors
+
 def inferPosteriorsEdgeImproveNew(g, d=5):
 	#graphHealthCheck(g)
 	numNodes = len(g.nodes())
@@ -82,46 +108,35 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 	for i in range(d):
 
-		def mult_rows(mat):
-			factors = defaultdict(lambda : [])
-
-			zeroMT = zeroM.T
-			r, c, v = sparse.find(zeroMT)
-			unqr = np.unique(c)
-			out = np.zeros(zeroMT.shape[1], dtype=zeroM.dtype)
-			max_el = np.max(np.bincount(c))
-			size_slice = ceil(zeroM.shape[1]/10)
-			cur_ind = 0
-
-			for i in range(ceil(zeroM.shape[1]/size_slice)):
-				end_ind = cur_ind + size_slice
-				if cur_ind+size_slice > zeroM.shape[1] - 1:
-					end_ind = zeroM.shape[1]
-				curr_slice = zeroMT[cur_ind:end_ind,:]
-				r,c,v = sparse.find(curr_slice)
-				unqr_t, shift_idx_t = np.unique(c, return_index=1)
-				res_raw = np.multiply.reduceat(v, shift_idx_t)
-				for j, x in enumerate(unqr_t):
-					factor = 1 / res_raw[j]
-					factors[x].append(factor)
-				cur_ind = end_ind
-
-			return factors
-
 		factsZero = mult_rows(zeroM)
 		factsOne = mult_rows(oneM)
-		ratios = []
+		a_s = []
+		b_s = []
+		print('run')
 		for x in factsZero.items():
-			ratios.append(np.multiply.reduce([y/factsOne[x[0]][i] for (i,y) in enumerate(x[1])]))
+			" stupid ratio"
+			a = np.multiply.reduce(x[1])
+			if x[0] == 0:
+				print(x[1])
+				dens = oneM.toarray()
+				dens[dens==0] = 1
+				dens_prod = dens.prod(1)[0]
+				print('test')
+				print(dens_prod)
+				print(a)
+			b = np.multiply.reduce(factsOne[x[0]])
+			a_s.append(a)
+			b_s.append(b)
+			#ratios.append(np.multiply.reduce([y/factsOne[x[0]][i] for (i,y) in enumerate(x[1])]))
 
-		zeroMV = zeroP
+		zeroMV = np.array(a_s) * zeroP
 
 		oneMT = oneM.T
 		r, c, v = sparse.find(oneMT)
 		out = np.zeros(oneMT.shape[1], dtype=oneM.dtype)
 		unqr, shift_idx = np.unique(c, return_index=1)
 		out[unqr] = np.multiply.reduceat(v, shift_idx)
-		oneMV = 1/np.array(ratios) * oneP
+		oneMV = np.array(b_s) * oneP
 
 		one1 = (sparse.spdiags(oneMV, 0, len(oneMV), len(oneMV)) * sameP.T).T
 		one2 = (sparse.spdiags(zeroMV, 0, len(zeroMV), len(zeroMV)) * diffP.T).T
