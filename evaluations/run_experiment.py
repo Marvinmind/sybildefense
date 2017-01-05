@@ -42,10 +42,10 @@ def run_experiment(paras, saveAs, systems=None):
 		g_org = graph_creation.undirected_to_directed(g_org)
 	elif paras.graph in ('david', 'pokec'):
 		print('start reading in')
-		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
-		print('done reading in, start converting')
+		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], nodetype=int)
+		print('done reading in')
+	if 'votetrust' in systems:
 		g_org = graph_creation.undirected_to_directed(g_org)
-
 
 	nx.set_node_attributes(g_org, 'label', 0)
 	NUM_HONEST = len(g_org.nodes())

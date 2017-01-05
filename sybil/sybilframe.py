@@ -45,32 +45,6 @@ def inferPosteriorsEdgeImprove(g, d=5):
 		belief = normalize(message)
 		g.node[n][SF_Keys.Belief] = belief
 
-def mult_rows(mat):
-		NUM_SLICES = 20
-
-		factors = defaultdict(lambda: [])
-		zeroMT = mat.T
-		r, c, v = sparse.find(zeroMT)
-		unqr = np.unique(c)
-		out = np.zeros(zeroMT.shape[1], dtype=zeroMT.dtype)
-		max_el = np.max(np.bincount(c))
-		size_slice = ceil(zeroMT.shape[1]/NUM_SLICES)
-		cur_ind = 0
-
-		for i in range(ceil(zeroMT.shape[1]/size_slice)):
-			end_ind = cur_ind + size_slice
-			if cur_ind+size_slice > zeroMT.shape[1] - 1:
-				end_ind = zeroMT.shape[1]
-			curr_slice = zeroMT[cur_ind:end_ind,:]
-			r,c,v = sparse.find(curr_slice)
-			unqr_t, shift_idx_t = np.unique(c, return_index=1)
-			res_raw = np.multiply.reduceat(v, shift_idx_t)
-			for j, x in enumerate(unqr_t):
-				factor = res_raw[j]
-				factors[x].append(factor)
-			cur_ind = end_ind
-
-		return factors
 
 def inferPosteriorsEdgeImproveNew(g, d=5):
 	#graphHealthCheck(g)
@@ -88,7 +62,7 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 	"Node Potentials"
 	zeroP = np.empty(numNodes)
 	oneP = np.empty(numNodes)
-	print('start updating')
+	t = time.clock()
 	for u,v, data in g.edges_iter(data=True):
 
 		zeroM.update({(v,u) : 0.5})
@@ -96,10 +70,11 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 		diffP.update({(v,u) : data[SF_Keys.Potential](1,-1)})
 		sameP.update({(v,u) : data[SF_Keys.Potential](1,1)})
-	print('done updating')
+
 	for n, data in g.nodes_iter(data=True):
 		oneP[n] = data[SF_Keys.Potential](1)
 		zeroP[n] = data[SF_Keys.Potential](-1)
+	print('update duration: {}'.format(time.clock()-t))
 
 	zeroM = sparse.csr_matrix(zeroM)
 	oneM = sparse.csr_matrix(oneM)
@@ -108,19 +83,22 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 
 	for i in range(d):
-		factsZero = mult_rows(zeroM)
-		factsOne = mult_rows(oneM)
-		ratios = []
-		for x in factsZero.items():
-			" stupid ratio"
-			ratios.append(np.multiply.reduce([y/factsOne[x[0]][i] for (i,y) in enumerate(x[1])]))
+		t = time.clock()
+		r, c, v = sparse.find(oneM)  # a is input sparse matrix
+		outOne = np.bincount(r, np.log(v), minlength=oneM.shape[0])
+		r, c, v = sparse.find(zeroM)  # a is input sparse matrix
+		outZero = np.bincount(r, np.log(v), minlength=oneM.shape[0])
+		ratio = np.exp(outZero-outOne)
 
-		zeroMV = np.array(ratios) * zeroP
+		zeroMV = ratio * zeroP
+		oneMV = oneP
+		print('mult message duration: {}'.format(time.clock() - t))
 
 		oneMT = oneM.T
-		oneMV = oneP
 
 		r, c, v = sparse.find(oneMT)
+
+		t = time.clock()
 
 		one1 = (sparse.spdiags(oneMV, 0, len(oneMV), len(oneMV)) * sameP.T).T
 		one2 = (sparse.spdiags(zeroMV, 0, len(zeroMV), len(zeroMV)) * diffP.T).T
@@ -140,7 +118,8 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 		zeroM[r1, c1] /= v1+v2
 		oneM[r2, c2] /= v1+v2
-
+		print('matrix mult duration: {}'.format(time.clock() - t))
+	t = time.clock()
 	""" calc beliefs """
 	r, c, v = sparse.find(oneM)
 	v = v.astype('float64')
@@ -155,6 +134,8 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		message[-1] = zeroB[n] * zeroP[n]
 		belief = normalize(message)
 		g.node[n][SF_Keys.Belief] = belief
+	print('message collection duration: {}'.format(time.clock() - t))
+
 
 def inferPosteriors(g, d=5):
 	for u,v in g.edges():

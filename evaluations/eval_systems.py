@@ -22,7 +22,11 @@ def eval_system(g, system=None, paras=None):
 		t = time.clock()
 		sybilframe.inferPosteriorsEdgeImproveNew(g)
 		ranks = sybilframe.getRanks(g)
-		print(time.clock() - t)
+		print(time.clock()-t)
+		print(ranks)
+		sybilframe.inferPosteriorsEdgeImprove(g)
+		ranks = sybilframe.getRanks(g)
+		print(ranks)
 
 	real = [g.node[i]['label'] for i in g.nodes_iter()]
 	b = benchmarks.Benchmarks(real, ranks)
