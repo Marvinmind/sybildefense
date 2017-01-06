@@ -52,16 +52,16 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 	numNodes = len(g.nodes())
 
 	"Messages"
-	zeroM = sparse.dok_matrix((numNodes, numNodes))
-	oneM = sparse.dok_matrix((numNodes, numNodes))
+	zeroM = sparse.dok_matrix((numNodes, numNodes), dtype='float64')
+	oneM = sparse.dok_matrix((numNodes, numNodes), dtype='float64')
 
 	"Edge Potentials"
-	sameP = sparse.dok_matrix((numNodes, numNodes))
-	diffP = sparse.dok_matrix((numNodes, numNodes))
+	sameP = sparse.dok_matrix((numNodes, numNodes), dtype='float64')
+	diffP = sparse.dok_matrix((numNodes, numNodes), dtype='float64')
 
 	"Node Potentials"
-	zeroP = np.empty(numNodes)
-	oneP = np.empty(numNodes)
+	zeroP = np.empty(numNodes, dtype='float64')
+	oneP = np.empty(numNodes, dtype='float64')
 	t = time.clock()
 	for u,v, data in g.edges_iter(data=True):
 
@@ -76,10 +76,10 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		zeroP[n] = data[SF_Keys.Potential](-1)
 	print('update duration: {}'.format(time.clock()-t))
 
-	zeroM = sparse.csr_matrix(zeroM)
-	oneM = sparse.csr_matrix(oneM)
-	sameP = sparse.csr_matrix(sameP)
-	diffP = sparse.csr_matrix(diffP)
+	zeroM = sparse.csr_matrix(zeroM, dtype='float64')
+	oneM = sparse.csr_matrix(oneM, dtype='float64')
+	sameP = sparse.csr_matrix(sameP, dtype='float64')
+	diffP = sparse.csr_matrix(diffP, dtype='float64')
 
 
 	for i in range(d):
@@ -88,8 +88,9 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		outOne = np.bincount(r, np.log(v), minlength=oneM.shape[0])
 		r, c, v = sparse.find(zeroM)  # a is input sparse matrix
 		outZero = np.bincount(r, np.log(v), minlength=oneM.shape[0])
-		ratio = np.exp(outZero-outOne)
-
+		ratio = np.exp(np.array(outZero, dtype='float128') - np.array(outOne, dtype='float128'))
+		if np.min(ratio)==0:
+			print('underflow. god damit')
 		zeroMV = ratio * zeroP
 		oneMV = oneP
 		print('mult message duration: {}'.format(time.clock() - t))

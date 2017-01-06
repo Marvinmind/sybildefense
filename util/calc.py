@@ -33,7 +33,7 @@ def getSuccessProb(f, k=0.3, start=0.2, max=1):
 
 
 def getNodeProbClosure(middle):
-	prec = 10000
+	prec = 1000
 	val = np.array(getValues(prec, middle))
 	val = val / sum(val)
 	y = np.cumsum(val)

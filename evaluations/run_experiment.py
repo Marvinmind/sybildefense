@@ -144,13 +144,16 @@ def run_experiment(paras, saveAs, systems=None):
 		" set edge prob for sybilframe"
 		t = time.clock()
 		if 'sybilframe' in systems:
-			for start, end in g_sybilframe.edges_iter():
+			for start, end in g.edges_iter():
 				if g.node[start]['label'] == g.node[end]['label']:
 					prob = getNonSybilEdgeProb()
 				else:
 					# print('ATTACK EDGE!!')
 					prob = getSybilEdgeProb()
-				g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
+				func = sybilframe.create_edge_func(prob)
+				g_sybilframe[start][end][SF_Keys.Potential] = func
+				g_sybilframe[end][start][SF_Keys.Potential] = func
+
 		print('done edgeprobs in {}'.format(time.clock() -t))
 
 		"set pool for breadth first"
