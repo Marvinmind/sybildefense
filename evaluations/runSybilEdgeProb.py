@@ -19,7 +19,7 @@ import warnings
 
 """
 
-graph = 'david'
+graph = 'pokec'
 #(0.1, 0.3, 0.5, 0.6)
 for i in (0.1, 0.3, 0.5, 0.6):
 	print(i)

@@ -43,7 +43,7 @@ def run_experiment(paras, saveAs, systems=None):
 		g_org = graph_creation.undirected_to_directed(g_org)
 	elif paras.graph in ('david', 'pokec'):
 		print('start reading in')
-		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], nodetype=int)
+		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
 	print('done reading in {}'.format(time.clock()-t))
@@ -138,10 +138,7 @@ def run_experiment(paras, saveAs, systems=None):
 		if 'sybilframe' in systems:
 			print('start creating sybilframe')
 			t= time.clock()
-			if 'integro' in systems:
-				g_sybilframe = nx.DiGraph(g_integro)
-			else:
-				g_sybilframe = nx.DiGraph(g)
+			g_sybilframe = nx.DiGraph(nx.Graph(g))
 			print('done creating sybilframe in {}'.format(time.clock()-t))
 
 		" set edge prob for sybilframe"
