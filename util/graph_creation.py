@@ -110,6 +110,7 @@ def append_boosting_region(g, dummies):
 
 def undirected_to_directed(g):
 	g = nx.DiGraph(g)
+
 	nx.set_node_attributes(g, 'type', 'honest')
 	sorted_edges = sorted(g.edges(), key = lambda tup: tup[0])
 	for e in sorted_edges:
@@ -132,5 +133,4 @@ def undirected_to_directed(g):
 	"label nodes from 0 to 1"
 	mapping = dict(zip(g.nodes(), range(len(g.nodes()))))
 	nx.relabel_nodes(g, mapping, copy=False)
-
 	return g

@@ -15,6 +15,7 @@ def run_experiment(paras, saveAs, systems=None):
 	if systems==None:
 		print('set systems default')
 		systems = ('integro', 'votetrust', 'sybilframe')
+		print(systems)
 
 	results_list = []
 	return_package = (results_list, paras)
@@ -34,20 +35,17 @@ def run_experiment(paras, saveAs, systems=None):
 	t = time.clock()
 	if paras.graph == 'smallWorld':
 		g_org = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
-	elif paras.graph == 'facebook':
-		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph])
-		g_org = graph_creation.undirected_to_directed(g_org)
+
 	elif paras.graph == 'newOrleans':
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph])
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
-	elif paras.graph in ('david', 'pokec', 'slashdot'):
+	elif paras.graph in ('david', 'pokec', 'slashdot', 'facebook'):
 		print('start reading in')
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
 	print('done reading in {}'.format(time.clock()-t))
-
 	nx.set_node_attributes(g_org, 'label', 0)
 	NUM_HONEST = len(g_org.nodes())
 	NUM_ATTACKERS = paras.numSybils
@@ -137,7 +135,8 @@ def run_experiment(paras, saveAs, systems=None):
 			g_integro = nx.Graph(g)
 		if 'sybilframe' in systems:
 			print('start creating sybilframe')
-			t= time.clock()
+			t = time.clock()
+			print(nx.is_connected(nx.Graph(g)))
 			g_sybilframe = nx.DiGraph(nx.Graph(g))
 			print('done creating sybilframe in {}'.format(time.clock()-t))
 
