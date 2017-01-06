@@ -110,12 +110,13 @@ def vote_propagation_mat(g, d=paras['d']):
 	for i, data in g.nodes_iter(data=True):
 		data['vote_capacity'] = v[i]
 
-def vote_combined(g, d=0.8):
+def vote_combined(g, d=paras['d']):
 	""" create out edge list"""
 	neighbors = []
 	for n in g.nodes_iter():
 		neighbors.append(len((g.out_edges(n))))
 	neighbors = tuple(neighbors)
+
 	""" create adjacency matrix"""
 	shape = len(g.nodes())
 	a = sparse.lil_matrix((shape, shape))
