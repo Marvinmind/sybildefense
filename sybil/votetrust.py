@@ -119,8 +119,8 @@ def vote_combined(g, d=paras['d']):
 
 	""" create adjacency matrix"""
 	shape = len(g.nodes())
-	a = sparse.lil_matrix((shape, shape))
-	b = sparse.lil_matrix((shape, shape))
+	a = sparse.dok_matrix((shape, shape))
+	b = sparse.dok_matrix((shape, shape))
 	v = np.zeros(shape)
 	initial = np.array([g.node[x]['initial_trust'] for x in sorted(g.nodes())]) * (1 - d)
 
@@ -128,8 +128,9 @@ def vote_combined(g, d=paras['d']):
 		edges = g.out_edges(i)
 		length = len(edges)
 		for e in edges:
-			a[i, e[1]] = 1 / length
-			b[i, e[1]] = g[e[0]][e[1]]['trust']
+			a.update({(i, e[1]) : 1 / length})
+			b.update({(i, e[1]) : g[e[0]][e[1]]['trust']})
+
 	b = sparse.csc_matrix(b)
 	count = 0
 	a = sparse.csc_matrix(a)

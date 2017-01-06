@@ -41,7 +41,7 @@ def run_experiment(paras, saveAs, systems=None):
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph])
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
-	elif paras.graph in ('david', 'pokec'):
+	elif paras.graph in ('david', 'pokec', 'slashdot'):
 		print('start reading in')
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
 		g_org = nx.convert_node_labels_to_integers(g_org)

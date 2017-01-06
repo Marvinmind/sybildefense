@@ -88,7 +88,7 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		outOne = np.bincount(r, np.log(v), minlength=oneM.shape[0])
 		r, c, v = sparse.find(zeroM)  # a is input sparse matrix
 		outZero = np.bincount(r, np.log(v), minlength=oneM.shape[0])
-		ratio = np.exp(np.array(outZero, dtype='float128') - np.array(outOne, dtype='float128'))
+		ratio = np.exp(np.array(outZero, dtype='float64') - np.array(outOne, dtype='float64'))
 		if np.min(ratio)==0:
 			print('underflow. god damit')
 		zeroMV = ratio * zeroP

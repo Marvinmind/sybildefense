@@ -3,28 +3,30 @@ import pickle
 from matplotlib import pyplot as plt
 from util import setMatplotlib
 
-PRandAll = pickle.load(open('../pickles/attackEdges/attackEdgesPRand.p','rb'))
+graph = 'facebook'
+
+PRandAll = pickle.load(open('../pickles/attackEdges/attackEdgesPRand{}.p'.format(graph),'rb'))
 PRandRes = PRandAll[0]
 PRandAUC = getMergedAuc(PRandRes)
 PRandParas = PRandAll[1]
 
 
-PTarAll = pickle.load(open('../pickles/attackEdges/attackEdgesPTar.p','rb'))
+PTarAll = pickle.load(open('../pickles/attackEdges/attackEdgesPTar{}.p'.format(graph),'rb'))
 PTarRes = PTarAll[0]
 PTarAUC = getMergedAuc(PTarRes)
 PTarParas = PTarAll[1]
 
-SRRandAll = pickle.load(open('../pickles/attackEdges/attackEdgesSRRand.p','rb'))
+SRRandAll = pickle.load(open('../pickles/attackEdges/attackEdgesSRRand{}.p'.format(graph),'rb'))
 SRRandRes = SRRandAll[0]
 SRRandAUC = getMergedAuc(SRRandRes)
 SRRandParas = SRRandAll[1]
 
-PTarTwoPhaseAll = pickle.load(open('../pickles/attackEdges/attackEdgesPTwoPhase.p','rb'))
+PTarTwoPhaseAll = pickle.load(open('../pickles/attackEdges/attackEdgesPTwoPhase{}.p'.format(graph),'rb'))
 PTarTwoPhaseRes = PTarTwoPhaseAll[0]
 PTarTwoPhaseAUC = getMergedAuc(PTarTwoPhaseRes)
 PTarTwoPhaseParas = PTarTwoPhaseAll[1]
 
-PTarNoboostAll = pickle.load(open('../pickles/attackEdges/attackEdgesPTarNoboost.p','rb'))
+PTarNoboostAll = pickle.load(open('../pickles/attackEdges/attackEdgesPTarNoboost{}.p'.format(graph),'rb'))
 PTarNoboostRes = PTarNoboostAll[0]
 PTarNoboostAUC = getMergedAuc(PTarNoboostRes)
 PTarNoboostParas = PTarNoboostAll[1]

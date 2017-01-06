@@ -73,16 +73,16 @@ def calc_weighted_degrees(g):
 # construct propagation matrix:
 def construct_transition_matrix(g):
 	N = len(g.nodes())
-	a = sparse.lil_matrix((N,N))
+	a = sparse.dok_matrix((N,N))
 	nx.set_node_attributes(g,'degree', 0)
 	degrees = calc_weighted_degrees(g)
 	nx.set_node_attributes(g,'degree', degrees)
 	for from_node, to_node, data in g.edges_iter(data=True):
-		a[from_node,to_node] = data['weight'] / g.node[from_node]['degree']
-		a[to_node,from_node] = data['weight'] / g.node[to_node]['degree']
+		a.update({(from_node, to_node): data['weight'] / g.node[from_node]['degree']})
+		a.update({(to_node, from_node): data['weight'] / g.node[to_node]['degree']})
 
 		if to_node == from_node:
-			a[from_node,to_node] *= 2
+			a.update({(from_node, to_node): a[from_node,to_node] * 2})
 	return a
 
 def getValues(n,auc):
@@ -169,12 +169,6 @@ def get_ranks(g):
 	for i in range(ceil(np.log2(len(g.nodes())))):
 		raw = raw * a
 
-	"""
-	for i, val in enumerate(raw):
-		if val == 0:
-			print('zero rank at: '.format(i))
-			print(g.node[i])
-	"""
 	degrees = calc_weighted_degrees(g)
 	degrees = [degrees[x] for x in g.nodes()]
 	rank = raw / np.array(degrees)

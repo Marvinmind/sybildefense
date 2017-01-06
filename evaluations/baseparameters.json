@@ -24,7 +24,8 @@
      "facebook" : "../datasets/facebook_combined.txt",
       "david" : "../datasets/davidGraph.txt",
       "newOrleans" : "../datasets/newOrleansCon",
-      "pokec" : "../datasets/pokec.txt"
+      "pokec" : "../datasets/pokec.txt",
+      "slashdot": "../datasets/soc-Slashdot.txt"
     }
 
 }

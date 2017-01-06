@@ -35,7 +35,6 @@ paras = parameters.ParameterSettingsP(graph=graph, strategy='twoPhase', boosted=
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTwoPhase{}.p'.format(graph))
 """
 "Run on pokec graph"
-graph = 'pokec'
 
 paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=True, evalAt=evalIntervals, numRepeats=3)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTar{}.p'.format(graph))
