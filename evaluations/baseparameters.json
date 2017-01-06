@@ -25,7 +25,7 @@
       "david" : "../datasets/davidGraph.txt",
       "newOrleans" : "../datasets/newOrleansCon",
       "pokec" : "../datasets/pokec.txt",
-      "slashdot": "../datasets/soc-Slashdot.txt"
+      "slashdot": "../datasets/slashdotNoSelf.txt"
     }
 
 }

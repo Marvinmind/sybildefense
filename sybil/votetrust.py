@@ -110,7 +110,7 @@ def vote_propagation_mat(g, d=paras['d']):
 	for i, data in g.nodes_iter(data=True):
 		data['vote_capacity'] = v[i]
 
-def vote_combined(g, d=paras['d']):
+def vote_combined(g, d = paras['d']):
 	""" create out edge list"""
 	neighbors = []
 	for n in g.nodes_iter():
@@ -162,6 +162,7 @@ def vote_combined(g, d=paras['d']):
 		else:
 			p_old = p
 	return p
+
 def getRanks(g):
 	ranks=[]
 	for i in g.nodes_iter():

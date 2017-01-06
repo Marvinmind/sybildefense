@@ -47,7 +47,7 @@ def inferPosteriorsEdgeImprove(g, d=5):
 
 
 def inferPosteriorsEdgeImproveNew(g, d=5):
-	#graphHealthCheck(g)
+	graphHealthCheck(g)
 
 	numNodes = len(g.nodes())
 

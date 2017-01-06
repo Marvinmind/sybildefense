@@ -46,5 +46,5 @@ for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
 axis.legend(loc='upper left')
 plt.tight_layout()
 plt.subplots_adjust(top=0.92)
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/EdgeProb.pdf', format='pdf')
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/EdgeProb{}.pdf'.format(graph), format='pdf')
 #plt.show()
