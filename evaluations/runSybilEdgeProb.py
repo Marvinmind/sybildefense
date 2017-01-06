@@ -19,11 +19,11 @@ import warnings
 
 """
 
-graph = 'facebook'
+graph = 'david'
 #(0.1, 0.3, 0.5, 0.6)
-for i in (0.6,):
+for i in (0.1, 0.3, 0.5, 0.6):
 	print(i)
-	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=(50,), numRepeats=1)
+	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=(50,), numRepeats=3)
 	paras.edgeProbSybil = 1-i
 	paras.edgeProbNonSybil = 0.1
 	paras.numSeeds = 100
