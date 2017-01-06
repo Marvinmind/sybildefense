@@ -119,6 +119,10 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 		zeroM[r1, c1] /= v1+v2
 		oneM[r2, c2] /= v1+v2
+
+		zeroM = sparse.csr_matrix(zeroM, dtype='float64')
+		oneM = sparse.csr_matrix(oneM, dtype='float64')
+
 		print('matrix mult duration: {}'.format(time.clock() - t))
 	t = time.clock()
 	""" calc beliefs """
