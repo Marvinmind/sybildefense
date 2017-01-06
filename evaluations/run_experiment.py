@@ -9,7 +9,7 @@ from sybil import integro, sybilframe
 from collections import defaultdict
 import numpy as np
 from util import graph_creation
-
+import time
 
 def run_experiment(paras, saveAs, systems=None):
 	if systems==None:
@@ -31,6 +31,7 @@ def run_experiment(paras, saveAs, systems=None):
 	getNonSybilEdgeProb = calc.getNodeProbClosure(paras.edgeProbNonSybil)
 
 	"create benign region from graph"
+	t = time.clock()
 	if paras.graph == 'smallWorld':
 		g_org = graph_creation.create_directed_smallWorld(paras.sizeSmallWorld, paras.edgesSmallWorld)
 	elif paras.graph == 'facebook':
@@ -43,9 +44,9 @@ def run_experiment(paras, saveAs, systems=None):
 	elif paras.graph in ('david', 'pokec'):
 		print('start reading in')
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], nodetype=int)
-		print('done reading in')
 	if 'votetrust' in systems:
 		g_org = graph_creation.undirected_to_directed(g_org)
+	print('done reading in {}'.format(time.clock()-t))
 
 	nx.set_node_attributes(g_org, 'label', 0)
 	NUM_HONEST = len(g_org.nodes())
@@ -111,6 +112,8 @@ def run_experiment(paras, saveAs, systems=None):
 				attackers.append(NUM_HONEST+offset+i)
 
 		""" set node prob"""
+		print('set node probs')
+		t = time.clock()
 		for i in g.nodes_iter():
 			if g.node[i]['label'] == 0:
 				prob_victim = getNonVictimNodeProb()
@@ -121,7 +124,7 @@ def run_experiment(paras, saveAs, systems=None):
 
 			g.node[i]['prob_victim'] = prob_victim
 			g.node[i][SF_Keys.Potential] = sybilframe.create_node_func(prob_sybil)
-
+		print('done nodeprobs in {}'.format(time.clock() - t))
 		"set seed attributes"
 		nx.set_node_attributes(g, 'seed', 0)
 		for s in seeds:
@@ -134,13 +137,15 @@ def run_experiment(paras, saveAs, systems=None):
 			g_integro = nx.Graph(g)
 		if 'sybilframe' in systems:
 			print('start creating sybilframe')
+			t= time.clock()
 			if 'integro' in systems:
 				g_sybilframe = nx.DiGraph(g_integro)
 			else:
 				g_sybilframe = nx.DiGraph(nx.Graph(g))
-			print('done creating sybilframe')
+			print('done creating sybilframe in {}'.format(time.clock()-t))
 
 		" set edge prob for sybilframe"
+		t = time.clock()
 		if 'sybilframe' in systems:
 			for start, end in g_sybilframe.edges_iter():
 				if g.node[start]['label'] == g.node[end]['label']:
@@ -149,6 +154,7 @@ def run_experiment(paras, saveAs, systems=None):
 					# print('ATTACK EDGE!!')
 					prob = getSybilEdgeProb()
 				g_sybilframe[start][end][SF_Keys.Potential] = sybilframe.create_edge_func(prob)
+		print('done edgeprobs in {}'.format(time.clock() -t))
 
 		"set pool for breadth first"
 		if paras.strategy == 'twoPhase' or paras.strategy == "breadthFirst":
