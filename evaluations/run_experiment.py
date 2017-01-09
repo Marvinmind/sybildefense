@@ -15,7 +15,6 @@ def run_experiment(paras, saveAs, systems=None):
 	if systems==None:
 		print('set systems default')
 		systems = ('integro', 'votetrust', 'sybilframe')
-		print(systems)
 
 	results_list = []
 	return_package = (results_list, paras)
@@ -46,6 +45,7 @@ def run_experiment(paras, saveAs, systems=None):
 		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
 	print('done reading in {}'.format(time.clock()-t))
+
 	nx.set_node_attributes(g_org, 'label', 0)
 	NUM_HONEST = len(g_org.nodes())
 	NUM_ATTACKERS = paras.numSybils
@@ -66,6 +66,7 @@ def run_experiment(paras, saveAs, systems=None):
 
 	for i in range(paras.numRepeats):
 		g = g_org.copy()
+
 		"add boosting region"
 		if paras.boosted:
 			r = []
@@ -93,7 +94,6 @@ def run_experiment(paras, saveAs, systems=None):
 			for i in range(NUM_HONEST, NUM_HONEST+NUM_ATTACKERS):
 				g.node[i]['label'] = 1
 				attackers.append(i)
-
 
 		elif paras.scenario == 'P':
 			"create peripheral sybils (including boosting if boosting) for peripheral scenario"
@@ -129,15 +129,16 @@ def run_experiment(paras, saveAs, systems=None):
 			g.node[s]['seed'] = 1
 
 		"create customized graph for each system"
+		g_integro = nx.Graph(g)
+
 		if 'votetrust' in systems:
 			g_votetrust = g.copy()
-		if 'integro' in systems:
-			g_integro = nx.Graph(g)
+
 		if 'sybilframe' in systems:
 			print('start creating sybilframe')
 			t = time.clock()
-			print(nx.is_connected(nx.Graph(g)))
-			g_sybilframe = nx.DiGraph(nx.Graph(g))
+			g_sybilframe = nx.DiGraph(g_integro)
+
 			print('done creating sybilframe in {}'.format(time.clock()-t))
 
 		" set edge prob for sybilframe"
@@ -153,7 +154,7 @@ def run_experiment(paras, saveAs, systems=None):
 				g_sybilframe[start][end][SF_Keys.Potential] = func
 				g_sybilframe[end][start][SF_Keys.Potential] = func
 
-		print('done edgeprobs in {}'.format(time.clock() -t))
+		print('done edgeprobs in {}'.format(time.clock() - t))
 
 		"set pool for breadth first"
 		if paras.strategy == 'twoPhase' or paras.strategy == "breadthFirst":
@@ -216,13 +217,15 @@ def run_experiment(paras, saveAs, systems=None):
 					trust = calc.getSuccessByProb(paras.vulnAcceptanceProb)
 
 				else:
-					num_common_friends = len(set(g.neighbors(h)).intersection(set(g.neighbors(s))))
+					num_common_friends = len(set(g_integro.neighbors(h)).intersection(set(g_integro.neighbors(s))))
 					trust = getAcceptance(num_common_friends)
+
 				if 'votetrust' in systems:
 					g_votetrust.add_edge(s, h, {'trust': trust})
+
 				if trust == 1:
 					if paras.strategy in ('breadthFirst', 'twoPhase'):
-						friends_of_friend = g.neighbors(h)
+						friends_of_friend = g_integro.neighbors(h)
 						if s in friends_of_friend:
 							friends_of_friend.remove(s)
 						pools[s].extend(friends_of_friend)
@@ -232,9 +235,9 @@ def run_experiment(paras, saveAs, systems=None):
 						seen_add = seen.add
 						pools[s] = [x for x in pools[s] if not (x in seen or seen_add(x)) and x not in requested[s]+seeds]
 
-					if 'integro' in systems:
-						g_integro.node[h]['prob_victim'] = getVictimNodeProb()
-						g_integro.add_edge(s, h)
+					g_integro.node[h]['prob_victim'] = getVictimNodeProb()
+					g_integro.add_edge(s, h)
+
 					if 'sybilframe' in systems:
 						g_sybilframe.add_edge(s, h, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
 						g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})

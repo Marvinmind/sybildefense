@@ -47,7 +47,7 @@ def inferPosteriorsEdgeImprove(g, d=5):
 
 
 def inferPosteriorsEdgeImproveNew(g, d=5):
-	graphHealthCheck(g)
+	#graphHealthCheck(g)
 
 	numNodes = len(g.nodes())
 
@@ -88,7 +88,7 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		outOne = np.bincount(r, np.log(v), minlength=oneM.shape[0])
 		r, c, v = sparse.find(zeroM)  # a is input sparse matrix
 		outZero = np.bincount(r, np.log(v), minlength=oneM.shape[0])
-		ratio = np.exp(np.array(outZero, dtype='float64') - np.array(outOne, dtype='float64'))
+		ratio = np.exp(np.array(outZero, dtype='float128') - np.array(outOne, dtype='float128'))
 		if np.min(ratio)==0:
 			print('underflow. god damit')
 		zeroMV = ratio * zeroP
@@ -214,14 +214,14 @@ def graphHealthCheck(g):
 	message = []
 	for n, d in g.nodes(data=True):
 		if g.degree(n)==0:
-			message.append = 'node has zero degree: {}'.format(n)
+			message.append('node has zero degree: {}'.format(n))
 		if d[SF_Keys.Potential](1) <= 0 or d[SF_Keys.Potential](-1) <= 0:
-			message.append = 'node has zero or smaller node pot: {} {}'.format(n, d[SF_Keys.Potential])
+			message.append ('node has zero or smaller node pot: {} {}'.format(n, d[SF_Keys.Potential]))
 	for start, end, d in g.edges(data=True):
 		if start not in g[end]:
 			message.append('not back and forth')
 		if d[SF_Keys.Potential](0,0) <= 0 or d[SF_Keys.Potential](0,1) <= 0 or d[SF_Keys.Potential](1,0) <= 0 or d[SF_Keys.Potential](1,1) <= 0:
-			message.append = 'edge has zero or smaller edge pot: {} {}'.format((start, end), d[SF_Keys.Potential])
+			message.append('edge has zero or smaller edge pot: {} {}'.format((start, end), d[SF_Keys.Potential]))
 
 	if len(message) == 0:
 		print('graph healthy')

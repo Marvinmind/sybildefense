@@ -32,7 +32,7 @@ PTarNoboostAUC = getMergedAuc(PTarNoboostRes)
 PTarNoboostParas = PTarNoboostAll[1]
 
 f, axarr = plt.subplots(1, 5, figsize=(8.25, 2.5), sharey=True)
-f.suptitle('Systems Performance by Number of Attack Edges')
+f.suptitle('Systems Performance by Number of Requests')
 
 x = [x for x in PRandParas.evalAt]
 
@@ -84,5 +84,5 @@ axarr[0].legend(bbox_to_anchor=(0,0.4), loc='upper left')
 plt.tight_layout()
 plt.subplots_adjust(top=0.82)
 f.subplots_adjust(wspace=0.1)
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/AttackEdges.pdf', format='pdf')
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/AttackEdges{}.pdf'.format(graph), format='pdf')
 

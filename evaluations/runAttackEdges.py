@@ -15,39 +15,21 @@ from evaluations.run_experiment import run_experiment
 
 """
 
-graph = 'facebook'
+graph = 'slashdot'
+num_repeats = 3
 evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
-"""
-" Run on facbook Graph"
-paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=True, evalAt=evalIntervals, numRepeats=3)
-run_experiment(paras, saveAs='./attackEdges/attackEdgesPTar{}.p'.format(graph))
 
-paras = parameters.ParameterSettingsP(graph=graph, strategy='random', boosted=False, evalAt=evalIntervals, numRepeats=3)
-run_experiment(paras, saveAs='./attackEdges/attackEdgesPRand{}.p'.format(graph))
-
-paras = parameters.ParameterSettingsSR(graph=graph, evalAt=evalIntervals, numRepeats=3)
+paras = parameters.ParameterSettingsSR(graph=graph, evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesSRRand{}.p'.format(graph))
 
-paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=evalIntervals, numRepeats=3)
-run_experiment(paras, saveAs='./attackEdges/attackEdgesPTarNoboost{}.p'.format(graph))
-
-paras = parameters.ParameterSettingsP(graph=graph, strategy='twoPhase', boosted=False, evalAt=evalIntervals, numRepeats=3)
-run_experiment(paras, saveAs='./attackEdges/attackEdgesPTwoPhase{}.p'.format(graph))
-"Run on pokec graph"
-
-paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=True, evalAt=evalIntervals, numRepeats=3)
-run_experiment(paras, saveAs='./attackEdges/attackEdgesPTar{}.p'.format(graph))
-
-paras = parameters.ParameterSettingsP(graph=graph, strategy='random', boosted=False, evalAt=evalIntervals, numRepeats=3)
+paras = parameters.ParameterSettingsP(graph=graph, strategy='random', boosted=False, evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPRand{}.p'.format(graph))
 
-paras = parameters.ParameterSettingsSR(graph=graph, evalAt=evalIntervals, numRepeats=3)
-run_experiment(paras, saveAs='./attackEdges/attackEdgesSRRand{}.p'.format(graph))
-"""
-
-paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=evalIntervals, numRepeats=3)
+paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTarNoboost{}.p'.format(graph))
-"""
-paras = parameters.ParameterSettingsP(graph=graph, strategy='twoPhase', boosted=False, evalAt=evalIntervals, numRepeats=3)
+
+paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=True, evalAt=evalIntervals, numRepeats=num_repeats)
+run_experiment(paras, saveAs='./attackEdges/attackEdgesPTar{}.p'.format(graph))
+
+paras = parameters.ParameterSettingsP(graph=graph, strategy='twoPhase', boosted=True, evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTwoPhase{}.p'.format(graph))
-"""
