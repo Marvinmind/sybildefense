@@ -15,8 +15,8 @@ from evaluations.run_experiment import run_experiment
 
 """
 
-graph = 'slashdot'
-num_repeats = 3
+graph = 'facebook'
+num_repeats = 2
 evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
 
 paras = parameters.ParameterSettingsSR(graph=graph, evalAt=evalIntervals, numRepeats=num_repeats)

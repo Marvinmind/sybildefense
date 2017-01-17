@@ -15,8 +15,12 @@ from evaluations.run_experiment import run_experiment
 """
 
 for i in (0.1, 0.2, 0.4):
-	paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=True, evalAt=(50,), maxRequests=51, numRepeats=3)
-	paras.nodeProbNonVictim = 1-i
+	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=False, evalAt=(50,), numRepeats=3)
+	paras.nodeProbNonVictim = 0.9
 	paras.nodeProbVictim = i
-	paras.numSeeds = 100
-	run_experiment(paras, saveAs='./victimProb/victimProb{}PRand.p'.format(i), systems=('integro',))
+	run_experiment(paras, saveAs='./victimProb/victimProb{}PTar.p'.format(i), systems=('integro',))
+
+	paras = parameters.ParameterSettingsSR(graph='facebook', evalAt=(50,), numRepeats=3)
+	paras.nodeProbNonVictim = 0.9
+	paras.nodeProbVictim = i
+	run_experiment(paras, saveAs='./victimProb/victimProb{}SRRand.p'.format(i), systems=('integro',))

@@ -89,7 +89,10 @@ def getValues(n,auc):
 	l = [x/n for x in range(n)]
 	r = []
 	for e in l:
-		r.append(dist_func(e,auc))
+		if auc < 0.5:
+			r.append(dist_func(1-e,1-auc))
+		else:
+			r.append(dist_func(e, auc))
 	return r
 
 def dist_func(e,auc):
@@ -99,7 +102,7 @@ def dist_func(e,auc):
 		return e * h2*4
 	elif e>0.25 and e<=0.5:
 		return e * (h1-h2)*4-h1+2*h2
-	elif e > 0.5 and e < 1:
+	elif e > 0.5 and e <= 1:
 		return  -2*(h1*e-h1)
 
 

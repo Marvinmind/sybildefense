@@ -58,7 +58,7 @@ axarr[1].set_title('Peri. Random', loc='center')
 axarr[2].plot(x, list(PTarNoboostAUC['integro'].values()), 'r-')
 axarr[2].plot(x, list(PTarNoboostAUC['votetrust'].values()),'b--')
 axarr[2].plot(x, list(PTarNoboostAUC['sybilframe'].values()),'k-.')
-axarr[2].set_xlabel('Number of Attack Edges')
+axarr[2].set_xlabel('Number of Requests')
 
 axarr[2].set_ylim((0, 1.1))
 axarr[2].set_title('Peri. Targeted', loc='center')
