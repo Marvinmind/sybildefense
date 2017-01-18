@@ -67,8 +67,13 @@ def run_experiment(paras, saveAs, systems=None):
 	for i in range(paras.numRepeats):
 		g = g_org.copy()
 
+		"set seed attributes"
+		nx.set_node_attributes(g, 'seed', 0)
+		for s in seeds:
+			g.node[s]['seed'] = 1
+
 		"add boosting region"
-		if paras.boosted:
+		if paras.boosted == 'random':
 			r = []
 			for i in range(paras.numDummies):
 				while True:
@@ -84,15 +89,34 @@ def run_experiment(paras, saveAs, systems=None):
 
 			for i in range(3):
 				g.node[NUM_HONEST + i]['label'] = 1
+				g.node[NUM_HONEST + i]['seed'] = 0
+
+		if paras.boosted == 'seed':
+			for n, data in g.nodes_iter(data=True):
+				if data['seed'] == 1:
+					print('seed found')
+					s = n
+					break
+
+			g.add_edge(s, NUM_HONEST, {'trust': 1})
+
+			g.add_edge(NUM_HONEST, NUM_HONEST + 1, {'trust': 1})
+			g.add_edge(NUM_HONEST + 1, NUM_HONEST + 2, {'trust': 1})
+			g.add_edge(NUM_HONEST + 2, NUM_HONEST, {'trust': 1})
+
+			for i in range(3):
+				g.node[NUM_HONEST + i]['label'] = 1
+				g.node[NUM_HONEST + i]['seed'] = 0
 
 		"add sybil nodes"
 		attackers = []
 
 		"create sybil region for sybil region scenario"
 		if paras.scenario == 'SR':
-			graph_creation.add_community(g, NUM_ATTACKERS, 0, type='sybil')
+			g = graph_creation.add_sybil_region(g, NUM_ATTACKERS, 15)
 			for i in range(NUM_HONEST, NUM_HONEST+NUM_ATTACKERS):
 				g.node[i]['label'] = 1
+				g.node[i]['seed'] = 0
 				attackers.append(i)
 
 		elif paras.scenario == 'P':
@@ -102,7 +126,7 @@ def run_experiment(paras, saveAs, systems=None):
 				offset = 0
 				if paras.boosted:
 					offset = 3
-				g.add_node(NUM_HONEST + i + offset, {'label': 1})
+				g.add_node(NUM_HONEST + i + offset, {'label': 1, 'seed':0})
 				if paras.boosted:
 					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST, {'trust': 1})
 					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 1, {'trust': 1})
@@ -113,20 +137,21 @@ def run_experiment(paras, saveAs, systems=None):
 		print('set node probs')
 		t = time.clock()
 		for i in g.nodes_iter():
+			prob_victim = getNonVictimNodeProb()
 			if g.node[i]['label'] == 0:
-				prob_victim = getNonVictimNodeProb()
+				neighbors = g.neighbors(i)
+				for n in neighbors:
+					if g.node[n]['label'] == 1:
+						prob_victim = getVictimNodeProb()
+
 				prob_sybil = getNonSybilNodeProb()
 			else:
-				prob_victim = getVictimNodeProb()
 				prob_sybil = getSybilNodeProb()
 
 			g.node[i]['prob_victim'] = prob_victim
 			g.node[i][SF_Keys.Potential] = sybilframe.create_node_func(prob_sybil)
 		print('done nodeprobs in {}'.format(time.clock() - t))
-		"set seed attributes"
-		nx.set_node_attributes(g, 'seed', 0)
-		for s in seeds:
-			g.node[s]['seed'] = 1
+
 
 		"create customized graph for each system"
 		g_integro = nx.Graph(g)
@@ -184,6 +209,21 @@ def run_experiment(paras, saveAs, systems=None):
 			if i in paras.evalAt or (not paras.evalAt and paras.evalInterval % i == 0):
 				print('eval')
 				if 'integro' in systems:
+					victims = {'number': 0, 'victimProb': 0}
+					nonVictims = {'number': 0, 'victimProb': 0}
+
+					for e, data in g_integro.nodes(data=True):
+						ns = g_integro.neighbors(e)
+						if 1 in [g_integro.node[x]['label'] for x in ns] and data['label'] ==0:
+							victims['number'] += 1
+							victims['victimProb'] += data['prob_victim']
+						else:
+							nonVictims['number'] += 1
+							nonVictims['victimProb'] += data['prob_victim']
+					print('num victims: {}, victim prob {}'.format(victims['number'], victims['victimProb']))
+					print('num nonvictims: {}, nonvictims prob {}'.format(nonVictims['number'], nonVictims['victimProb']))
+
+
 					results['integro'].append(eval_systems.eval_system(g_integro, system='integro', paras=paras))
 				if 'votetrust' in systems:
 					results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust', paras=paras))
@@ -249,8 +289,10 @@ def run_experiment(paras, saveAs, systems=None):
 		filename = 'res_'
 		filename += paras.strategy+'_'
 
-		if paras.boosted:
+		if paras.boosted == 'random':
 			filename += 'boosted_'
+		elif paras.boosted == 'seed':
+			filename += 'boostedseed_'
 		else:
 			filename += 'noboost_'
 

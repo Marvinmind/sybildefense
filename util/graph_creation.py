@@ -3,6 +3,7 @@ import networkx as nx
 import random
 from math import floor
 from util.keys import Systems
+import sybil.integro as integro
 
 def create_directed_smallWorld(n, e):
 	# Create graph
@@ -31,30 +32,11 @@ def create_directed_smallWorld(n, e):
 
 	return g
 
-def add_sybil_region(g, SIZE_SYBIL, NUMBER_IN):
-	### Add sybil region ###
-
-	NUM_NODES = len(g.nodes())
-
-	for i in range(SIZE_SYBIL):
-		g.add_node(NUM_NODES + i)
-	for i in range(SIZE_SYBIL):
-		for j in range(SIZE_SYBIL):
-			if j != i:
-				g.add_edge(i + NUM_NODES, j + NUM_NODES)
-				g.node[i+NUM_NODES]['label'] = 1
-
-	selected = []
-	r = 0
-	for i in range(NUMBER_IN):
-		while True:
-			r = floor(random.random() * NUM_NODES)
-			if r not in selected:
-				selected.append(r)
-				sybil = floor(random.random() * SIZE_SYBIL + NUM_NODES)
-				g.add_edge(r, sybil)
-				break
-	return r
+def add_sybil_region(g, SIZE_SYBIL, m):
+	f = nx.barabasi_albert_graph(SIZE_SYBIL, m)
+	nx.set_node_attributes(f, 'label', 1)
+	f = integro.merge_and_renumber(g, f)
+	return f
 
 def add_community(g, SIZE_SYBIL, NUMBER_IN, type='sybil', num_honest=None):
 	### Add sybil region ###

@@ -1,7 +1,7 @@
 import pickle
 from matplotlib import pyplot as plt
 import sklearn.preprocessing as prep
-from util.calc import get_cdf, getMergedRanks
+from util.calc import get_cdf, getMergedRanks, getMergedAuc
 
 graph = 'facebook'
 
@@ -11,8 +11,10 @@ for sys in ('integro', ):
 	f.suptitle('Integro Victim Prior Influence - Peripheral Random', fontsize=14, weight='bold')
 
 	for enu, i in enumerate((0.1, 0.2, 0.4)):
-		perTarAll = pickle.load(open('../pickles/victimProb/victimProb{}PTar.p'.format(i), 'rb'))
+		perTarAll = pickle.load(open('../pickles/victimProb/victimProb{}eval1SRRand.p'.format(i), 'rb'))
 		perTar = perTarAll[0]
+		perTarAuc = getMergedAuc(perTar)
+		print(list(perTarAuc['integro'].values()))
 		paras = perTarAll[1]
 
 		ranksPerTar = getMergedRanks(perTar)
@@ -45,4 +47,4 @@ for sys in ('integro', ):
 		axarr[enu].plot(x_h, y_h, 'b--')
 
 
-plt.show()
+#plt.show()

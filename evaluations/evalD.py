@@ -3,17 +3,18 @@ from collections import defaultdict
 from matplotlib import pyplot as plt
 import sklearn.preprocessing as prep
 import numpy as np
+from util import setMatplotlib
 from util.calc import get_cdf, getMergedRanks
 
 graph = 'facebook'
-
+boosttype = 'seed'
 
 for sys in ('votetrust', ):
-	f, axarr = plt.subplots(1, 7)
-	f.suptitle('Influence of \'d\' Parameter on Votetrust - Peripheral Targeted ', fontsize=14, weight='bold')
+	f, axarr = plt.subplots(1, 3, figsize=(6,2))
+	f.suptitle('Influence of \'d\' Factor on Votetrust - Peripheral Targeted ', weight='bold')
 
-	for enu, i in enumerate((0.7, 0.75, 0.8, 0.9, 0.95,  0.99, 0.999)):
-		perTarAll = pickle.load(open('../pickles/d/d{}PTar.p'.format(i), 'rb'))
+	for enu, i in enumerate((0.8, 0.99, 0.999)):
+		perTarAll = pickle.load(open('../pickles/d/d{}PTar{}.p'.format(i, boosttype), 'rb'))
 		perTar = perTarAll[0]
 		paras = perTarAll[1]
 
@@ -47,4 +48,7 @@ for sys in ('votetrust', ):
 		axarr[enu].plot(x_h, y_h, 'b--')
 
 
-plt.show()
+plt.subplots_adjust(top=0.82)
+plt.tight_layout()
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/d{}.pdf'.format(boosttype), type='pdf')
+#plt.show()
