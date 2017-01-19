@@ -7,14 +7,14 @@ from util import setMatplotlib
 from util.calc import get_cdf, getMergedRanks
 
 graph = 'facebook'
-boosttype = 'seed'
+boosttype = 'random'
 
 for sys in ('votetrust', ):
 	f, axarr = plt.subplots(1, 3, figsize=(6,2))
-	f.suptitle('Influence of \'d\' Factor on Votetrust - Peripheral Targeted ', weight='bold')
+	f.suptitle('Influence of \'d\' Factor on Votetrust - Compromised Seed Scenario', weight='bold')
 
 	for enu, i in enumerate((0.8, 0.99, 0.999)):
-		perTarAll = pickle.load(open('../pickles/d/d{}PTar{}.p'.format(i, boosttype), 'rb'))
+		perTarAll = pickle.load(open('../pickles/d/d{}PTar_{}_{}.p'.format(i, boosttype, graph), 'rb'))
 		perTar = perTarAll[0]
 		paras = perTarAll[1]
 
@@ -50,5 +50,5 @@ for sys in ('votetrust', ):
 
 plt.subplots_adjust(top=0.82)
 plt.tight_layout()
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/d{}.pdf'.format(boosttype), type='pdf')
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/d_{}_{}_{}.pdf'.format(boosttype, graph, paras.numSeeds), type='pdf')
 #plt.show()
