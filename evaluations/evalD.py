@@ -10,8 +10,8 @@ graph = 'facebook'
 boosttype = 'random'
 
 for sys in ('votetrust', ):
-	f, axarr = plt.subplots(1, 3, figsize=(6,2))
-	f.suptitle('Influence of \'d\' Factor on Votetrust - Compromised Seed Scenario', weight='bold')
+	f, axarr = plt.subplots(1, 3, figsize = (6,2))
+	f.suptitle('Influence of \'d\' Factor on Votetrust - {} Boosted Scenario'.format(boosttype.capitalize()), weight='bold')
 
 	for enu, i in enumerate((0.8, 0.99, 0.999)):
 		perTarAll = pickle.load(open('../pickles/d/d{}PTar_{}_{}.p'.format(i, boosttype, graph), 'rb'))
@@ -21,7 +21,6 @@ for sys in ('votetrust', ):
 		ranksPerTar = getMergedRanks(perTar)
 
 		print(paras.numSybils)
-
 
 		""" plot random per"""
 

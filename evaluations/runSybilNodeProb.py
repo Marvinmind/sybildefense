@@ -15,8 +15,8 @@ from evaluations.run_experiment import run_experiment
 """
 
 
-for i in (0.1, 0.2, 0.4):
-	paras = parameters.ParameterSettingsP(graph='facebook', strategy='random', boosted=True, evalAt=(50,), maxRequests=51, numRepeats=3)
+for i in (0.1, 0.3, 0.4, 0.6):
+	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=False, evalAt=(50,), numRepeats=3)
 	paras.nodeProbSybil = 1-i
 	paras.nodeProbNonSybil = i
 	paras.numSeeds = 100

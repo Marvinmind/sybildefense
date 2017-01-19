@@ -10,11 +10,10 @@ from evaluations.run_experiment import run_experiment
 
 	Set of variations:
 	d=0.8, 0.9, 0.95,  0.99, 0.999
-
 """
 
 
-boosttype = 'seed'
+boosttype = 'random'
 graph ='facebook'
 
 for i in (0.8, 0.99, 0.999):

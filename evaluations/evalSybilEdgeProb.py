@@ -7,7 +7,7 @@ from util import setMatplotlib
 graph = 'facebook'
 sys = 'sybilframe'
 
-f, axarr = plt.subplots(2, 2, figsize=(3.5, 3.5), sharex=True, sharey=True)
+f, axarr = plt.subplots(2, 2, figsize=(2.8, 2.8), sharex=True, sharey=True)
 f.suptitle('Sybilframe Edge Prior Influence')
 
 for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):

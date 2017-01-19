@@ -8,10 +8,10 @@ graph = 'facebook'
 
 
 for sys in ('sybilframe', ):
-	f, axarr = plt.subplots(1, 3)
+	f, axarr = plt.subplots(2, 2)
 	f.suptitle('Sybilframe Node Prior Influence - Peripheral Random', fontsize=14, weight='bold')
 
-	for enu, i in enumerate((0.1, 0.2, 0.4)):
+	for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
 		perTarAll = pickle.load(open('../pickles/sybilNodeProb/sybilNodeProb{}PRand.p'.format(i), 'rb'))
 		perTar = perTarAll[0]
 		paras = perTarAll[1]
