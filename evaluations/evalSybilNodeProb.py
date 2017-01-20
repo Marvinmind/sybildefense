@@ -47,6 +47,7 @@ for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
 	axis.plot(x_h, y_h, 'b--', label='Honest')
 	axis.plot(x_s, y_s, 'r--', label='Sybil')
 
+
 axis.legend(loc='upper left')
 plt.tight_layout()
 plt.subplots_adjust(top=0.92)
