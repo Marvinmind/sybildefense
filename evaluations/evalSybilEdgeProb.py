@@ -1,7 +1,7 @@
 import pickle
 from matplotlib import pyplot as plt
 import sklearn.preprocessing as prep
-from util.calc import get_cdf, getMergedRanks
+from util.calc import get_cdf, getMergedRanks, getMergedAuc
 from util import setMatplotlib
 
 graph = 'facebook'
@@ -21,6 +21,9 @@ for enu, i in enumerate((0.1, 0.3, 0.5, 0.6)):
 
 	x_h = sorted(ranksPerTar[sys][0][:-(paras.numSybils)])
 	x_s = sorted(ranksPerTar[sys][0][-(paras.numSybils):])
+
+	perTarAuc = getMergedAuc(perTar)
+	print(list(perTarAuc['sybilframe'].values()))
 
 	scaler = prep.MinMaxScaler()
 	scaler.fit(sorted(ranksPerTar[sys][0]))

@@ -7,12 +7,13 @@ from util import setMatplotlib
 
 graph = 'facebook'
 sys = 'sybilframe'
+edgeFNrate = 0.6
 
 f, axarr = plt.subplots(2, 2, figsize=(2.8, 2.8), sharex=True, sharey=True)
 f.suptitle('Sybilframe Node Prior Influence')
 
 for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
-	perTarAll = pickle.load(open('../pickles/sybilNodeProb/sybilNodeProb{}PRand.p'.format(i, graph), 'rb'))
+	perTarAll = pickle.load(open('../pickles/sybilNodeProb/sybilNodeProb{}PTar{}.p'.format(i, edgeFNrate), 'rb'))
 	perTar = perTarAll[0]
 	paras = perTarAll[1]
 	perTarAuc = getMergedAuc(perTar)
@@ -53,4 +54,4 @@ for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
 axis.legend(loc='upper left')
 plt.tight_layout()
 plt.subplots_adjust(top=0.92)
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/NodeProb{}.pdf'.format(graph), format='pdf')
+plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/NodeProb{}_{}.pdf'.format(graph, edgeFNrate), format='pdf')
