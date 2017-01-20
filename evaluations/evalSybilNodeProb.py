@@ -12,7 +12,7 @@ f, axarr = plt.subplots(2, 2, figsize=(2.8, 2.8), sharex=True, sharey=True)
 f.suptitle('Sybilframe Node Prior Influence')
 
 for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
-	perTarAll = pickle.load(open('../pickles/sybilNodeProb/sybilNodeProb{}PTar.p'.format(i, graph), 'rb'))
+	perTarAll = pickle.load(open('../pickles/sybilNodeProb/sybilNodeProb{}PRand.p'.format(i, graph), 'rb'))
 	perTar = perTarAll[0]
 	paras = perTarAll[1]
 	perTarAuc = getMergedAuc(perTar)
