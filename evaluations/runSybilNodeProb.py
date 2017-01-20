@@ -22,4 +22,4 @@ for i in (0.1,):
 	paras.numSeeds = 100
 	"Not usual setting"
 	paras.edgeProbSybil = 0.6
-	run_experiment(paras, saveAs='./sybilNodeProb/sybilNodeProb{}PTar{}.p'.format(i,paras.edgeProbSybil), systems=('sybilframe',))
+	run_experiment(paras, saveAs='./sybilProb/sybilNodeProb{}PTar{}.p'.format(i,paras.edgeProbSybil), systems=('sybilframe',))
