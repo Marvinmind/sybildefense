@@ -24,6 +24,9 @@ for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
 	x_h = sorted(ranksPerTar[sys][0][:-(paras.numSybils)])
 	x_s = sorted(ranksPerTar[sys][0][-(paras.numSybils):])
 
+	x_h = np.power(x_h,5)
+	x_s = np.power(x_s,5)
+
 	scaler = prep.MinMaxScaler()
 	scaler.fit(sorted(ranksPerTar[sys][0]))
 
@@ -33,15 +36,14 @@ for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
 	y_h = get_cdf(x_h)
 	y_s = get_cdf(x_s)
 
-	x_h = np.power(y_h,3)
-	x_s = np.power(y_s,3)
+
 
 	ind_row = lambda enu: 0 if enu in (0,1) else 1
 	ind_col = lambda enu: 0 if enu in (0, 2) else 1
 
 	axis = axarr[ind_row(enu)][ind_col(enu)]
 	axis.set_ylim((0, 1.1))
-	#axis.set_xlim((-0.1, 1.1))
+	axis.set_xlim((-0.1, 1.1))
 	axis.set_ylabel('FN='+str(i))
 
 	axis.plot(x_h, y_h, 'b--', label='Honest')

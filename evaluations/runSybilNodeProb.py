@@ -20,4 +20,6 @@ for i in (0.1, 0.3, 0.4, 0.6):
 	paras.nodeProbSybil = 1-i
 	paras.nodeProbNonSybil = 0.1
 	paras.numSeeds = 100
+	"Not usual setting"
+	paras.edgeProbSybil = 0.6
 	run_experiment(paras, saveAs='./sybilNodeProb/sybilNodeProb{}PRand.p'.format(i), systems=('sybilframe',))
