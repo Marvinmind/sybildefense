@@ -28,4 +28,4 @@ for i in (0.1, 0.3, 0.6, 0.81):
 		paras.nodeProbSybil = 1-j
 		paras.nodeProbNonSybil = 0.1
 		paras.numSeeds = 100
-		run_experiment(paras, saveAs='./sybilProb/sybilEdgeProb{}PTar{}_node{}_edge{}.p'.format(i, graph, round(paras.nodeProbSybil,2)[2:], round(paras.edgeProbSybil,2)[2:], systems=('sybilframe',))
+		run_experiment(paras, saveAs='./sybilProb/sybilProb{}PTar{}_node{}_edge{}.p'.format(i, graph, str(round(1-paras.nodeProbSybil,2))[2:], str(round(1-paras.edgeProbSybil,2))[2:]), systems=('sybilframe',))
