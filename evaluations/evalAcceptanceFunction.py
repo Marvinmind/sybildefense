@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 from util.calc import getSuccessProb
-#from util import setMatplotlib
+from util import setMatplotlib
 import matplotlib as mpl
+from baseparameters import paras
+
 
 plt.figure(figsize=(1.8, 1.75))
 
@@ -34,4 +36,4 @@ plt.legend(loc='lower right')
 plt.tight_layout(pad=0.1)
 plt.subplots_adjust(top=0.85, bottom=0.2)
 
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/funcAcceptance.pdf', type='pdf')
+plt.savefig(paras['figuresPath']+'/funcAcceptance.pdf', type='pdf')

@@ -5,6 +5,7 @@ import sklearn.preprocessing as prep
 import numpy as np
 from util import setMatplotlib
 from util.calc import get_cdf, getMergedRanks
+from baseparameters import paras as pathParas
 
 graph = 'facebook'
 boosttype = 'random'
@@ -46,8 +47,8 @@ for sys in ('votetrust', ):
 		axarr[enu].plot(x_s, y_s, 'r--')
 		axarr[enu].plot(x_h, y_h, 'b--')
 
-
-plt.subplots_adjust(top=0.82)
 plt.tight_layout()
-plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/d_{}_{}_{}.pdf'.format(boosttype, graph, paras.numSeeds), type='pdf')
+
+plt.subplots_adjust(top=0.8)
+plt.savefig((pathParas['figuresPath']+'/d_{}_{}_{}.pdf').format(boosttype, graph, paras.numSeeds), type='pdf')
 #plt.show()
