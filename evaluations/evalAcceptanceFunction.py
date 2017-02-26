@@ -5,18 +5,7 @@ import matplotlib as mpl
 from baseparameters import paras
 
 
-plt.figure(figsize=(1.8, 1.75))
-
-
-mpl.rcParams['axes.titlesize'] = 8
-mpl.rcParams['axes.labelsize'] = 7
-mpl.rcParams['lines.linewidth'] = 1
-
-
-mpl.rcParams['xtick.labelsize'] = 7
-mpl.rcParams['ytick.labelsize'] = 7
-mpl.rcParams['figure.titlesize'] = 9
-mpl.rcParams['legend.fontsize'] = 6
+plt.figure(figsize=(2.8, 2.5))
 
 "Plot success distribution"
 plt.suptitle('Success Probability Function')

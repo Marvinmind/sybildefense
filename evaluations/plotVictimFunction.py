@@ -7,7 +7,7 @@ from baseparameters import paras
 from util import setMatplotlib
 
 n = 200
-auc = 0.8
+auc = 0.3
 xvalues = list(np.linspace(0,1,n))
 yvalues = getValues(len(xvalues), auc)
 yvalues[-1] = 0
@@ -30,4 +30,3 @@ plt.subplots_adjust(bottom=0.2, top=0.90)
 
 plt.savefig(paras['figuresPath']+'/VictimProbFunction{}.pdf'.format(str(0)+str(auc)[2]), type='pdf')
 plt.tight_layout()
-plt.show()
