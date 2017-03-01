@@ -34,7 +34,19 @@ def create_directed_smallWorld(n, e):
 
 def add_sybil_region(g, SIZE_SYBIL, m):
 	f = nx.barabasi_albert_graph(SIZE_SYBIL, m)
+	oldEdges = f.edges()
+	nx.set_edge_attributes(f, 'trust', 1)
 	nx.set_node_attributes(f, 'label', 1)
+	nx.set_node_attributes(f, 'seed', 0)
+
+	f = nx.DiGraph(f)
+	for e in oldEdges:
+		r = random.random()
+		if r<0.5:
+			f.remove_edge(e[0],e[1])
+		else:
+			f.remove_edge(e[1],e[0])
+
 	f = integro.merge_and_renumber(g, f)
 	return f
 
@@ -93,7 +105,6 @@ def append_boosting_region(g, dummies):
 def undirected_to_directed(g):
 	g = nx.DiGraph(g)
 
-	nx.set_node_attributes(g, 'type', 'honest')
 	sorted_edges = sorted(g.edges(), key = lambda tup: tup[0])
 	for e in sorted_edges:
 		if e[0] < e[1]:
@@ -114,5 +125,7 @@ def undirected_to_directed(g):
 
 	"label nodes from 0 to 1"
 	mapping = dict(zip(g.nodes(), range(len(g.nodes()))))
-	g = nx.relabel_nodes(g, mapping, copy=True)
+	nx.relabel_nodes(g, mapping, copy=False)
+	print("labels in undir to dir")
+	print(g.nodes())
 	return g

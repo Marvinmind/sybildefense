@@ -41,7 +41,7 @@ def run_experiment(paras, saveAs, systems=None):
 		g_org = graph_creation.undirected_to_directed(g_org)
 	elif paras.graph in ('david', 'pokec', 'slashdot', 'facebook'):
 		print('start reading in')
-		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
+		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r')
 		g_org = graph_creation.undirected_to_directed(g_org)
 
 
@@ -116,9 +116,14 @@ def run_experiment(paras, saveAs, systems=None):
 		if paras.scenario == 'SR':
 			g = graph_creation.add_sybil_region(g, NUM_ATTACKERS, 15)
 			for i in range(NUM_HONEST, NUM_HONEST+NUM_ATTACKERS):
-				g.node[i]['label'] = 1
-				g.node[i]['seed'] = 0
 				attackers.append(i)
+			for i in range(NUM_HONEST):
+				if g.node[i]['label'] != 0:
+					print("honest node labeld as sybil")
+
+			for i in range(NUM_HONEST, NUM_HONEST+NUM_ATTACKERS):
+				if g.node[i]['label'] != 1:
+					print("sybil node labeld as honest")
 
 		elif paras.scenario == 'P':
 			"create peripheral sybils (including boosting if boosting) for peripheral scenario"
@@ -127,7 +132,7 @@ def run_experiment(paras, saveAs, systems=None):
 				offset = 3
 
 			for i in range(NUM_ATTACKERS):
-				g.add_node(NUM_HONEST + i + offset, {'label': 1, 'seed' : 0})
+				g.add_node(NUM_HONEST + i + offset, {'label': 1, 'seed': 0})
 				if paras.boosted:
 					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST, {'trust': 1})
 					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 1, {'trust': 1})
@@ -210,35 +215,11 @@ def run_experiment(paras, saveAs, systems=None):
 			if i in paras.evalAt or (not paras.evalAt and paras.evalInterval % i == 0):
 				print('eval')
 				if 'integro' in systems:
-					victims = {'number': 0, 'victimProb': 0}
-					nonVictims = {'number': 0, 'victimProb': 0}
-
-					for e, data in g_integro.nodes(data=True):
-						ns = g_integro.neighbors(e)
-						if 1 in [g_integro.node[x]['label'] for x in ns] and data['label'] ==0:
-							victims['number'] += 1
-							victims['victimProb'] += data['prob_victim']
-						else:
-							nonVictims['number'] += 1
-							nonVictims['victimProb'] += data['prob_victim']
-					print('num victims: {}, victim prob {}'.format(victims['number'], victims['victimProb']))
-					print('num nonvictims: {}, nonvictims prob {}'.format(nonVictims['number'], nonVictims['victimProb']))
-
-
 					results['integro'].append(eval_systems.eval_system(g_integro, system='integro', paras=paras))
 				if 'votetrust' in systems:
-					count = 0
-					count2 = 0
-					for test_edge in g_votetrust.edges(data=True):
-						if not 'trust' in test_edge[2].keys():
-							count += 1
-						count2 += 1
-					print(count)
-					print(count2)
 					results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust', paras=paras))
 				if 'sybilframe' in systems:
 					results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe', paras=paras))
-				results_list.append(results)
 
 			"Select new victims"
 			for s in attackers:
@@ -292,6 +273,7 @@ def run_experiment(paras, saveAs, systems=None):
 						g_sybilframe.add_edge(h, s, {SF_Keys.Potential: sybilframe.create_edge_func(getSybilEdgeProb())})
 
 				requested[s].append(h)
+		results_list.append(results)
 
 	if not saveAs:
 		"create filename from parameters"

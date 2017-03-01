@@ -21,9 +21,10 @@ import json
 paras = json.load(open('../evaluations/baseparameters.json', 'r'))
 
 def merge_and_renumber(a,b):
-	mapping = dict(zip(b.nodes(), list(range(len(a.nodes()), len(a.nodes()) + len(b.nodes())))))
+	mapping = dict(zip(sorted(b.nodes()), list(range(len(a.nodes()), len(a.nodes()) + len(b.nodes())))))
 	temp = nx.relabel_nodes(b, mapping, copy=True)
 	f = nx.compose(a, temp)
+
 	return f
 
 

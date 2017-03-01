@@ -19,6 +19,7 @@ graph = 'facebook'
 num_repeats = 5
 evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
 
+
 paras = parameters.ParameterSettingsSR(graph=graph, evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesSRRand{}.p'.format(graph))
 
@@ -28,8 +29,8 @@ run_experiment(paras, saveAs='./attackEdges/attackEdgesPRand{}.p'.format(graph))
 paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTarNoboost{}.p'.format(graph))
 
-paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=True, evalAt=evalIntervals, numRepeats=num_repeats)
+paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted='random', evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTar{}.p'.format(graph))
 
-paras = parameters.ParameterSettingsP(graph=graph, strategy='twoPhase', boosted=True, evalAt=evalIntervals, numRepeats=num_repeats)
+paras = parameters.ParameterSettingsP(graph=graph, strategy='twoPhase', boosted='random', evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTwoPhase{}.p'.format(graph))

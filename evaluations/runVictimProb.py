@@ -13,16 +13,17 @@ from evaluations.run_experiment import run_experiment
 
 """
 
-numRepeats =5
+numRepeats = 2
+evalInt = (50, 20, 1)
 
 for i in (0.1, 0.2, 0.4):
-	for evalAt in (50, 20, 1):
-		paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=False, evalAt=(evalAt,), numRepeats=numRepeats)
-		paras.nodeProbNonVictim = 0.9
-		paras.nodeProbVictim = i
-		run_experiment(paras, saveAs='./victimProb/victimProb{}eval{}PTar.p'.format(i, evalAt), systems=('integro',))
+	paras = parameters.ParameterSettingsSR(graph='facebook', strategy='breadthFirst', evalAt=evalInt, numRepeats=numRepeats)
+	paras.nodeProbNonVictim = 0.9
+	paras.nodeProbVictim = i
+	run_experiment(paras, saveAs='./victimProb/victimProb{}SRTar.p'.format(i), systems=('integro',))
 
-		paras = parameters.ParameterSettingsSR(graph='facebook', strategy='breadthFirst', evalAt=(evalAt,), numRepeats=numRepeats)
-		paras.nodeProbNonVictim = 0.9
-		paras.nodeProbVictim = i
-		run_experiment(paras, saveAs='./victimProb/victimProb{}eval{}SRTar.p'.format(i, evalAt), systems=('integro',))
+	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=False, evalAt=evalInt, numRepeats=numRepeats)
+	paras.nodeProbNonVictim = 0.9
+	paras.nodeProbVictim = i
+	run_experiment(paras, saveAs='./victimProb/victimProb{}PTar.p'.format(i), systems=('integro',))
+
