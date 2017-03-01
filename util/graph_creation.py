@@ -114,5 +114,5 @@ def undirected_to_directed(g):
 
 	"label nodes from 0 to 1"
 	mapping = dict(zip(g.nodes(), range(len(g.nodes()))))
-	nx.relabel_nodes(g, mapping, copy=False)
+	g = nx.relabel_nodes(g, mapping, copy=True)
 	return g

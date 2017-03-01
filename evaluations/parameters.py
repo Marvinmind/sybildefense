@@ -55,16 +55,17 @@ class ParameterSettingsSR(ParameterSettings):
 		super(ParameterSettingsSR, self).__init__()
 		
 		self.scenario = 'SR'
-		self.boosted = False
-		self.strategy = strategy
 		self.numRepeats = numRepeats
 		self.evalInterval = evalInterval
 		self.evalAt = evalAt
 		self.graph = graph
+		self.strategy = strategy
+		self.boosted = False
+
 
 
 class ParameterSettingsP(ParameterSettings):
-	def __init__(self, numRepeats=5, evalInterval=2, evalAt=False, graph='facebook', strategy='random', boosted='False'):
+	def __init__(self, strategy='random', numRepeats=5, evalInterval=20, evalAt=False, graph='facebook', boosted='False'):
 		super(ParameterSettingsP, self).__init__()
 
 		self.scenario = 'P'

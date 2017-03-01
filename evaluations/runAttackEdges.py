@@ -16,7 +16,7 @@ from evaluations.run_experiment import run_experiment
 """
 
 graph = 'facebook'
-num_repeats = 2
+num_repeats = 5
 evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
 
 paras = parameters.ParameterSettingsSR(graph=graph, evalAt=evalIntervals, numRepeats=num_repeats)

@@ -8,7 +8,7 @@ from util.calc import get_cdf, getMergedRanks
 from baseparameters import paras as pathParas
 
 graph = 'facebook'
-boosttype = 'random'
+boosttype = 'seed'
 
 for sys in ('votetrust', ):
 	f, axarr = plt.subplots(1, 3, figsize = (6,2))
@@ -44,8 +44,9 @@ for sys in ('votetrust', ):
 		axarr[enu].set_title('d='+str(i))
 
 
-		axarr[enu].plot(x_s, y_s, 'r--')
-		axarr[enu].plot(x_h, y_h, 'b--')
+		axarr[enu].plot(x_s, y_s, 'r--', label='Sybil')
+		axarr[enu].plot(x_h, y_h, 'b--', label='Honest')
+axarr[2].legend(bbox_to_anchor=(0,1), loc='upper left')
 
 plt.tight_layout()
 

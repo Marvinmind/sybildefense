@@ -7,7 +7,7 @@ from util.keys import SF_Keys
 from evaluations import eval_systems, parameters
 from sybil import integro, sybilframe
 from collections import defaultdict
-import numpy as np
+import os
 from util import graph_creation
 import time
 
@@ -42,8 +42,9 @@ def run_experiment(paras, saveAs, systems=None):
 	elif paras.graph in ('david', 'pokec', 'slashdot', 'facebook'):
 		print('start reading in')
 		g_org = nx.read_edgelist(paras.datasetLocations[paras.graph], 'r', nodetype=int)
-		g_org = nx.convert_node_labels_to_integers(g_org)
 		g_org = graph_creation.undirected_to_directed(g_org)
+
+
 	print('done reading in {}'.format(time.clock()-t))
 
 	nx.set_node_attributes(g_org, 'label', 0)
@@ -121,12 +122,12 @@ def run_experiment(paras, saveAs, systems=None):
 
 		elif paras.scenario == 'P':
 			"create peripheral sybils (including boosting if boosting) for peripheral scenario"
+			offset = 0
+			if paras.boosted:
+				offset = 3
 
 			for i in range(NUM_ATTACKERS):
-				offset = 0
-				if paras.boosted:
-					offset = 3
-				g.add_node(NUM_HONEST + i + offset, {'label': 1, 'seed':0})
+				g.add_node(NUM_HONEST + i + offset, {'label': 1, 'seed' : 0})
 				if paras.boosted:
 					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST, {'trust': 1})
 					g.add_edge(NUM_HONEST + i + offset, NUM_HONEST + 1, {'trust': 1})
@@ -152,9 +153,9 @@ def run_experiment(paras, saveAs, systems=None):
 			g.node[i][SF_Keys.Potential] = sybilframe.create_node_func(prob_sybil)
 		print('done nodeprobs in {}'.format(time.clock() - t))
 
-
 		"create customized graph for each system"
-		g_integro = nx.Graph(g)
+		if 'integro' in systems:
+			g_integro = nx.Graph(g)
 
 		if 'votetrust' in systems:
 			g_votetrust = g.copy()
@@ -226,6 +227,14 @@ def run_experiment(paras, saveAs, systems=None):
 
 					results['integro'].append(eval_systems.eval_system(g_integro, system='integro', paras=paras))
 				if 'votetrust' in systems:
+					count = 0
+					count2 = 0
+					for test_edge in g_votetrust.edges(data=True):
+						if not 'trust' in test_edge[2].keys():
+							count += 1
+						count2 += 1
+					print(count)
+					print(count2)
 					results['votetrust'].append(eval_systems.eval_system(g_votetrust, system='votetrust', paras=paras))
 				if 'sybilframe' in systems:
 					results['sybilframe'].append(eval_systems.eval_system(g_sybilframe, system='sybilframe', paras=paras))
