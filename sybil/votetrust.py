@@ -150,8 +150,6 @@ def vote_combined(g, d = paras['d']):
 	p_old = 0
 	p = np.ones(len(v)) * 0.5
 
-	print(len(g.nodes()))
-	print(v[len(g.nodes())-102])
 	while True:
 		nom = (p*v)*b
 		denom = (p*v)*a

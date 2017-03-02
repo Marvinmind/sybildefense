@@ -74,7 +74,6 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 	for n, data in g.nodes_iter(data=True):
 		oneP[n] = data[SF_Keys.Potential](1)
 		zeroP[n] = data[SF_Keys.Potential](-1)
-	print('update duration: {}'.format(time.clock()-t))
 
 	zeroM = sparse.csr_matrix(zeroM, dtype='float64')
 	oneM = sparse.csr_matrix(oneM, dtype='float64')
@@ -93,7 +92,6 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 			print('underflow. god damit')
 		zeroMV = ratio * zeroP
 		oneMV = oneP
-		print('mult message duration: {}'.format(time.clock() - t))
 
 		oneMT = oneM.T
 
@@ -123,7 +121,6 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 		zeroM = sparse.csr_matrix(zeroM, dtype='float64')
 		oneM = sparse.csr_matrix(oneM, dtype='float64')
 
-		print('matrix mult duration: {}'.format(time.clock() - t))
 	t = time.clock()
 	""" calc beliefs """
 	r, c, v = sparse.find(oneM)

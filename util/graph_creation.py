@@ -127,5 +127,4 @@ def undirected_to_directed(g):
 	mapping = dict(zip(g.nodes(), range(len(g.nodes()))))
 	nx.relabel_nodes(g, mapping, copy=False)
 	print("labels in undir to dir")
-	print(g.nodes())
 	return g

@@ -14,7 +14,7 @@ from evaluations.run_experiment import run_experiment
 """
 
 numRepeats = 2
-evalInt = (50, 20, 1)
+evalInt = (1, 20, 50)
 
 for i in (0.1, 0.2, 0.4):
 	paras = parameters.ParameterSettingsSR(graph='facebook', strategy='breadthFirst', evalAt=evalInt, numRepeats=numRepeats)
