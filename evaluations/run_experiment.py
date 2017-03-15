@@ -8,6 +8,7 @@ from evaluations import eval_systems, parameters
 from sybil import integro, sybilframe
 from collections import defaultdict
 import os
+import numpy as np
 from util import graph_creation
 import time
 
@@ -53,22 +54,23 @@ def run_experiment(paras, saveAs, systems=None):
 	if paras.scenario == 'SR':
 		NUM_ATTACKERS = paras.sizeSybilRegion
 
-	seeds = []
-	if paras.seedsStrategy == 'list':
-		for s in paras.seedsList:
-			seeds.append(s)
-	elif paras.seedsStrategy == 'random':
-		for i in range(paras.numSeeds):
-			while True:
-				r = random.randint(0, NUM_HONEST-1)
-				if r not in seeds:
-					seeds.append(r)
-					break
 
 	for i in range(paras.numRepeats):
 		g = g_org.copy()
 
 		"set seed attributes"
+		seeds = []
+		if paras.seedsStrategy == 'list':
+			for s in paras.seedsList:
+				seeds.append(s)
+		elif paras.seedsStrategy == 'random':
+			for i in range(paras.numSeeds):
+				while True:
+					r = random.randint(0, NUM_HONEST - 1)
+					if r not in seeds:
+						seeds.append(r)
+						break
+
 		nx.set_node_attributes(g, 'seed', 0)
 		for s in seeds:
 			g.node[s]['seed'] = 1
@@ -124,6 +126,7 @@ def run_experiment(paras, saveAs, systems=None):
 			for i in range(NUM_HONEST, NUM_HONEST+NUM_ATTACKERS):
 				if g.node[i]['label'] != 1:
 					print("sybil node labeld as honest")
+			print(g[attackers[0]])
 
 		elif paras.scenario == 'P':
 			"create peripheral sybils (including boosting if boosting) for peripheral scenario"
@@ -156,6 +159,8 @@ def run_experiment(paras, saveAs, systems=None):
 
 			g.node[i]['prob_victim'] = prob_victim
 			g.node[i][SF_Keys.Potential] = sybilframe.create_node_func(prob_sybil)
+
+
 		print('done nodeprobs in {}'.format(time.clock() - t))
 
 		"create customized graph for each system"
@@ -163,6 +168,7 @@ def run_experiment(paras, saveAs, systems=None):
 			g_integro = nx.Graph(g)
 
 		if 'votetrust' in systems:
+			print(type(g))
 			g_votetrust = g.copy()
 
 		if 'sybilframe' in systems:

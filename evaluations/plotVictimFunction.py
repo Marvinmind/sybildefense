@@ -4,7 +4,7 @@ from matplotlib import rcParams
 from math import ceil
 import numpy as np
 from baseparameters import paras
-from util import setMatplotlib
+from util import setMatplotlibPaper
 
 n = 200
 auc = 0.3

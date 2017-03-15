@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import sklearn.preprocessing as prep
 import numpy as np
 from util.calc import get_cdf, getMergedRanks
-from util import setMatplotlib
+from util import setMatplotlibPaper
 graph = 'facebook'
 dirRoot = 'C:/Users/Martin/Dropbox/MasterGöttingen/Masterarbeit'
 

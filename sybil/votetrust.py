@@ -168,4 +168,5 @@ def getRanks(g):
 	ranks=[]
 	for i in g.nodes_iter():
 		ranks.append(g.node[i]['p'])
+
 	return np.array(ranks)

@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from util.calc import getSuccessProb
-from util import setMatplotlib
+from util import setMatplotlibPaper
 import matplotlib as mpl
 from baseparameters import paras
 

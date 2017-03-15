@@ -29,7 +29,7 @@ def eval_system(g, system=None, paras=None):
 		print('eval time total sybilframe {}'.format(time.clock()-t))
 
 
-	real = [g.node[i]['label'] for i in g.nodes_iter()]
+	real = [g.node[i]['label'] for i in range(len(g.nodes()))]
 	b = benchmarks.Benchmarks(real, ranks)
 
 	return b

@@ -3,7 +3,7 @@ from collections import defaultdict
 from matplotlib import pyplot as plt
 import sklearn.preprocessing as prep
 import numpy as np
-from util import setMatplotlib
+from util import setMatplotlibPaper
 from util.calc import get_cdf, getMergedRanks
 from baseparameters import paras as pathParas
 

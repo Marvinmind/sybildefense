@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import sklearn.preprocessing as prep
 from util.calc import get_cdf, getMergedRanks, getMergedAuc
 import numpy as np
-from util import setMatplotlib
+from util import setMatplotlibPaper
 
 graph = 'facebook'
 sys = 'sybilframe'

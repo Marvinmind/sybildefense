@@ -62,7 +62,6 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 	"Node Potentials"
 	zeroP = np.empty(numNodes, dtype='float64')
 	oneP = np.empty(numNodes, dtype='float64')
-	t = time.clock()
 	for u,v, data in g.edges_iter(data=True):
 
 		zeroM.update({(v,u) : 0.5})
@@ -82,7 +81,6 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 
 	for i in range(d):
-		t = time.clock()
 		r, c, v = sparse.find(oneM)  # a is input sparse matrix
 		outOne = np.bincount(r, np.log(v), minlength=oneM.shape[0])
 		r, c, v = sparse.find(zeroM)  # a is input sparse matrix
@@ -97,7 +95,6 @@ def inferPosteriorsEdgeImproveNew(g, d=5):
 
 		r, c, v = sparse.find(oneMT)
 
-		t = time.clock()
 
 		one1 = (sparse.spdiags(oneMV, 0, len(oneMV), len(oneMV)) * sameP.T).T
 		one2 = (sparse.spdiags(zeroMV, 0, len(zeroMV), len(zeroMV)) * diffP.T).T
@@ -203,9 +200,10 @@ def normalize(message):
 
 def getRanks(g):
 	ranks = []
-	for i in g.nodes_iter():
+	for i in sorted(g.nodes()):
 		ranks.append(g.node[i][SF_Keys.Belief][1])
 	return np.array(ranks)
+
 
 def graphHealthCheck(g):
 	message = []

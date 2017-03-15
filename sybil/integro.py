@@ -162,7 +162,7 @@ def add_apriori(g, auc=0.7, mode='soft'):
 def get_ranks(g):
 	" return needs to be reset to rank from raw!!"
 	a = sparse.csc_matrix(construct_transition_matrix(g))
-	v_0 = [g.node[x]['init_trust'] for x in g.nodes()]
+	v_0 = [g.node[x]['init_trust'] for x in sorted(g.nodes())]
 	v_0 = np.array(v_0)
 	raw = v_0
 	mult = 1
@@ -174,7 +174,7 @@ def get_ranks(g):
 		raw = raw * a
 
 	degrees = calc_weighted_degrees(g)
-	degrees = [degrees[x] for x in g.nodes()]
+	degrees = [degrees[x] for x in sorted(g.nodes())]
 	rank = raw / np.array(degrees)
 	return rank
 
