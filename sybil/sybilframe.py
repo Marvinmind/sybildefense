@@ -1,10 +1,13 @@
 __author__ = 'Martin'
 import numpy as np
 from util.keys import SF_Keys
-from math import ceil
 from collections import defaultdict
 from scipy import sparse
+import cudamat as cm
 import time
+
+cm.cublas_init()
+
 
 def inferPosteriorsEdgeImprove(g, d=5):
 	for u,v in g.edges():
