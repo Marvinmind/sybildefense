@@ -15,13 +15,13 @@ from evaluations.run_experiment import run_experiment
 
 """
 
-graph = 'slashdot'
+graph = 'facebook'
 num_repeats = 3
 evalIntervals = (5,10,20,30,40,50,60,70,80,90,100)
 
 paras = parameters.ParameterSettingsSR(graph=graph, strategy='breadthFirst', evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesSRTar{}.p'.format(graph))
-
+"""
 paras = parameters.ParameterSettingsSR(graph=graph, evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesSRRand{}.p'.format(graph))
 
@@ -36,3 +36,4 @@ run_experiment(paras, saveAs='./attackEdges/attackEdgesPTar{}.p'.format(graph))
 
 paras = parameters.ParameterSettingsP(graph=graph, strategy='twoPhase', boosted='random', evalAt=evalIntervals, numRepeats=num_repeats)
 run_experiment(paras, saveAs='./attackEdges/attackEdgesPTwoPhase{}.p'.format(graph))
+"""
