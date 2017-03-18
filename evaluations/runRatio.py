@@ -14,7 +14,7 @@ from evaluations.run_experiment import run_experiment
 	All Systems, all scenarios
 
 """
-graph = 'facebook'
+graph = 'slashdot'
 for i in ((0.2, 0.7), (0.1, 0.5)):
 	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted="random", evalAt=(50,), numRepeats=3)
 	paras.acceptanceRatioLimits = i
