@@ -100,4 +100,3 @@ plt.tight_layout()
 plt.subplots_adjust(top=0.78, bottom=0.1)
 f.subplots_adjust(wspace=0.1)
 plt.savefig(pathParas['figuresPath']+'/AttackEdges{}.pdf'.format(graph), format='pdf')
-
