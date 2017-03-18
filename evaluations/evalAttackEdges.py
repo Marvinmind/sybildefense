@@ -3,7 +3,7 @@ import pickle
 from matplotlib import pyplot as plt
 from util import setMatplotlibPaper
 
-graph = 'facebook'
+graph = 'slashdot'
 
 PRandAll = pickle.load(open('../pickles/attackEdges/attackEdgesPRand{}.p'.format(graph),'rb'))
 PRandRes = PRandAll[0]
@@ -80,7 +80,7 @@ axarr[3].xaxis.get_major_ticks()[0].label1.set_visible(False)
 
 
 plt.tight_layout()
-plt.subplots_adjust(top=0.82)
+plt.subplots_adjust(top=0.9)
 f.subplots_adjust(wspace=0.1)
 caption = f.text(0.525, 0, 'Number of Requests', ha='center', fontsize=8)
 

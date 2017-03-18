@@ -16,7 +16,7 @@ PTarRes = PTarAll[0]
 PTarAUC = getMergedAuc(PTarRes)
 PTarParas = PTarAll[1]
 
-SRRandAll = pickle.load(open('../pickles/attackEdges/attackEdgesSRRand{}.p'.format(graph),'rb'))
+SRRandAll = pickle.load(open("../pickles/attackEdges/attackEdgesSRRand{}.p".format(graph), 'rb'))
 SRRandRes = SRRandAll[0]
 SRRandAUC = getMergedAuc(SRRandRes)
 SRRandParas = SRRandAll[1]
@@ -39,7 +39,7 @@ PTarNoboostParas = PTarNoboostAll[1]
 f, axarr = plt.subplots(2, 3, figsize=(5.8, 5), sharey=True)
 
 x = [x for x in PRandParas.evalAt]
-f.suptitle('Systems Performance by Number of Requests', weight='bold')
+f.suptitle('Systems Performance by Number of Requests - '+str.upper(str(graph)[0])+str(graph)[1:], weight='bold')
 
 "SR Random"
 axarr[0,0].plot(x, list(SRRandAUC['integro'].values()), 'r-', label='Integro')
@@ -57,7 +57,7 @@ axarr[0,1].plot(x, list(PRandAUC['sybilframe'].values()),'k-.')
 
 axarr[0,1].set_ylim((0, 1.1))
 axarr[0,1].set_title('Peri. Random', loc='center')
-axarr[0,1].set_xlabel('Number of Requests')
+axarr[1,1].set_xlabel('Number of Requests')
 
 
 "P Targeted Noboost"
@@ -94,6 +94,10 @@ axarr[1,2].plot(x, list(SRTarAUC['sybilframe'].values()),'k-.')
 axarr[1,2].set_ylim((0, 1.1))
 axarr[1,2].set_title('Sybil Region Targeted', loc='center')
 axarr[1,0].legend(bbox_to_anchor=(0,0.52), loc='upper left')
+
+for i in range(2):
+	for j in range(1,3):
+		axarr[i,j].xaxis.get_major_ticks()[0].label1.set_visible(False)
 
 
 plt.tight_layout()

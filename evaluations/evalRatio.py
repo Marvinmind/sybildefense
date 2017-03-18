@@ -10,12 +10,13 @@ dirRoot = 'C:/Users/Martin/Dropbox/MasterGöttingen/Masterarbeit'
 
 
 f, axarr = plt.subplots(2, 3, sharey=True, sharex=True, figsize=(5.2, 3))
-f.suptitle('Influence of Acceptance Ratio', weight='bold')
+f.suptitle('Influence of Acceptance Ratio - '+str.upper(str(graph)[0])+str(graph)[1:], weight='bold')
 
 for j, sys in enumerate(('integro', 'votetrust', 'sybilframe')):
 	for enu, i in enumerate(((0.2,0.7),(0.1, 0.5))):
-		perTar = pickle.load(open('../pickles/ratio/ratio{}PTar.p'.format(i),'rb'))[0]
-		paras = pickle.load(open('../pickles/ratio/ratio{}SRRand.p'.format(i),'rb'))[1]
+		perTarFile = pickle.load(open('../pickles/ratio/ratio{}PTar.p'.format(i),'rb'))
+		perTar = perTarFile[0]
+		paras = perTarFile[1]
 		ranksPerTar = getMergedRanks(perTar)
 		print(paras.numSybils)
 		print(ranksPerTar[sys])
@@ -50,4 +51,4 @@ for j, sys in enumerate(('integro', 'votetrust', 'sybilframe')):
 plt.tight_layout()
 plt.subplots_adjust(top=0.85)
 axarr[1, 2].legend(loc=(0.05, 0.7), borderpad=0.2)
-plt.savefig(dirRoot+'/figures/AcceptanceRatio.pdf', format='pdf')
+plt.savefig(dirRoot+'/figures/AcceptanceRatio{}.pdf'.format(graph), format='pdf')

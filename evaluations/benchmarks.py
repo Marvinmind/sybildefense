@@ -11,8 +11,8 @@ class Benchmarks():
 		ROC AUC expects the opposite. 1 - predValue inverses the order
 		"""
 
-		#self.real = real
-		#self.ranks = predValues
+		self.real = real
+		self.ranks = predValues
 		predValues = 1 - predValues
 		self.auc = metrics.roc_auc_score(np.array(real), predValues)
 		predLabels = [round(x) for x in predValues]

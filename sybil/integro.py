@@ -165,11 +165,7 @@ def get_ranks(g):
 	v_0 = [g.node[x]['init_trust'] for x in sorted(g.nodes())]
 	v_0 = np.array(v_0)
 	raw = v_0
-	mult = 1
-	"ugly hack to deal with newOrleans degree of 15!!"
-	if len(g.nodes()) > 50000:
-		print('increase mult')
-		mult = 1
+
 	for i in range(ceil(np.log2(len(g.nodes())))):
 		raw = raw * a
 
