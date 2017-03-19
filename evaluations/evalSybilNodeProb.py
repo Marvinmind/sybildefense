@@ -5,15 +5,15 @@ from util.calc import get_cdf, getMergedRanks, getMergedAuc
 import numpy as np
 from util import setMatplotlibPaper
 
-graph = 'facebook'
+graph = 'slashdot'
 sys = 'sybilframe'
 edgeFNrate = 0.6
 
-f, axarr = plt.subplots(2, 2, figsize=(2.8, 2.8), sharex=True, sharey=True)
-f.suptitle('Sybilframe Node Prior Influence')
+f, axarr = plt.subplots(1, 4, figsize=(7.5, 2.3), sharey=True)
+f.suptitle('Sybilframe Edge Prior Influence - '  +str.upper(str(graph)[0])+str(graph)[1:], weight='bold')
 
-for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
-	perTarAll = pickle.load(open('../pickles/sybilNodeProb/sybilNodeProb{}PTar{}.p'.format(i, edgeFNrate), 'rb'))
+for enu, i in enumerate((0.1, 0.3, 0.6, 0.8)):
+	perTarAll = pickle.load(open('../pickles/sybilNodeProb/sybilNodeProb{}PTar{}.p'.format(i, graph), 'rb'))
 	perTar = perTarAll[0]
 	paras = perTarAll[1]
 	perTarAuc = getMergedAuc(perTar)
@@ -42,7 +42,8 @@ for enu, i in enumerate((0.1, 0.3, 0.4, 0.6)):
 	ind_row = lambda enu: 0 if enu in (0,1) else 1
 	ind_col = lambda enu: 0 if enu in (0, 2) else 1
 
-	axis = axarr[ind_row(enu)][ind_col(enu)]
+	#axis = axarr[ind_row(enu)][ind_col(enu)]
+	axis = axarr[enu]
 	axis.set_ylim((0, 1.1))
 	axis.set_xlim((-0.1, 1.1))
 	axis.set_ylabel('FN='+str(i))

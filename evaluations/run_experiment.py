@@ -164,8 +164,7 @@ def run_experiment(paras, saveAs, systems=None):
 		print('done nodeprobs in {}'.format(time.clock() - t))
 
 		"create customized graph for each system"
-		if 'integro' in systems:
-			g_integro = nx.Graph(g)
+		g_integro = nx.Graph(g)
 
 		if 'votetrust' in systems:
 			print(type(g))
@@ -175,6 +174,7 @@ def run_experiment(paras, saveAs, systems=None):
 			print('start creating sybilframe')
 			t = time.clock()
 			g_sybilframe = nx.DiGraph(g_integro)
+
 
 			print('done creating sybilframe in {}'.format(time.clock()-t))
 

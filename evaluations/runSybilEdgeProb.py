@@ -18,11 +18,10 @@ import warnings
 
 
 """
-
-graph = 'facebook'
+evalIntervals = (1,5,10,15,20,25,30,35,40,45,50)
+graph = 'slashdot'
 for i in (0.1, 0.3, 0.6, 0.82):
-	print(i)
-	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=(50,), numRepeats=5)
+	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=evalIntervals, numRepeats=1)
 	paras.edgeProbSybil = 1-i
 	paras.edgeProbNonSybil = 0.1
 	paras.numSeeds = 100
