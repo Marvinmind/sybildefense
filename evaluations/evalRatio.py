@@ -5,16 +5,16 @@ import sklearn.preprocessing as prep
 import numpy as np
 from util.calc import get_cdf, getMergedRanks
 from util import setMatplotlibPaper
-graph = 'facebook'
-dirRoot = 'C:/Users/Martin/Dropbox/MasterGöttingen/Masterarbeit'
+from baseparameters import paras as pathParas
 
+graph = 'slashdot'
 
 f, axarr = plt.subplots(2, 3, sharey=True, sharex=True, figsize=(5.2, 3))
 f.suptitle('Influence of Acceptance Ratio - '+str.upper(str(graph)[0])+str(graph)[1:], weight='bold')
 
 for j, sys in enumerate(('integro', 'votetrust', 'sybilframe')):
 	for enu, i in enumerate(((0.2,0.7),(0.1, 0.5))):
-		perTarFile = pickle.load(open('../pickles/ratio/ratio{}PTar.p'.format(i),'rb'))
+		perTarFile = pickle.load(open('../pickles/ratio/ratio{}PTar{}.p'.format(i, graph),'rb'))
 		perTar = perTarFile[0]
 		paras = perTarFile[1]
 		ranksPerTar = getMergedRanks(perTar)
@@ -51,4 +51,4 @@ for j, sys in enumerate(('integro', 'votetrust', 'sybilframe')):
 plt.tight_layout()
 plt.subplots_adjust(top=0.85)
 axarr[1, 2].legend(loc=(0.05, 0.7), borderpad=0.2)
-plt.savefig(dirRoot+'/figures/AcceptanceRatio{}.pdf'.format(graph), format='pdf')
+plt.savefig(pathParas['figuresPath']+'/AcceptanceRatio{}.pdf'.format(graph), format='pdf')
