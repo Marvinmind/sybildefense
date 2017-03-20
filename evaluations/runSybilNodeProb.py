@@ -15,7 +15,7 @@ from evaluations.run_experiment import run_experiment
 """
 
 evalIntervals = (1,5,10,15,20,25,30,35,40,45,50)
-graph = 'facebook'
+graph = 'slashdot'
 
 for i in (0.1, 0.3, 0.6, 0.8):
 	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=evalIntervals, numRepeats=1)

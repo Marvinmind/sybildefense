@@ -6,7 +6,7 @@ import numpy as np
 from util import setMatplotlibPaper
 
 
-graph = 'facebook'
+graph = 'slashdot'
 colors = ['r-', 'b--.', 'k-.', 'g:']
 sys = 'sybilframe'
 
