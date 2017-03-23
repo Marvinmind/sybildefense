@@ -13,17 +13,18 @@ from evaluations.run_experiment import run_experiment
 
 """
 
-numRepeats = 1
+graph = 'slashdot'
+numRepeats = 5
 evalInt = (1, 20, 50)
 
 for i in (0.1, 0.2, 0.4):
-	paras = parameters.ParameterSettingsSR(graph='facebook', strategy='breadthFirst', evalAt=evalInt, numRepeats=numRepeats)
+	paras = parameters.ParameterSettingsSR(graph=graph, strategy='breadthFirst', evalAt=evalInt, numRepeats=numRepeats)
 	paras.nodeProbNonVictim = 0.9
 	paras.nodeProbVictim = i
-	run_experiment(paras, saveAs='./victimProb/victimProb{}SRTar.p'.format(i), systems=('integro',))
+	run_experiment(paras, saveAs='./victimProb/victimProb{}{}SRTar.p'.format(i, graph), systems=('integro',))
 
-	paras = parameters.ParameterSettingsP(graph='facebook', strategy='breadthFirst', boosted=False, evalAt=evalInt, numRepeats=numRepeats)
+	paras = parameters.ParameterSettingsP(graph=graph, strategy='breadthFirst', boosted=False, evalAt=evalInt, numRepeats=numRepeats)
 	paras.nodeProbNonVictim = 0.9
 	paras.nodeProbVictim = i
-	run_experiment(paras, saveAs='./victimProb/victimProb{}PTar.p'.format(i), systems=('integro',))
+	run_experiment(paras, saveAs='./victimProb/victimProb{}{}PTar.p'.format(i, graph), systems=('integro',))
 
