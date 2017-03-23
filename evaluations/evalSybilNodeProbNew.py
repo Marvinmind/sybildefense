@@ -11,7 +11,7 @@ colors = ['r-', 'b--.', 'k-.', 'g:']
 sys = 'sybilframe'
 
 plt.figure(figsize=(3.5, 2.3))
-plt.ylim(0, 1.1)
+plt.ylim(0.8, 1)
 
 plt.suptitle('Sybilframe Node Prior Influence - '  +str.upper(str(graph)[0])+str(graph)[1:], weight='bold')
 
@@ -27,7 +27,8 @@ for enu, i in enumerate((0.1, 0.3, 0.6, 0.8)):
 	print(list(perTarAUC['sybilframe'].values()))
 	plt.plot(x, list(perTarAUC['sybilframe'].values()), colors[enu], label='FN = '+str(i))
 
-plt.legend(loc='lower right')
+if graph=='facebook':
+	plt.legend(loc='lower right')
 plt.tight_layout()
 plt.subplots_adjust(top=0.85)
 plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/NodeProb{}.pdf'.format(graph), format='pdf')

@@ -6,7 +6,7 @@ import numpy as np
 from util import setMatplotlibPaper
 
 
-graph = 'facebook'
+graph = 'slashdot'
 colors = ['r-', 'b--.', 'k-.', 'g:']
 sys = 'sybilframe'
 
@@ -26,7 +26,9 @@ for enu, i in enumerate((0.1, 0.3, 0.6, 0.82)):
 	print(list(perTarAUC['sybilframe'].values()))
 	plt.plot(x, list(perTarAUC['sybilframe'].values()), colors[enu], label='FN = '+str(i))
 
-plt.legend(loc='lower right')
+if graph=='facebook':
+	plt.legend(loc='lower right')
+
 plt.tight_layout()
 plt.subplots_adjust(top=0.85)
 plt.savefig('/home/martin/Dropbox/MasterGöttingen/Masterarbeit/figures/EdgeProb{}.pdf'.format(graph), format='pdf')

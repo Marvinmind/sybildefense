@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19cd0809-4433-4eda-b270-22739ebfafcf" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1PRand.p" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2PRand.p" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4PRand.p" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1facebookPTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1facebookPTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1facebookSRTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1facebookSRTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1slashdotPTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1slashdotPTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1slashdotSRTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.1slashdotSRTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2facebookPTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2facebookPTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2facebookSRTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2facebookSRTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2slashdotPTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2slashdotPTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2slashdotSRTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.2slashdotSRTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4facebookPTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4facebookPTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4facebookSRTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4facebookSRTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4slashdotPTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4slashdotPTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4slashdotSRTar.p" afterPath="$PROJECT_DIR$/pickles/victimProb/victimProb0.4slashdotSRTar.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/implementations.iml" afterPath="$PROJECT_DIR$/.idea/implementations.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" afterPath="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py" afterPath="$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalSybilEdgeProbNew.py" afterPath="$PROJECT_DIR$/evaluations/evalSybilEdgeProbNew.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalSybilNodeProbNew.py" afterPath="$PROJECT_DIR$/evaluations/evalSybilNodeProbNew.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/evalVictims.py" afterPath="$PROJECT_DIR$/evaluations/evalVictims.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluations/runVictimProb.py" afterPath="$PROJECT_DIR$/evaluations/runVictimProb.py" />
     </list>
     <ignored path="implementations.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,108 +37,111 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/implementations$Unittests_in_IntegroTests.coverage" NAME="Unittests in IntegroTests Coverage Results" MODIFIED="1478615649252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_test_boosting_test_smallWorld.coverage" NAME="Unittest test_boosting.test_smallWorld Coverage Results" MODIFIED="1479995524404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_targeted.coverage" NAME="peripheral_scenario_targeted Coverage Results" MODIFIED="1479914727556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_com_v_sib.coverage" NAME="Unittest IntegroTests.test_com_v_sib Coverage Results" MODIFIED="1478616574403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_Collusion_vs_d__1_.coverage" NAME="Unittest VoteTrustTests.test_Collusion_vs_d (1) Coverage Results" MODIFIED="1477335887139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalSeedInfluence.coverage" NAME="evalSeedInfluence Coverage Results" MODIFIED="1481725274388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittests_in_IntegroTests__1_.coverage" NAME="Unittests in IntegroTests (1) Coverage Results" MODIFIED="1478615663903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$integro_evaluations.coverage" NAME="integro_evaluations Coverage Results" MODIFIED="1478616620747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalSybilNodeProb.coverage" NAME="evalSybilNodeProb Coverage Results" MODIFIED="1484934008190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$runD.coverage" NAME="runD Coverage Results" MODIFIED="1487462882593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_run.coverage" NAME="Unittest VoteTrustTests.test_run Coverage Results" MODIFIED="1476297093422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1474299300573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$plotVictimFunction.coverage" NAME="plotVictimFunction Coverage Results" MODIFIED="1488044845319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$run_experiment.coverage" NAME="run_experiment Coverage Results" MODIFIED="1481720891635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_collusion_once.coverage" NAME="Unittest VoteTrustTests.test_collusion_once Coverage Results" MODIFIED="1476560131850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_serious.coverage" NAME="Unittest IntegroTests.test_serious Coverage Results" MODIFIED="1474383034703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_weights_frequencies.coverage" NAME="Unittest IntegroTests.test_weights_frequencies Coverage Results" MODIFIED="1479991222148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_mult.coverage" NAME="Unittest VoteTrustTests.test_propagation_mult Coverage Results" MODIFIED="1477416674832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_boosted_P.coverage" NAME="scenario_targeted_boosted_P Coverage Results" MODIFIED="1481027790087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_random.coverage" NAME="peripheral_scenario_random Coverage Results" MODIFIED="1479915617855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$integro.coverage" NAME="integro Coverage Results" MODIFIED="1474045369065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_Sybilframe_attack_tests_test_smallword.coverage" NAME="Unittest Sybilframe_attack_tests.test_smallword Coverage Results" MODIFIED="1478104351523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$eval_cdf_boost_vs_noboost.coverage" NAME="eval_cdf_boost_vs_noboost Coverage Results" MODIFIED="1481626747800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$testpyopencl.coverage" NAME="testpyopencl Coverage Results" MODIFIED="1478345969781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weight_setting.coverage" NAME="Unittest IntegroTests.test_weight_setting Coverage Results" MODIFIED="1478825872741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_nodeProb.coverage" NAME="Unittest ProbTests.test_nodeProb Coverage Results" MODIFIED="1479576776784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_random.coverage" NAME="Unittest VoteTrustTests.test_random Coverage Results" MODIFIED="1478440837752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_Collusion_vs_d.coverage" NAME="Unittest VoteTrustTests.test_Collusion_vs_d Coverage Results" MODIFIED="1477335707239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_base.coverage" NAME="Unittest VoteTrustTests.test_propagation_base Coverage Results" MODIFIED="1477414731043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$other_plots.coverage" NAME="other_plots Coverage Results" MODIFIED="1483540805158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$votetrust_timing.coverage" NAME="votetrust_timing Coverage Results" MODIFIED="1477236374172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/timing" />
-    <SUITE FILE_PATH="coverage/implementations$peripheral_scenario_targeted.coverage" NAME="peripheral_scenario_targeted Coverage Results" MODIFIED="1479679106054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_smallWorld.coverage" NAME="Unittest sybilframe_tests.test_smallWorld Coverage Results" MODIFIED="1478090941253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalVictimProb.coverage" NAME="evalVictimProb Coverage Results" MODIFIED="1484673824357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalD.coverage" NAME="evalD Coverage Results" MODIFIED="1487462917229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalAttackEdges.coverage" NAME="evalAttackEdges Coverage Results" MODIFIED="1489836735863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_attack.coverage" NAME="Unittest VoteTrustTests.test_attack Coverage Results" MODIFIED="1476983138251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_noboost_P.coverage" NAME="scenario_targeted_noboost_P Coverage Results" MODIFIED="1480014232260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_transition_matrix.coverage" NAME="Unittest IntegroTests.test_transition_matrix Coverage Results" MODIFIED="1478814381318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$test_ipyton.coverage" NAME="test_ipyton Coverage Results" MODIFIED="1474040996225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
-    <SUITE FILE_PATH="coverage/implementations$votetrust_digest.coverage" NAME="votetrust_digest Coverage Results" MODIFIED="1477170146745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$votetrust_evaluations.coverage" NAME="votetrust_evaluations Coverage Results" MODIFIED="1479505127954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$scenario_random_noboost_SR.coverage" NAME="scenario_random_noboost_SR Coverage Results" MODIFIED="1480557668914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalSybilEdgeProb.coverage" NAME="evalSybilEdgeProb Coverage Results" MODIFIED="1484935041666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_sybil_region.coverage" NAME="Unittest IntegroTests.test_sybil_region Coverage Results" MODIFIED="1478456731400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$sybil_region_scenario.coverage" NAME="sybil_region_scenario Coverage Results" MODIFIED="1479909486531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1478815304136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_peripheral_vs_little_connected.coverage" NAME="Unittest IntegroTests.test_peripheral_vs_little_connected Coverage Results" MODIFIED="1478522277004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_collusion.coverage" NAME="Unittest VoteTrustTests.test_collusion Coverage Results" MODIFIED="1477482278911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalSybilNodeProbExp.coverage" NAME="evalSybilNodeProbExp Coverage Results" MODIFIED="1488044463467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$eval_pickles.coverage" NAME="eval_pickles Coverage Results" MODIFIED="1480201801500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_integro.coverage" NAME="Unittest sybilframe_tests.test_integro Coverage Results" MODIFIED="1477933976649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_merge_renumber.coverage" NAME="Unittest IntegroTests.test_merge_renumber Coverage Results" MODIFIED="1478820643964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_getFriends.coverage" NAME="Unittest VoteTrustTests.test_getFriends Coverage Results" MODIFIED="1476980649969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_rank_toy.coverage" NAME="Unittest IntegroTests.test_rank_toy Coverage Results" MODIFIED="1479991114813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittests_in_VoteTrustTests__1_.coverage" NAME="Unittests in VoteTrustTests (1) Coverage Results" MODIFIED="1476187076485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$eval_pickles_fb.coverage" NAME="eval_pickles_fb Coverage Results" MODIFIED="1480415057881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$parameters.coverage" NAME="parameters Coverage Results" MODIFIED="1481030349521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$multiprocess_test.coverage" NAME="multiprocess_test Coverage Results" MODIFIED="1479652592446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_rank_toy.coverage" NAME="Unittest IntegroTests.test_rank_toy Coverage Results" MODIFIED="1478450171461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$runVictimProb.coverage" NAME="runVictimProb Coverage Results" MODIFIED="1484673862974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_propagation.coverage" NAME="Unittest IntegroTests.test_propagation Coverage Results" MODIFIED="1478534948479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_Sybilframe_attack_tests_breadth_first_test.coverage" NAME="Unittest Sybilframe_attack_tests.breadth_first_test Coverage Results" MODIFIED="1478440040147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_breadth_first.coverage" NAME="Unittest VoteTrustTests.test_breadth_first Coverage Results" MODIFIED="1478440568157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_auc.coverage" NAME="Unittest ProbTests.test_auc Coverage Results" MODIFIED="1479318657355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_new_dist.coverage" NAME="Unittest sybilframe_tests.test_new_dist Coverage Results" MODIFIED="1477951139376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_serious.coverage" NAME="Unittest MyTest.test_serious Coverage Results" MODIFIED="1474322351507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$peripheral_scenario.coverage" NAME="peripheral_scenario Coverage Results" MODIFIED="1479495036270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittests_in_VoteTrustTests.coverage" NAME="Unittests in VoteTrustTests Coverage Results" MODIFIED="1475420795358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalRatio.coverage" NAME="evalRatio Coverage Results" MODIFIED="1489862862653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_infer.coverage" NAME="Unittest sybilframe_tests.test_infer Coverage Results" MODIFIED="1477734787294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_acceptance_closure.coverage" NAME="Unittest ProbTests.test_acceptance_closure Coverage Results" MODIFIED="1479499779523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalAttackEdgesThesis.coverage" NAME="evalAttackEdgesThesis Coverage Results" MODIFIED="1489836761156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$runSybilEdgeProb.coverage" NAME="runSybilEdgeProb Coverage Results" MODIFIED="1483719961537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_boosted.coverage" NAME="Unittest VoteTrustTests.test_boosted Coverage Results" MODIFIED="1477515993192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_noboost.coverage" NAME="peripheral_scenario_noboost Coverage Results" MODIFIED="1479914793935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$runAttackEdges.coverage" NAME="runAttackEdges Coverage Results" MODIFIED="1489756036584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_sybilframe_tests_test_infer.coverage" NAME="Unittest sybilframe_tests.test_infer Coverage Results" MODIFIED="1483555324075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$runSybilNodeProb.coverage" NAME="runSybilNodeProb Coverage Results" MODIFIED="1484923636702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_authors_attachement.coverage" NAME="Unittest sybilframe_tests.test_authors_attachement Coverage Results" MODIFIED="1478726774910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/implementations$testMatrixMult.coverage" NAME="testMatrixMult Coverage Results" MODIFIED="1477241726794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
-    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1479991202623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_aggregation.coverage" NAME="Unittest VoteTrustTests.test_aggregation Coverage Results" MODIFIED="1476190236219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$runSuccessRate.coverage" NAME="runSuccessRate Coverage Results" MODIFIED="1481725815175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_weights.coverage" NAME="Unittest MyTest.test_weights Coverage Results" MODIFIED="1474140098521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test.coverage" NAME="Unittest VoteTrustTests.test Coverage Results" MODIFIED="1477090453075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation.coverage" NAME="Unittest VoteTrustTests.test_propagation Coverage Results" MODIFIED="1477218664414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$evalRatioInfluence.coverage" NAME="evalRatioInfluence Coverage Results" MODIFIED="1481727287205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_weight_setting.coverage" NAME="Unittest MyTest.test_weight_setting Coverage Results" MODIFIED="1474301186404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_getprobs.coverage" NAME="Unittest IntegroTests.test_getprobs Coverage Results" MODIFIED="1478449949428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$votetrust.coverage" NAME="votetrust Coverage Results" MODIFIED="1478432350434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_peripheral.coverage" NAME="Unittest VoteTrustTests.test_peripheral Coverage Results" MODIFIED="1476530130850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_rank_authors.coverage" NAME="Unittest IntegroTests.test_rank_authors Coverage Results" MODIFIED="1478825979200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$sybil_region_scenario.coverage" NAME="sybil_region_scenario Coverage Results" MODIFIED="1479499803017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/implementations$test_dist.coverage" NAME="test_dist Coverage Results" MODIFIED="1474031891016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_assignment.coverage" NAME="Unittest VoteTrustTests.test_assignment Coverage Results" MODIFIED="1476193042143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weights_frequencies.coverage" NAME="Unittest IntegroTests.test_weights_frequencies Coverage Results" MODIFIED="1478817344087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/sybildefense$eval_cdf.coverage" NAME="eval_cdf Coverage Results" MODIFIED="1481624926091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
-    <SUITE FILE_PATH="coverage/sybildefense$runRatio.coverage" NAME="runRatio Coverage Results" MODIFIED="1489863059700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_base.coverage" NAME="Unittest VoteTrustTests.test_propagation_base Coverage Results" MODIFIED="1477414731043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_smallWorld.coverage" NAME="Unittest sybilframe_tests.test_smallWorld Coverage Results" MODIFIED="1478090941253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$parameters.coverage" NAME="parameters Coverage Results" MODIFIED="1481030349521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_targeted.coverage" NAME="peripheral_scenario_targeted Coverage Results" MODIFIED="1479914727556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalSybilEdgeProb.coverage" NAME="evalSybilEdgeProb Coverage Results" MODIFIED="1484935041666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_acceptance_closure.coverage" NAME="Unittest ProbTests.test_acceptance_closure Coverage Results" MODIFIED="1479499779523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalAttackEdgesThesis.coverage" NAME="evalAttackEdgesThesis Coverage Results" MODIFIED="1490286844149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$votetrust_digest.coverage" NAME="votetrust_digest Coverage Results" MODIFIED="1477170146745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
     <SUITE FILE_PATH="coverage/sybildefense$test_facebook_ego.coverage" NAME="test_facebook_ego Coverage Results" MODIFIED="1480461294055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation_mult.coverage" NAME="Unittest VoteTrustTests.test_propagation_mult Coverage Results" MODIFIED="1477416674832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weights_frequencies.coverage" NAME="Unittest IntegroTests.test_weights_frequencies Coverage Results" MODIFIED="1478817344087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$runAttackEdges.coverage" NAME="runAttackEdges Coverage Results" MODIFIED="1489756036584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalD.coverage" NAME="evalD Coverage Results" MODIFIED="1487462917229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_IntegroTests.coverage" NAME="Unittests in IntegroTests Coverage Results" MODIFIED="1478615649252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalAttackEdges.coverage" NAME="evalAttackEdges Coverage Results" MODIFIED="1489836735863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$test_dist.coverage" NAME="test_dist Coverage Results" MODIFIED="1474031891016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_boosted.coverage" NAME="Unittest VoteTrustTests.test_boosted Coverage Results" MODIFIED="1477515993192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_Collusion_vs_d.coverage" NAME="Unittest VoteTrustTests.test_Collusion_vs_d Coverage Results" MODIFIED="1477335707239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test.coverage" NAME="Unittest VoteTrustTests.test Coverage Results" MODIFIED="1477090453075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalRatioInfluence.coverage" NAME="evalRatioInfluence Coverage Results" MODIFIED="1481727287205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$runSybilEdgeProb.coverage" NAME="runSybilEdgeProb Coverage Results" MODIFIED="1483719961537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$runSybilNodeProb.coverage" NAME="runSybilNodeProb Coverage Results" MODIFIED="1484923636702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$peripheral_scenario.coverage" NAME="peripheral_scenario Coverage Results" MODIFIED="1479495036270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$testpyopencl.coverage" NAME="testpyopencl Coverage Results" MODIFIED="1478345969781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_weights_frequencies.coverage" NAME="Unittest IntegroTests.test_weights_frequencies Coverage Results" MODIFIED="1479991222148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalSybilNodeProbExp.coverage" NAME="evalSybilNodeProbExp Coverage Results" MODIFIED="1488044463467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalSybilNodeProb.coverage" NAME="evalSybilNodeProb Coverage Results" MODIFIED="1484934008190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$integro.coverage" NAME="integro Coverage Results" MODIFIED="1474045369065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_VoteTrustTests__1_.coverage" NAME="Unittests in VoteTrustTests (1) Coverage Results" MODIFIED="1476187076485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_test_boosting_test_smallWorld.coverage" NAME="Unittest test_boosting.test_smallWorld Coverage Results" MODIFIED="1479995524404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$multiprocess_test.coverage" NAME="multiprocess_test Coverage Results" MODIFIED="1479652592446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalRatio.coverage" NAME="evalRatio Coverage Results" MODIFIED="1489862862653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$runD.coverage" NAME="runD Coverage Results" MODIFIED="1487462882593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_transition_matrix.coverage" NAME="Unittest IntegroTests.test_transition_matrix Coverage Results" MODIFIED="1478814381318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_rank_toy.coverage" NAME="Unittest IntegroTests.test_rank_toy Coverage Results" MODIFIED="1479991114813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalSeedInfluence.coverage" NAME="evalSeedInfluence Coverage Results" MODIFIED="1481725274388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_breadth_first.coverage" NAME="Unittest VoteTrustTests.test_breadth_first Coverage Results" MODIFIED="1478440568157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$scenario_random_noboost_SR.coverage" NAME="scenario_random_noboost_SR Coverage Results" MODIFIED="1480557668914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_noboost.coverage" NAME="peripheral_scenario_noboost Coverage Results" MODIFIED="1479914793935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$integro_evaluations.coverage" NAME="integro_evaluations Coverage Results" MODIFIED="1478616620747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_assignment.coverage" NAME="Unittest VoteTrustTests.test_assignment Coverage Results" MODIFIED="1476193042143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$eval_pickles.coverage" NAME="eval_pickles Coverage Results" MODIFIED="1480201801500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$runVictimProb.coverage" NAME="runVictimProb Coverage Results" MODIFIED="1490282991973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_weights.coverage" NAME="Unittest MyTest.test_weights Coverage Results" MODIFIED="1474140098521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$eval_pickles_fb.coverage" NAME="eval_pickles_fb Coverage Results" MODIFIED="1480415057881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_rank_toy.coverage" NAME="Unittest IntegroTests.test_rank_toy Coverage Results" MODIFIED="1478450171461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_authors_attachement.coverage" NAME="Unittest sybilframe_tests.test_authors_attachement Coverage Results" MODIFIED="1478726774910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$runSuccessRate.coverage" NAME="runSuccessRate Coverage Results" MODIFIED="1481725815175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalSybilNodeProbNew.coverage" NAME="evalSybilNodeProbNew Coverage Results" MODIFIED="1490286394107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalVictims.coverage" NAME="evalVictims Coverage Results" MODIFIED="1490285032859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_attack.coverage" NAME="Unittest VoteTrustTests.test_attack Coverage Results" MODIFIED="1476983138251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_random.coverage" NAME="Unittest VoteTrustTests.test_random Coverage Results" MODIFIED="1478440837752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_serious.coverage" NAME="Unittest MyTest.test_serious Coverage Results" MODIFIED="1474322351507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_VoteTrustTests.coverage" NAME="Unittests in VoteTrustTests Coverage Results" MODIFIED="1475420795358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_rank_authors.coverage" NAME="Unittest IntegroTests.test_rank_authors Coverage Results" MODIFIED="1478825979200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_integro.coverage" NAME="Unittest sybilframe_tests.test_integro Coverage Results" MODIFIED="1477933976649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_serious.coverage" NAME="Unittest IntegroTests.test_serious Coverage Results" MODIFIED="1474383034703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_MyTest_test_weight_setting.coverage" NAME="Unittest MyTest.test_weight_setting Coverage Results" MODIFIED="1474301186404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_sybil_region.coverage" NAME="Unittest IntegroTests.test_sybil_region Coverage Results" MODIFIED="1478456731400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1474299300573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$test_ipyton.coverage" NAME="test_ipyton Coverage Results" MODIFIED="1474040996225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sybil" />
+    <SUITE FILE_PATH="coverage/sybildefense$sybil_region_scenario.coverage" NAME="sybil_region_scenario Coverage Results" MODIFIED="1479909486531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_propagation.coverage" NAME="Unittest IntegroTests.test_propagation Coverage Results" MODIFIED="1478534948479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_peripheral.coverage" NAME="Unittest VoteTrustTests.test_peripheral Coverage Results" MODIFIED="1476530130850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_transition_matrix.coverage" NAME="Unittest IntegroTests.test_transition_matrix Coverage Results" MODIFIED="1479991194911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sybildefense$evalAcceptanceFunction.coverage" NAME="evalAcceptanceFunction Coverage Results" MODIFIED="1488044789104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittests_in_IntegroTests__1_.coverage" NAME="Unittests in IntegroTests (1) Coverage Results" MODIFIED="1478615663903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_peripheral_vs_little_connected.coverage" NAME="Unittest IntegroTests.test_peripheral_vs_little_connected Coverage Results" MODIFIED="1478522277004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1478815304136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_getprobs.coverage" NAME="Unittest IntegroTests.test_getprobs Coverage Results" MODIFIED="1478449949428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_auc.coverage" NAME="Unittest ProbTests.test_auc Coverage Results" MODIFIED="1479318657355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$sybil_region_scenario.coverage" NAME="sybil_region_scenario Coverage Results" MODIFIED="1479499803017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_com_v_sib.coverage" NAME="Unittest IntegroTests.test_com_v_sib Coverage Results" MODIFIED="1478616574403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$other_plots.coverage" NAME="other_plots Coverage Results" MODIFIED="1483540805158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_Collusion_vs_d__1_.coverage" NAME="Unittest VoteTrustTests.test_Collusion_vs_d (1) Coverage Results" MODIFIED="1477335887139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_sybilframe_tests_test_infer.coverage" NAME="Unittest sybilframe_tests.test_infer Coverage Results" MODIFIED="1483555324075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$votetrust.coverage" NAME="votetrust Coverage Results" MODIFIED="1478432350434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$plotVictimFunction.coverage" NAME="plotVictimFunction Coverage Results" MODIFIED="1488044845319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$peripheral_scenario_random.coverage" NAME="peripheral_scenario_random Coverage Results" MODIFIED="1479915617855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_collusion.coverage" NAME="Unittest VoteTrustTests.test_collusion Coverage Results" MODIFIED="1477482278911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_weight_setting.coverage" NAME="Unittest IntegroTests.test_weight_setting Coverage Results" MODIFIED="1478825872741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_ProbTests_test_nodeProb.coverage" NAME="Unittest ProbTests.test_nodeProb Coverage Results" MODIFIED="1479576776784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_IntegroTests_test_merge_renumber.coverage" NAME="Unittest IntegroTests.test_merge_renumber Coverage Results" MODIFIED="1478820643964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_collusion_once.coverage" NAME="Unittest VoteTrustTests.test_collusion_once Coverage Results" MODIFIED="1476560131850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_Sybilframe_attack_tests_test_smallword.coverage" NAME="Unittest Sybilframe_attack_tests.test_smallword Coverage Results" MODIFIED="1478104351523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$votetrust_timing.coverage" NAME="votetrust_timing Coverage Results" MODIFIED="1477236374172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/timing" />
+    <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_noboost_P.coverage" NAME="scenario_targeted_noboost_P Coverage Results" MODIFIED="1480014232260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$run_experiment.coverage" NAME="run_experiment Coverage Results" MODIFIED="1481720891635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_infer.coverage" NAME="Unittest sybilframe_tests.test_infer Coverage Results" MODIFIED="1477734787294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_sybilframe_tests_test_new_dist.coverage" NAME="Unittest sybilframe_tests.test_new_dist Coverage Results" MODIFIED="1477951139376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$peripheral_scenario_targeted.coverage" NAME="peripheral_scenario_targeted Coverage Results" MODIFIED="1479679106054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_Sybilframe_attack_tests_breadth_first_test.coverage" NAME="Unittest Sybilframe_attack_tests.breadth_first_test Coverage Results" MODIFIED="1478440040147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalVictimProb.coverage" NAME="evalVictimProb Coverage Results" MODIFIED="1484673824357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$scenario_targeted_boosted_P.coverage" NAME="scenario_targeted_boosted_P Coverage Results" MODIFIED="1481027790087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$evalSybilEdgeProbNew.coverage" NAME="evalSybilEdgeProbNew Coverage Results" MODIFIED="1490286441386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$Unittest_IntegroTests_test_weights.coverage" NAME="Unittest IntegroTests.test_weights Coverage Results" MODIFIED="1479991202623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$eval_cdf.coverage" NAME="eval_cdf Coverage Results" MODIFIED="1481624926091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/sybildefense$eval_cdf_boost_vs_noboost.coverage" NAME="eval_cdf_boost_vs_noboost Coverage Results" MODIFIED="1481626747800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_propagation.coverage" NAME="Unittest VoteTrustTests.test_propagation Coverage Results" MODIFIED="1477218664414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$votetrust_evaluations.coverage" NAME="votetrust_evaluations Coverage Results" MODIFIED="1479505127954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_getFriends.coverage" NAME="Unittest VoteTrustTests.test_getFriends Coverage Results" MODIFIED="1476980649969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_aggregation.coverage" NAME="Unittest VoteTrustTests.test_aggregation Coverage Results" MODIFIED="1476190236219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sybildefense$runRatio.coverage" NAME="runRatio Coverage Results" MODIFIED="1489863059700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluations" />
+    <SUITE FILE_PATH="coverage/implementations$Unittest_VoteTrustTests_test_run.coverage" NAME="Unittest VoteTrustTests.test_run Coverage Results" MODIFIED="1476297093422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -135,146 +159,120 @@
     <favorites_list name="implementations" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.60988295">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="runAttackEdges.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/runAttackEdges.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="445">
-                  <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="evalSybilEdgeProb.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
-                  <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="runSybilEdgeProb.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/evaluations/runSybilEdgeProb.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="evalAttackEdges.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdges.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="evalAttackEdgesThesis.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="629">
-                  <caret line="41" column="97" lean-forward="false" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="97" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="evalVictimProb.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/evalVictimProb.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="evalAcceptanceFunction.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/evalAcceptanceFunction.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="evalRatio.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/evalRatio.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="runRatio.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/runRatio.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="runRatio.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evaluations/runRatio.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sybilframe.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="568">
-                  <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#22#40#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="baseparameters.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="runAttackEdges.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/runAttackEdges.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runSybilEdgeProb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/runSybilEdgeProb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalAttackEdges.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdges.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalAttackEdgesThesis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalVictims.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalVictims.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="70" lean-forward="false" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalSybilNodeProbNew.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalSybilNodeProbNew.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalSybilEdgeProbNew.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalSybilEdgeProbNew.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evalRatio.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/evalRatio.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runRatio.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evaluations/runRatio.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runVictimProb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluations/runVictimProb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -295,9 +293,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/evaluations/votetrust_evaluations.py" />
-        <option value="$PROJECT_DIR$/tests/multiprocess_test.py" />
-        <option value="$PROJECT_DIR$/evaluations/peripheral_scenario_targeted.py" />
         <option value="$PROJECT_DIR$/evaluations/peripheral_scenario_random.py" />
         <option value="$PROJECT_DIR$/evaluations/peripheral_scenario_noboost.py" />
         <option value="$PROJECT_DIR$/evaluations/sybil_region_scenario.py" />
@@ -322,7 +317,6 @@
         <option value="$PROJECT_DIR$/sybil/votetrust.py" />
         <option value="$PROJECT_DIR$/util/graph_creation.py" />
         <option value="$PROJECT_DIR$/evaluations/evalVictimProb.py" />
-        <option value="$PROJECT_DIR$/evaluations/runVictimProb.py" />
         <option value="$PROJECT_DIR$/evaluations/run_experiment.py" />
         <option value="$PROJECT_DIR$/evaluations/baseparameters.json" />
         <option value="$PROJECT_DIR$/evaluations/evalSybilNodeProb.py" />
@@ -342,10 +336,14 @@
         <option value="$PROJECT_DIR$/evaluations/benchmarks.py" />
         <option value="$PROJECT_DIR$/evaluations/runAttackEdges.py" />
         <option value="$PROJECT_DIR$/evaluations/evalAttackEdges.py" />
-        <option value="$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py" />
         <option value="$PROJECT_DIR$/evaluations/evalRatio.py" />
         <option value="$PROJECT_DIR$/evaluations/runRatio.py" />
         <option value="$PROJECT_DIR$/evaluations/runSybilEdgeProb.py" />
+        <option value="$PROJECT_DIR$/evaluations/runVictimProb.py" />
+        <option value="$PROJECT_DIR$/evaluations/evalVictims.py" />
+        <option value="$PROJECT_DIR$/evaluations/evalSybilNodeProbNew.py" />
+        <option value="$PROJECT_DIR$/evaluations/evalSybilEdgeProbNew.py" />
+        <option value="$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py" />
       </list>
     </option>
   </component>
@@ -356,10 +354,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="y" value="27" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -396,8 +393,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -500,6 +495,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -537,8 +534,8 @@
       <recent name="$PROJECT_DIR$/pickles/SeedInfluence" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.runRatio">
-    <configuration default="false" name="runAttackEdges" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.evalAttackEdgesThesis">
+    <configuration default="false" name="runVictimProb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -551,12 +548,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="implementations" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/runAttackEdges.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/runVictimProb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="evalAttackEdges" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="evalVictims" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -569,7 +566,43 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="implementations" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalAttackEdges.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalVictims.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="evalSybilNodeProbNew" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalSybilNodeProbNew.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="evalSybilEdgeProbNew" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="implementations" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalSybilEdgeProbNew.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -588,42 +621,6 @@
       <module name="implementations" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="evalRatio" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/evalRatio.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="runRatio" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="implementations" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluations/runRatio.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -844,19 +841,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.runAttackEdges" />
-      <item index="1" class="java.lang.String" itemvalue="Python.evalAttackEdges" />
-      <item index="2" class="java.lang.String" itemvalue="Python.evalAttackEdgesThesis" />
-      <item index="3" class="java.lang.String" itemvalue="Python.evalRatio" />
-      <item index="4" class="java.lang.String" itemvalue="Python.runRatio" />
+      <item index="0" class="java.lang.String" itemvalue="Python.runVictimProb" />
+      <item index="1" class="java.lang.String" itemvalue="Python.evalVictims" />
+      <item index="2" class="java.lang.String" itemvalue="Python.evalSybilNodeProbNew" />
+      <item index="3" class="java.lang.String" itemvalue="Python.evalSybilEdgeProbNew" />
+      <item index="4" class="java.lang.String" itemvalue="Python.evalAttackEdgesThesis" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.runRatio" />
-        <item index="1" class="java.lang.String" itemvalue="Python.evalRatio" />
-        <item index="2" class="java.lang.String" itemvalue="Python.evalAttackEdgesThesis" />
-        <item index="3" class="java.lang.String" itemvalue="Python.evalAttackEdges" />
-        <item index="4" class="java.lang.String" itemvalue="Python.runAttackEdges" />
+        <item index="0" class="java.lang.String" itemvalue="Python.evalAttackEdgesThesis" />
+        <item index="1" class="java.lang.String" itemvalue="Python.evalSybilEdgeProbNew" />
+        <item index="2" class="java.lang.String" itemvalue="Python.evalSybilNodeProbNew" />
+        <item index="3" class="java.lang.String" itemvalue="Python.evalVictims" />
+        <item index="4" class="java.lang.String" itemvalue="Python.runVictimProb" />
       </list>
     </recent_temporary>
   </component>
@@ -1185,18 +1182,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21092564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3033586" sideWeight="0.5378465" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30245748" sideWeight="0.53994846" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21018419" sideWeight="0.4939394" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38136512" sideWeight="0.47954544" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11720227" sideWeight="0.4916237" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3809074" sideWeight="0.47954544" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6310518" sideWeight="0.46215352" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502708" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39219934" sideWeight="0.47974414" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1204,11 +1203,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3033586" sideWeight="0.46215352" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39219934" sideWeight="0.47974414" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1302,21 +1299,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27018">
-          <caret line="1536" column="0" lean-forward="false" selection-start-line="1536" selection-start-column="0" selection-end-line="1536" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/peripheral_scenario_targeted.py" />
     <entry file="file://$PROJECT_DIR$/tests/integro_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
@@ -1400,13 +1382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/runVictimProb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1514,48 +1489,127 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2771">
           <caret line="168" column="24" lean-forward="false" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalAcceptanceFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1962">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/runAttackEdges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/evalVictimProb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/evalAcceptanceFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="97" lean-forward="false" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/evalRatio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="236">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/runVictimProb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalVictims.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="70" lean-forward="false" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalSybilNodeProbNew.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalSybilEdgeProbNew.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/runSybilEdgeProb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdges.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="261">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluations/evalAttackEdgesThesis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -1564,53 +1618,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluations/runRatio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sybil/sybilframe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/evalSybilEdgeProb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/runAttackEdges.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/baseparameters.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluations/runSybilEdgeProb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>

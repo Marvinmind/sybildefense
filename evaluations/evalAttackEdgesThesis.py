@@ -69,9 +69,9 @@ axarr[0,2].set_ylim((0, 1.1))
 axarr[0,2].set_title('Peri. Targeted', loc='center')
 
 "P Targeted Boost"
-axarr[1,0].plot(x, list(PTarAUC['integro'].values()), 'r-')
-axarr[1,0].plot(x, list(PTarAUC['votetrust'].values()),'b--')
-axarr[1,0].plot(x, list(PTarAUC['sybilframe'].values()),'k-.')
+axarr[1,0].plot(x, list(PTarAUC['integro'].values()), 'r-', label = 'Integro')
+axarr[1,0].plot(x, list(PTarAUC['votetrust'].values()),'b--', label='Votetrust')
+axarr[1,0].plot(x, list(PTarAUC['sybilframe'].values()),'k-.', label='SybilFrame')
 
 axarr[1,0].set_title('Peri. Targeted Boosted', loc='center')
 axarr[1,0].set_ylim((0, 1.1))
@@ -93,14 +93,13 @@ axarr[1,2].plot(x, list(SRTarAUC['sybilframe'].values()),'k-.')
 
 axarr[1,2].set_ylim((0, 1.1))
 axarr[1,2].set_title('Sybil Region Targeted', loc='center')
-axarr[1,0].legend(bbox_to_anchor=(0,0.52), loc='upper left')
+axarr[0,0].legend(loc='lower left')
 
 for i in range(2):
 	for j in range(1,3):
 		axarr[i,j].xaxis.get_major_ticks()[0].label1.set_visible(False)
 
-
 plt.tight_layout()
-plt.subplots_adjust(top=0.78, bottom=0.1)
+plt.subplots_adjust(top=0.85, bottom=0.1)
 f.subplots_adjust(wspace=0.1)
 plt.savefig(pathParas['figuresPath']+'/AttackEdges{}.pdf'.format(graph), format='pdf')

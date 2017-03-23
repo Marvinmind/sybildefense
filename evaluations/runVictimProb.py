@@ -15,7 +15,7 @@ from evaluations.run_experiment import run_experiment
 
 graph = 'slashdot'
 numRepeats = 5
-evalInt = (1, 20, 50)
+evalInt = (10, 20, 40)
 
 for i in (0.1, 0.2, 0.4):
 	paras = parameters.ParameterSettingsSR(graph=graph, strategy='breadthFirst', evalAt=evalInt, numRepeats=numRepeats)
